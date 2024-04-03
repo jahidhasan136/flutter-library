@@ -9,7 +9,7 @@ import logo from "../assets/logo.png";
 
 const SideMenu = () => {
   return (
-    <div>
+    <div className="border-r-[1px] border-secondary">
       <img className=" px-4 pt-7 pb-8" src={logo} alt="" />
       <div className="grid gap-7">
         <div className="grid gap-2 text-textSecondary">
