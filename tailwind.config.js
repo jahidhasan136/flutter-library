@@ -8,6 +8,9 @@ export default {
         textSecondary: "#989898",
         primary: "#111111",
       },
+      screens: {
+        xl: "1280px",
+      },
     },
   },
   plugins: [],
