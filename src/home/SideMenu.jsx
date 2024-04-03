@@ -78,7 +78,7 @@ const SideMenu = () => {
                 <Link to="" className="text-sm">
                   Chat
                 </Link>
-                <p>10</p>
+                <p>5</p>
               </div>
             </div>
             <div className="hover:bg-secondary hover:text-primary">
@@ -86,7 +86,7 @@ const SideMenu = () => {
                 <Link to="" className="text-sm">
                   Onboarding
                 </Link>
-                <p>10</p>
+                <p>18</p>
               </div>
             </div>
             <div className="hover:bg-secondary hover:text-primary">
@@ -94,7 +94,7 @@ const SideMenu = () => {
                 <Link to="" className="text-sm">
                   E-commerce
                 </Link>
-                <p>10</p>
+                <p>9</p>
               </div>
             </div>
             <div className="hover:bg-secondary hover:text-primary">
@@ -110,7 +110,7 @@ const SideMenu = () => {
                 <Link to="" className="text-sm">
                   Error
                 </Link>
-                <p>10</p>
+                <p>16</p>
               </div>
             </div>
           </div>

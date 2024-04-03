@@ -5,13 +5,15 @@ import SideMenu from "./SideMenu";
 const Home = () => {
   return (
     <>
-      <div className="flex  justify-between">
+      <div className="flex">
         <div className="w-[180px]">
           <SideMenu />
         </div>
-        <div>
+        <div className="px-4 pt-4 pb-5 w-full">
           <Header />
-          <Outlet />
+          <div className="mt-10">
+            <Outlet />
+          </div>
         </div>
       </div>
     </>
