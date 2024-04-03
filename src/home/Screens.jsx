@@ -18,7 +18,7 @@ const Screens = () => {
         <button className="text-textSecondary text-xs ">See all</button>
       </div>
       {/* Filter sections */}
-      <div className="flex gap-2 items-center">
+      <div className="flex gap-2 items-center mb-4">
         <button className="flex gap-2 items-center px-4 py-2 bg-secondary rounded-full mr-4">
           <img src={filterIcon} alt="" />
           <p className="text-sm leading-[18.2px]">Filters</p>
@@ -63,16 +63,16 @@ const Screens = () => {
       </div>
       {/* project sections */}
       <div className="grid md:grid-cols-5 gap-4">
-        <img className="rounded-2xl" src={screenImgOne} alt="" />
-        <img className="rounded-2xl" src={screenImgTwo} alt="" />
-        <img className="rounded-2xl" src={screenImgThree} alt="" />
-        <img className="rounded-2xl" src={screenImgFour} alt="" />
-        <img className="rounded-2xl" src={screenImgFive} alt="" />
-        <img className="rounded-2xl" src={screenImgSix} alt="" />
-        <img className="rounded-2xl" src={screenImgSeven} alt="" />
-        <img className="rounded-2xl" src={screenImgEight} alt="" />
-        <img className="rounded-2xl" src={screenImgNine} alt="" />
-        <img className="rounded-2xl" src={screenImgTen} alt="" />
+        <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
+        <img className="rounded-2xl w-full" src={screenImgTwo} alt="" />
+        <img className="rounded-2xl w-full" src={screenImgThree} alt="" />
+        <img className="rounded-2xl w-full" src={screenImgFour} alt="" />
+        <img className="rounded-2xl w-full" src={screenImgFive} alt="" />
+        <img className="rounded-2xl w-full" src={screenImgSix} alt="" />
+        <img className="rounded-2xl w-full" src={screenImgSeven} alt="" />
+        <img className="rounded-2xl w-full" src={screenImgEight} alt="" />
+        <img className="rounded-2xl w-full" src={screenImgNine} alt="" />
+        <img className="rounded-2xl w-full" src={screenImgTen} alt="" />
       </div>
     </div>
   );

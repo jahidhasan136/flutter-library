@@ -11,7 +11,7 @@ const Articles = () => {
       </div>
       <div className="grid md:grid-cols-3 gap-5">
         <div>
-          <img src={articleImgOne} alt="" />
+          <img className="rounded-2xl w-full" src={articleImgOne} alt="" />
           <div className="flex gap-5 pt-4 pb-2 text-textSecondary text-sm leading-[18.2px] capitalize">
             <h3>Mar 24, 2024</h3>
             <h3>Animation</h3>
@@ -21,7 +21,7 @@ const Articles = () => {
           </h2>
         </div>
         <div>
-          <img src={articleImgTwo} alt="" />
+          <img className="rounded-2xl w-full" src={articleImgTwo} alt="" />
           <div className="flex gap-5 pt-4 pb-2 text-textSecondary text-sm leading-[18.2px] capitalize">
             <h3>Mar 24, 2024</h3>
             <h3>Animation</h3>
@@ -31,7 +31,7 @@ const Articles = () => {
           </h2>
         </div>
         <div>
-          <img src={articleImgThree} alt="" />
+          <img className="rounded-2xl w-full" src={articleImgThree} alt="" />
           <div className="flex gap-5 pt-4 pb-2 text-textSecondary text-sm leading-[18.2px] capitalize">
             <h3>Mar 24, 2024</h3>
             <h3>Animation</h3>
