@@ -4,7 +4,7 @@ import articleImgThree from "../assets/articles/article-3.png";
 
 const Articles = () => {
   return (
-    <div>
+    <div className="mb-10">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl text-primary leading-[31.2px]">Articles</h2>
         <button className="text-textSecondary text-xs ">See all</button>
