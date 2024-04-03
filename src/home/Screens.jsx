@@ -12,7 +12,7 @@ import screenImgNine from "../assets/screens/screens-9.png";
 
 const Screens = () => {
   return (
-    <div>
+    <div className="mb-10">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl text-primary leading-[31.2px]">Screens</h2>
         <button className="text-textSecondary text-xs ">See all</button>
