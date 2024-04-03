@@ -16,7 +16,11 @@ const Templates = () => {
       </div>
       <div className="grid md:grid-cols-3 gap-4">
         <div className="grid gap-2">
-          <img className="rounded-lg w-full" src={templateOne} alt="" />
+          <img
+            className="rounded-lg w-full object-cover"
+            src={templateOne}
+            alt=""
+          />
           <div className="flex justify-between">
             <h2 className="capitalize font-semibold text-primary leading-[20.8px]">
               Foodly Restaurent App template
@@ -34,7 +38,11 @@ const Templates = () => {
           </div>
         </div>
         <div className="grid gap-2">
-          <img className="rounded-lg w-full" src={templateTwo} alt="" />
+          <img
+            className="rounded-lg w-full object-cover"
+            src={templateTwo}
+            alt=""
+          />
           <div className="flex justify-between">
             <h2 className="capitalize font-semibold text-primary leading-[20.8px]">
               Flutter animation template
@@ -52,7 +60,11 @@ const Templates = () => {
           </div>
         </div>
         <div className="grid gap-2">
-          <img className="rounded-lg w-full" src={templateThree} alt="" />
+          <img
+            className="rounded-lg w-full object-cover"
+            src={templateThree}
+            alt=""
+          />
           <div className="flex justify-between">
             <h2 className="capitalize font-semibold text-primary leading-[20.8px]">
               Flutter animation template
@@ -70,7 +82,11 @@ const Templates = () => {
           </div>
         </div>
         <div className="grid gap-2">
-          <img className="rounded-lg w-full" src={templateFour} alt="" />
+          <img
+            className="rounded-lg w-full object-cover"
+            src={templateFour}
+            alt=""
+          />
           <div className="flex justify-between">
             <h2 className="capitalize font-semibold text-primary leading-[20.8px]">
               Flutter animation template
@@ -88,7 +104,11 @@ const Templates = () => {
           </div>
         </div>
         <div className="grid gap-2">
-          <img className="rounded-lg w-full" src={templateFive} alt="" />
+          <img
+            className="rounded-lg w-full object-cover"
+            src={templateFive}
+            alt=""
+          />
           <div className="flex justify-between">
             <h2 className="capitalize font-semibold text-primary leading-[20.8px]">
               Flutter animation template
@@ -106,7 +126,11 @@ const Templates = () => {
           </div>
         </div>
         <div className="grid gap-2">
-          <img className="rounded-lg w-full" src={templateSix} alt="" />
+          <img
+            className="rounded-lg w-full object-cover"
+            src={templateSix}
+            alt=""
+          />
           <div className="flex justify-between">
             <h2 className="capitalize font-semibold text-primary leading-[20.8px]">
               Flutter animation template
