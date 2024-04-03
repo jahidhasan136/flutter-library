@@ -1,3 +1,4 @@
+import Articles from "./Articles";
 import Hero from "./Hero";
 import Templates from "./Templates";
 
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <Hero />
       <Templates />
+      <Articles />
     </>
   );
 };
