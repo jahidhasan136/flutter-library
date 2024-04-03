@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import articlesIcon from "../assets/icons/articles.png";
 import discoverIcon from "../assets/icons/discover.png";
 import hireIcon from "../assets/icons/hire.png";
@@ -15,37 +16,49 @@ const SideMenu = () => {
           <div className="hover:bg-secondary hover:text-primary">
             <div className="flex gap-2 px-4 py-2 items-center">
               <img src={discoverIcon} alt="" />
-              <p className="text-sm">Discover</p>
+              <Link to="" className="text-sm">
+                Discover
+              </Link>
             </div>
           </div>
           <div className="hover:bg-secondary hover:text-primary">
             <div className="flex gap-2 px-4 py-2 items-center">
               <img src={uiKitsIcon} alt="" />
-              <p className="text-sm">UI Kits</p>
+              <Link to="" className="text-sm">
+                UI Kits
+              </Link>
             </div>
           </div>
           <div className="hover:bg-secondary hover:text-primary">
             <div className="flex gap-2 px-4 py-2 items-center">
               <img src={screensIcon} alt="" />
-              <p className="text-sm">Screens</p>
+              <Link to="" className="text-sm">
+                Screens
+              </Link>
             </div>
           </div>
           <div className="hover:bg-secondary hover:text-primary">
             <div className="flex gap-2 px-4 py-2 items-center">
               <img src={articlesIcon} alt="" />
-              <p className="text-sm">Articles</p>
+              <Link to="" className="text-sm">
+                Articles
+              </Link>
             </div>
           </div>
           <div className="hover:bg-secondary hover:text-primary">
             <div className="flex gap-2 px-4 py-2 items-center">
               <img src={sponsoreIcon} alt="" />
-              <p className="text-sm">Become Sponsor</p>
+              <Link to="" className="text-sm">
+                Become Sponsor
+              </Link>
             </div>
           </div>
           <div className="hover:bg-secondary hover:text-primary">
             <div className="flex gap-2 px-4 py-2 items-center">
               <img src={hireIcon} alt="" />
-              <p className="text-sm">Hire Flutter Dev</p>
+              <Link to="" className="text-sm">
+                Hire Flutter Dev
+              </Link>
             </div>
           </div>
         </div>
@@ -54,37 +67,49 @@ const SideMenu = () => {
           <div className="grid gap-2 text-textSecondary">
             <div className="hover:bg-secondary hover:text-primary">
               <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <p className="text-sm">Sing in</p>
+                <Link to="" className="text-sm">
+                  Sing in
+                </Link>
                 <p>10</p>
               </div>
             </div>
             <div className="hover:bg-secondary hover:text-primary">
               <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <p className="text-sm">Chat</p>
+                <Link to="" className="text-sm">
+                  Chat
+                </Link>
                 <p>10</p>
               </div>
             </div>
             <div className="hover:bg-secondary hover:text-primary">
               <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <p className="text-sm">Onboarding</p>
+                <Link to="" className="text-sm">
+                  Onboarding
+                </Link>
                 <p>10</p>
               </div>
             </div>
             <div className="hover:bg-secondary hover:text-primary">
               <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <p className="text-sm">E-commerce</p>
+                <Link to="" className="text-sm">
+                  E-commerce
+                </Link>
                 <p>10</p>
               </div>
             </div>
             <div className="hover:bg-secondary hover:text-primary">
               <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <p className="text-sm">Checkout</p>
+                <Link to="" className="text-sm">
+                  Checkout
+                </Link>
                 <p>10</p>
               </div>
             </div>
             <div className="hover:bg-secondary hover:text-primary">
               <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <p className="text-sm">Error</p>
+                <Link to="" className="text-sm">
+                  Error
+                </Link>
                 <p>10</p>
               </div>
             </div>
