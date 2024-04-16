@@ -1,6 +1,6 @@
-import articleImgOne from "../assets/articles/article-1.png";
-import articleImgTwo from "../assets/articles/article-2.png";
-import articleImgThree from "../assets/articles/article-3.png";
+import articleImgOne from "../../assets/articles/article-1.png";
+import articleImgTwo from "../../assets/articles/article-2.png";
+import articleImgThree from "../../assets/articles/article-3.png";
 
 const Articles = () => {
   return (

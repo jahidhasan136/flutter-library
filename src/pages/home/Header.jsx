@@ -1,5 +1,5 @@
-import modeIcon from "../assets/icons/mode.png";
-import searchIcon from "../assets/icons/search.png";
+import modeIcon from "../../assets/icons/mode.png";
+import searchIcon from "../../assets/icons/search.png";
 
 const Header = () => {
   return (

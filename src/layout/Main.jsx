@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import Footer from "../home/Footer";
-import Header from "../home/Header";
-import SideMenu from "../home/SideMenu";
+import Footer from "../pages/home/Footer";
+import Header from "../pages/home/Header";
+import SideMenu from "../pages/home/SideMenu";
 
 const Main = () => {
   return (

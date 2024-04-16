@@ -1,15 +1,15 @@
 import { IoMdArrowForward } from "react-icons/io";
-import filterIcon from "../assets/icons/filter.png";
-import screenImgOne from "../assets/screens/screens-1.png";
-import screenImgTen from "../assets/screens/screens-10.png";
-import screenImgTwo from "../assets/screens/screens-2.png";
-import screenImgThree from "../assets/screens/screens-3.png";
-import screenImgFour from "../assets/screens/screens-4.png";
-import screenImgFive from "../assets/screens/screens-5.png";
-import screenImgSix from "../assets/screens/screens-6.png";
-import screenImgSeven from "../assets/screens/screens-7.png";
-import screenImgEight from "../assets/screens/screens-8.png";
-import screenImgNine from "../assets/screens/screens-9.png";
+import filterIcon from "../../assets/icons/filter.png";
+import screenImgOne from "../../assets/screens/screens-1.png";
+import screenImgTen from "../../assets/screens/screens-10.png";
+import screenImgTwo from "../../assets/screens/screens-2.png";
+import screenImgThree from "../../assets/screens/screens-3.png";
+import screenImgFour from "../../assets/screens/screens-4.png";
+import screenImgFive from "../../assets/screens/screens-5.png";
+import screenImgSix from "../../assets/screens/screens-6.png";
+import screenImgSeven from "../../assets/screens/screens-7.png";
+import screenImgEight from "../../assets/screens/screens-8.png";
+import screenImgNine from "../../assets/screens/screens-9.png";
 
 const Screens = () => {
   return (
