@@ -8,6 +8,17 @@ export default {
         textSecondary: "#989898",
         primary: "#111111",
       },
+      // container: {
+      //   center: true,
+      //   padding: {
+      //     default: "1rem",
+      //     // xs: "1rem",
+      //     // sm: "1rem",
+      //     // lg: "4rem",
+      //     // xl: "5rem",
+      //     // "2xl": "6rem",
+      //   },
+      // },
       screens: {
         xl: "1280px",
       },

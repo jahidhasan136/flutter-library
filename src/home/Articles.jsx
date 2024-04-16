@@ -19,6 +19,10 @@ const Articles = () => {
           <h2 className="capitalize text-primary font-semibold leading-[20.8px]">
             Learn flutter animation
           </h2>
+          <p className="mt-2 text-textSecondary text-sm">
+            Lately, more Flutter developers have been running Dart on the
+            server. And it’s no wonder: who doesn’t like using...
+          </p>
         </div>
         <div>
           <img className="rounded-2xl w-full" src={articleImgTwo} alt="" />
@@ -29,6 +33,10 @@ const Articles = () => {
           <h2 className="capitalize text-primary font-semibold leading-[20.8px]">
             Onboarding Screen with Carousel & Animated Dots
           </h2>
+          <p className="mt-2 text-textSecondary text-sm">
+            Lately, more Flutter developers have been running Dart on the
+            server. And it’s no wonder: who doesn’t like using...
+          </p>
         </div>
         <div>
           <img className="rounded-2xl w-full" src={articleImgThree} alt="" />
@@ -39,6 +47,10 @@ const Articles = () => {
           <h2 className="capitalize text-primary font-semibold leading-[20.8px]">
             Parallax Scroll Effect with PageView in Flutter
           </h2>
+          <p className="mt-2 text-textSecondary text-sm">
+            Lately, more Flutter developers have been running Dart on the
+            server. And it’s no wonder: who doesn’t like using...
+          </p>
         </div>
       </div>
     </div>

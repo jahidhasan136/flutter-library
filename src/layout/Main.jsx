@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import Footer from "../home/Footer";
 import Header from "../home/Header";
 import SideMenu from "../home/SideMenu";
 
@@ -16,6 +17,7 @@ const Main = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

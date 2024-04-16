@@ -1,5 +1,4 @@
 import Articles from "./Articles";
-import Footer from "./Footer";
 import Hero from "./Hero";
 import Screens from "./Screens";
 import Templates from "./Templates";
@@ -11,7 +10,6 @@ const Home = () => {
       <Templates />
       <Articles />
       <Screens />
-      <Footer />
     </>
   );
 };
