@@ -4,15 +4,16 @@ import modeIcon from "../../assets/icons/mode.png";
 import searchIcon from "../../assets/icons/search.png";
 
 const Header = () => {
+  // dark mode light mode implement
   const [mode, setMode] = useState(false);
   const outSideModeRef = useRef(null)
 
+  // when i cick outside of card mode card are invisible
   const handleClickOutside = (event) => {
     if(outSideModeRef.current && !outSideModeRef.current.contains(event.target)){
       setMode(false);
     }
   }
-
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
 
@@ -20,6 +21,7 @@ const Header = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     }
   },[])
+
   return (
     <div ref={outSideModeRef} className="flex justify-between items-center">
       <div className="relative">
@@ -34,6 +36,8 @@ const Header = () => {
 
       {/* TODO: SHADOW OR ICON FIXED */}
       <div className="flex items-center gap-4">
+
+        {/* mode section */}
         <div className="relative">
         <img onClick={() => setMode(!mode)} className="cursor-pointer" src={modeIcon} alt="" />
           <div className={`${mode ? 'grid' : 'hidden'} absolute -right-4 top-10 bg-white gap-[2px] border rounded-lg w-[184px]`}>
