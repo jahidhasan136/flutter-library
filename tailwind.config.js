@@ -4,9 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary: "#111",
         secondary: "#F0F0F0",
+        textPrimary: "#111",
         textSecondary: "#989898",
-        primary: "#111111",
       },
       // container: {
       //   center: true,
@@ -21,6 +22,15 @@ export default {
       // },
       screens: {
         xl: "1280px",
+      },
+      fontSize: {
+        h1: "40px",
+        h2: "32px",
+        h3: "24px",
+        h4: "20px",
+        h5: "16px",
+        h6: "14px",
+        h7: "12px",
       },
     },
   },

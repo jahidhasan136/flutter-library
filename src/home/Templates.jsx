@@ -11,7 +11,7 @@ const Templates = () => {
   return (
     <div className="mb-10">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl text-primary leading-[31.2px]">Templates</h2>
+        <h2 className="text-h3 text-primary leading-[31.2px]">Templates</h2>
         <button className="text-textSecondary text-xs ">See all</button>
       </div>
       <div className="grid md:grid-cols-3 gap-4">
@@ -26,13 +26,13 @@ const Templates = () => {
               Foodly Restaurent App template
             </h2>
             <div className="flex gap-2 items-center">
-              <div className="flex gap-1 items-center">
+              <div className="flex gap-1  items-center">
                 <img src={phoneIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">28</p>
+                <p className="text-h6 leading-[18.2px]">28</p>
               </div>
               <div className="flex gap-1 items-center">
                 <img src={downloadIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">546</p>
+                <p className="text-h6 leading-[18.2px]">546</p>
               </div>
             </div>
           </div>
@@ -50,11 +50,11 @@ const Templates = () => {
             <div className="flex gap-2 items-center">
               <div className="flex gap-1 items-center">
                 <img src={phoneIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">28</p>
+                <p className="text-h6 leading-[18.2px]">28</p>
               </div>
               <div className="flex gap-1 items-center">
                 <img src={downloadIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">546</p>
+                <p className="text-h6 leading-[18.2px]">546</p>
               </div>
             </div>
           </div>
@@ -72,11 +72,11 @@ const Templates = () => {
             <div className="flex gap-2 items-center">
               <div className="flex gap-1 items-center">
                 <img src={phoneIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">28</p>
+                <p className="text-h6 leading-[18.2px]">28</p>
               </div>
               <div className="flex gap-1 items-center">
                 <img src={downloadIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">546</p>
+                <p className="text-h6 leading-[18.2px]">546</p>
               </div>
             </div>
           </div>
@@ -94,11 +94,11 @@ const Templates = () => {
             <div className="flex gap-2 items-center">
               <div className="flex gap-1 items-center">
                 <img src={phoneIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">28</p>
+                <p className="text-h6 leading-[18.2px]">28</p>
               </div>
               <div className="flex gap-1 items-center">
                 <img src={downloadIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">546</p>
+                <p className="text-h6 leading-[18.2px]">546</p>
               </div>
             </div>
           </div>
@@ -116,11 +116,11 @@ const Templates = () => {
             <div className="flex gap-2 items-center">
               <div className="flex gap-1 items-center">
                 <img src={phoneIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">28</p>
+                <p className="text-h6 leading-[18.2px]">28</p>
               </div>
               <div className="flex gap-1 items-center">
                 <img src={downloadIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">546</p>
+                <p className="text-h6 leading-[18.2px]">546</p>
               </div>
             </div>
           </div>
@@ -138,11 +138,11 @@ const Templates = () => {
             <div className="flex gap-2 items-center">
               <div className="flex gap-1 items-center">
                 <img src={phoneIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">28</p>
+                <p className="text-h6 leading-[18.2px]">28</p>
               </div>
               <div className="flex gap-1 items-center">
                 <img src={downloadIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">546</p>
+                <p className="text-h6 leading-[18.2px]">546</p>
               </div>
             </div>
           </div>
