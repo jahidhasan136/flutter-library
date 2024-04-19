@@ -1,26 +1,31 @@
-import { useEffect, useRef, useState } from "react";
-import { CiDark, CiLight, CiSettings } from "react-icons/ci";
-import modeIcon from "../../assets/icons/mode.png";
-import searchIcon from "../../assets/icons/search.png";
+import { useEffect, useRef, useState } from 'react';
+import modeIcon from '../../assets/icons/mode.png';
+import searchIcon from '../../assets/icons/search.png';
+import lightIcon from '../../assets/icons/light.svg';
+import darkIcon from '../../assets/icons/dark.svg';
+import systemIcon from '../../assets/icons/systems.svg';
 
 const Header = () => {
   // dark mode light mode implement
   const [mode, setMode] = useState(false);
-  const outSideModeRef = useRef(null)
+  const outSideModeRef = useRef(null);
 
   // when i cick outside of card mode card are invisible
   const handleClickOutside = (event) => {
-    if(outSideModeRef.current && !outSideModeRef.current.contains(event.target)){
+    if (
+      outSideModeRef.current &&
+      !outSideModeRef.current.contains(event.target)
+    ) {
       setMode(false);
     }
-  }
+  };
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
-    }
-  },[])
+    };
+  }, []);
 
   return (
     <div ref={outSideModeRef} className="flex justify-between items-center">
@@ -36,31 +41,35 @@ const Header = () => {
 
       {/* TODO: SHADOW OR ICON FIXED */}
       <div className="flex items-center gap-4">
-
         {/* mode section */}
         <div className="relative">
-        <img onClick={() => setMode(!mode)} className="cursor-pointer" src={modeIcon} alt="" />
-          <div className={`${mode ? 'grid' : 'hidden'} absolute -right-4 top-10 bg-white gap-[2px] border rounded-lg w-[184px]`}>
-          <div className="flex gap-[10px] items-center hover:bg-secondary hover:text-primary cursor-pointer p-2">
-            <CiLight className="text-2xl" />
-            <h3 className="leading-[18.2px] text-sm">Light</h3>
-          </div>
-          <div className="flex gap-[10px] items-center hover:bg-secondary hover:text-primary cursor-pointer p-2">
-            <CiDark className="text-2xl" />
-            <h3 className="leading-[18.2px] text-sm">Dark</h3>
-          </div>
-          <div className="flex gap-[10px] items-center hover:bg-secondary hover:text-primary cursor-pointer p-2">
-            <CiSettings className="text-2xl" />
-            <h3 className="leading-[18.2px] text-sm">System</h3>
+          <img
+            onClick={() => setMode(!mode)}
+            className="cursor-pointer"
+            src={modeIcon}
+            alt=""
+          />
+          <div
+            className={`${
+              mode ? 'grid' : 'hidden'
+            } absolute -right-4 top-10 bg-white gap-[2px] border rounded-lg w-[184px] p-2`}
+          >
+            <div className="flex gap-[10px] items-center hover:bg-secondary hover:text-primary cursor-pointer p-1 rounded-lg">
+              <img src={lightIcon} alt="" />
+              <h3 className="leading-[18.2px] text-sm">Light</h3>
+            </div>
+            <div className="flex gap-[10px] items-center hover:bg-secondary hover:text-primary cursor-pointer p-1 rounded-lg">
+              <img src={darkIcon} alt="" />
+              <h3 className="leading-[18.2px] text-sm">Dark</h3>
+            </div>
+            <div className="flex gap-[10px] items-center hover:bg-secondary hover:text-primary cursor-pointer p-1 rounded-lg">
+              <img src={systemIcon} alt="" />
+              <h3 className="leading-[18.2px] text-sm">System</h3>
+            </div>
           </div>
         </div>
-        </div>
-        <button className="px-4 py-[14px] border border-secondary rounded-2xl font-semibold text-primary">
-          Log in
-        </button>
-        <button className="px-4 py-[14px] rounded-2xl font-semibold bg-primary text-white">
-          Get Pro
-        </button>
+        <button className="btn_primary_s">Log in</button>
+        <button className="btn_primary_a">Get Pro</button>
       </div>
     </div>
   );
