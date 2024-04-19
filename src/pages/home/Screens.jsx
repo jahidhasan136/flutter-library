@@ -42,7 +42,7 @@ const Screens = () => {
       </div>
       {/* Filter sections */}
       <div className="flex gap-2 items-center mb-4">
-        <button className="flex gap-2 items-center px-4 py-2 bg-secondary rounded-full mr-4">
+        <button className="flex gap-2 items-center px-4 py-2 bg-bgSecondary rounded-full mr-4">
           <img src={filterIcon} alt="" />
           <p className="text-h6 leading-[18.2px]">Filters</p>
         </button>

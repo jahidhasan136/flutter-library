@@ -47,7 +47,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <hr className="my-4 bg-secondary" />
+      <hr className="my-4 bg-bgSecondary" />
       <div className="text-textSecondary flex justify-between text-sm leading-[18.2px]">
         <p>Copyright 2024 Jahid Hasan. All rights reserved</p>
         <div className="flex gap-2">

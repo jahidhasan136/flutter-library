@@ -55,10 +55,11 @@ const Header = () => {
             alt=""
           />
           {/* mode modal */}
+          {/* TODO: MODE MODAL Z-INDEX ISSUE */}
           <div
             className={`${
               mode ? 'grid' : 'hidden'
-            } absolute -right-4 top-10 gap-[2px] rounded-lg w-[184px] p-2 shadow-shadowMd`}
+            } absolute -right-4 top-12 gap-[2px] rounded-lg w-[184px] p-2 shadow-shadowMd`}
           >
             <div className="flex gap-[10px] items-center hover:bg-bgSecondary hover:text-primary cursor-pointer p-1 rounded-lg">
               <img src={lightIcon} alt="" />
@@ -81,6 +82,7 @@ const Header = () => {
             <img src={userIcon} alt="" />
           </button>
           {/* user modal */}
+          {/* TODO: USER MODAL Z-INDEX ISSUE */}
           <div
             className={`${
               user ? 'grid gap-3' : 'hidden'
