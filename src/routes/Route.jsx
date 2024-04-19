@@ -3,6 +3,7 @@ import Main from '../layout/Main';
 import Home from '../pages/home/Home';
 import Templates from '../pages/Templates';
 import Articles from '../pages/Articles';
+import Screens from '../pages/Screens';
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
       {
         path: '/articles',
         element: <Articles />,
+      },
+      {
+        path: '/screens',
+        element: <Screens />,
       },
     ],
   },

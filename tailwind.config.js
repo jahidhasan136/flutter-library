@@ -10,17 +10,17 @@ export default {
         textSecondary: '#989898',
         bgSecondary: '#F5F5F5',
       },
-      // container: {
-      //   center: true,
-      //   padding: {
-      //     default: "1rem",
-      //     // xs: "1rem",
-      //     // sm: "1rem",
-      //     // lg: "4rem",
-      //     // xl: "5rem",
-      //     // "2xl": "6rem",
-      //   },
-      // },
+      container: {
+        center: true,
+        padding: {
+          default: '1rem',
+          xs: '1rem',
+          sm: '1rem',
+          lg: '4rem',
+          xl: '5rem',
+          '2xl': '6rem',
+        },
+      },
       screens: {
         xl: '1280px',
       },
@@ -38,5 +38,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
 };

@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import filterIcon from '../../assets/icons/filter.png';
-import rightArrowIcon from '../../assets/icons/right-arrow.svg';
-import ScreensCard from '../../sections/ScreensCard';
+import filterIcon from '../assets/icons/filter.png';
+import rightArrowIcon from '../assets/icons/right-arrow.svg';
+import ScreensCard from '../sections/ScreensCard';
 
 const Screens = () => {
   // TODO: BUTTONS HOVER SCROLL FUNCTIONALITY PENDING
