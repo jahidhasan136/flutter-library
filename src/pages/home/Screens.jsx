@@ -76,9 +76,9 @@ const Screens = () => {
       </div>
       {/* Project sections */}
       <div className="grid md:grid-cols-5 gap-4">
-        <div className="relative flex justify-center overflow-hidden group">
+        <div className="relative flex justify-center overflow-hidden group rounded-2xl">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
-          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+          <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
             <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
               <img src={copyIcon} alt="" />
               <h6 className="text-h6">20</h6>
@@ -88,9 +88,9 @@ const Screens = () => {
             </button>
           </div>
         </div>
-        <div className="relative flex justify-center overflow-hidden group">
+        <div className="relative flex justify-center overflow-hidden group rounded-2xl">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
-          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+          <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
             <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
               <img src={copyIcon} alt="" />
               <h6 className="text-h6">20</h6>
@@ -100,9 +100,9 @@ const Screens = () => {
             </button>
           </div>
         </div>
-        <div className="relative flex justify-center overflow-hidden group">
+        <div className="relative flex justify-center overflow-hidden group rounded-2xl">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
-          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+          <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
             <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
               <img src={copyIcon} alt="" />
               <h6 className="text-h6">20</h6>
@@ -112,9 +112,9 @@ const Screens = () => {
             </button>
           </div>
         </div>
-        <div className="relative flex justify-center overflow-hidden group">
+        <div className="relative flex justify-center overflow-hidden group rounded-2xl">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
-          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+          <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
             <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
               <img src={copyIcon} alt="" />
               <h6 className="text-h6">20</h6>
@@ -124,9 +124,9 @@ const Screens = () => {
             </button>
           </div>
         </div>
-        <div className="relative flex justify-center overflow-hidden group">
+        <div className="relative flex justify-center overflow-hidden group rounded-2xl">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
-          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+          <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
             <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
               <img src={copyIcon} alt="" />
               <h6 className="text-h6">20</h6>
@@ -136,9 +136,9 @@ const Screens = () => {
             </button>
           </div>
         </div>
-        <div className="relative flex justify-center overflow-hidden group">
+        <div className="relative flex justify-center overflow-hidden group rounded-2xl">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
-          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+          <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
             <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
               <img src={copyIcon} alt="" />
               <h6 className="text-h6">20</h6>
@@ -148,9 +148,9 @@ const Screens = () => {
             </button>
           </div>
         </div>
-        <div className="relative flex justify-center overflow-hidden group">
+        <div className="relative flex justify-center overflow-hidden group rounded-2xl">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
-          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+          <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
             <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
               <img src={copyIcon} alt="" />
               <h6 className="text-h6">20</h6>
@@ -160,9 +160,9 @@ const Screens = () => {
             </button>
           </div>
         </div>
-        <div className="relative flex justify-center overflow-hidden group">
+        <div className="relative flex justify-center overflow-hidden group rounded-2xl">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
-          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+          <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
             <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
               <img src={copyIcon} alt="" />
               <h6 className="text-h6">20</h6>
@@ -172,9 +172,9 @@ const Screens = () => {
             </button>
           </div>
         </div>
-        <div className="relative flex justify-center overflow-hidden group">
+        <div className="relative flex justify-center overflow-hidden group rounded-2xl">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
-          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+          <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
             <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
               <img src={copyIcon} alt="" />
               <h6 className="text-h6">20</h6>
@@ -184,9 +184,9 @@ const Screens = () => {
             </button>
           </div>
         </div>
-        <div className="relative flex justify-center overflow-hidden group">
+        <div className="relative flex justify-center overflow-hidden group rounded-2xl">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
-          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+          <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
             <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
               <img src={copyIcon} alt="" />
               <h6 className="text-h6">20</h6>
