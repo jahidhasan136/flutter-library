@@ -3,10 +3,15 @@ import TemplatesCard from '../sections/TemplatesCard';
 import filterIcon from '../assets/icons/filter.png';
 import rightArrowIcon from '../assets/icons/right-arrow.svg';
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+
 const Templates = () => {
   // TODO: BUTTONS HOVER SCROLL FUNCTIONALITY PENDING
   const [currentButton, setCurrentButton] = useState(0);
   const buttonsPerClick = 10;
+  // home page filter option hide
+  const location = useLocation();
+  const hideFilter = location.pathname === '/';
 
   const buttons = [
     'All',
@@ -40,28 +45,34 @@ const Templates = () => {
         <button className="text-textSecondary text-xs ">See all</button>
       </div>
       {/* Filter sections */}
-      <div className="flex gap-2 items-center mb-4">
-        <button className="flex gap-2 items-center px-4 py-2 bg-bgSecondary rounded-full mr-4">
-          <img src={filterIcon} alt="" />
-          <p className="text-h6 leading-[18.2px]">Filters</p>
-        </button>
-        <div className="border-secondary border-r-2 py-4 mr-4"></div>
-        <div className="button-container flex gap-2 items-center overflow-x-auto">
-          {visibleButtons.map((button, index) => (
-            <button
-              key={index}
-              className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300"
-              onMouseOver={(e) => e.stopPropagation()} // Prevent scrolling on button hover
-            >
-              {button}
+      <div>
+        {hideFilter ? (
+          ''
+        ) : (
+          <div className="flex gap-2 items-center mb-4">
+            <button className="flex gap-2 items-center px-4 py-2 bg-bgSecondary rounded-full mr-4">
+              <img src={filterIcon} alt="" />
+              <p className="text-h6 leading-[18.2px]">Filters</p>
             </button>
-          ))}
-          {currentButton < totalPages - 1 && (
-            <button onClick={handleNext}>
-              <img src={rightArrowIcon} alt="arrow" />
-            </button>
-          )}
-        </div>
+            <div className="border-secondary border-r-2 py-4 mr-4"></div>
+            <div className="button-container flex gap-2 items-center overflow-x-auto">
+              {visibleButtons.map((button, index) => (
+                <button
+                  key={index}
+                  className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300"
+                  onMouseOver={(e) => e.stopPropagation()} // Prevent scrolling on button hover
+                >
+                  {button}
+                </button>
+              ))}
+              {currentButton < totalPages - 1 && (
+                <button onClick={handleNext}>
+                  <img src={rightArrowIcon} alt="arrow" />
+                </button>
+              )}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* templates card section */}
