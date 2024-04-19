@@ -1,19 +1,17 @@
-import downloadIcon from '../../assets/icons/download.png';
-import phoneIcon from '../../assets/icons/phone.png';
-import templateOne from '../../assets/templates/template-1.png';
-import templateTwo from '../../assets/templates/template-2.png';
-import templateThree from '../../assets/templates/template-3.png';
-import templateFour from '../../assets/templates/template-4.png';
-import templateFive from '../../assets/templates/template-5.png';
-import templateSix from '../../assets/templates/template-6.png';
+// icons
+import downloadIcon from '../assets/icons/download.png';
+import phoneIcon from '../assets/icons/phone.png';
+// images
+import templateOne from '../assets/templates/template-1.png';
+import templateTwo from '../assets/templates/template-2.png';
+import templateThree from '../assets/templates/template-3.png';
+import templateFour from '../assets/templates/template-4.png';
+import templateFive from '../assets/templates/template-5.png';
+import templateSix from '../assets/templates/template-6.png';
 
-const Templates = () => {
+const TemplatesCard = () => {
   return (
-    <div className="mb-10">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl text-primary leading-[31.2px]">Templates</h2>
-        <button className="text-textSecondary text-xs ">See all</button>
-      </div>
+    <>
       <div className="grid md:grid-cols-3 gap-4">
         <div className="grid gap-2">
           <img
@@ -148,8 +146,8 @@ const Templates = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
-export default Templates;
+export default TemplatesCard;
