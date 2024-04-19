@@ -33,6 +33,9 @@ export default {
         h6: '14px',
         h7: '12px',
       },
+      boxShadow: {
+        shadowMd: '0px 8px 24px 0px rgba(0, 0, 0, 0.10);',
+      },
     },
   },
   plugins: [],

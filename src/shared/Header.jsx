@@ -39,7 +39,6 @@ const Header = () => {
         />
       </div>
 
-      {/* TODO: SHADOW OR ICON FIXED */}
       <div className="flex items-center gap-4">
         {/* mode section */}
         <div className="relative">
@@ -52,7 +51,7 @@ const Header = () => {
           <div
             className={`${
               mode ? 'grid' : 'hidden'
-            } absolute -right-4 top-10 bg-white gap-[2px] border rounded-lg w-[184px] p-2`}
+            } absolute -right-4 top-10 gap-[2px] rounded-lg w-[184px] p-2 shadow-shadowMd`}
           >
             <div className="flex gap-[10px] items-center hover:bg-secondary hover:text-primary cursor-pointer p-1 rounded-lg">
               <img src={lightIcon} alt="" />
