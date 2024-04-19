@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* buttons */
+/* buttons start */
 .btn_primary_a {
   @apply px-4 py-[14px] rounded-2xl font-semibold bg-primary text-white text-h5;
 }
@@ -10,6 +10,7 @@
 .btn_primary_s {
   @apply px-4 py-[14px] border border-secondary rounded-2xl font-semibold text-h5 text-primary hover:bg-bgSecondary transition-all duration-300;
 }
+/* buttons end */
 
 .bg-screens {
   width: 100%;

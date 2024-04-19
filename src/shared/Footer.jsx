@@ -1,8 +1,8 @@
-import { AiFillLinkedin } from "react-icons/ai";
-import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { AiFillLinkedin } from 'react-icons/ai';
+import { FaFacebookSquare, FaInstagram } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
-import logo from "../../assets/logo.png";
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   return (

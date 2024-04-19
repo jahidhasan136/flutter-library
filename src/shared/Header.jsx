@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
-import modeIcon from '../../assets/icons/mode.png';
-import searchIcon from '../../assets/icons/search.png';
-import lightIcon from '../../assets/icons/light.svg';
-import darkIcon from '../../assets/icons/dark.svg';
-import systemIcon from '../../assets/icons/systems.svg';
+import modeIcon from '../assets/icons/mode.png';
+import searchIcon from '../assets/icons/search.png';
+import lightIcon from '../assets/icons/light.svg';
+import darkIcon from '../assets/icons/dark.svg';
+import systemIcon from '../assets/icons/systems.svg';
 
 const Header = () => {
   // dark mode light mode implement
