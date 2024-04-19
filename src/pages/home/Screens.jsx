@@ -44,6 +44,25 @@ const Screens = () => {
     currentButton * buttonsPerClick + buttonsPerClick
   );
 
+  const [, setSmShow] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const handleCopyText = () => {
+    const modalBodyText = 'card codes are copied';
+    const tempTextArea = document.createElement('textarea');
+    tempTextArea.value = modalBodyText;
+    document.body.appendChild(tempTextArea);
+    tempTextArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempTextArea);
+    setSmShow(false);
+    setTimeout(() => {
+      setCopied(false);
+    }, 3000);
+  };
+  const handleCopyTextChange = () => {
+    setCopied(true);
+  };
+
   return (
     <div className="mb-10">
       <div className="flex justify-between items-center mb-4">
@@ -74,6 +93,7 @@ const Screens = () => {
           )}
         </div>
       </div>
+
       {/* Project sections */}
       <div className="grid md:grid-cols-5 gap-4">
         <div className="relative flex justify-center overflow-hidden group rounded-2xl">
@@ -83,9 +103,20 @@ const Screens = () => {
               <img src={copyIcon} alt="" />
               <h6 className="text-h6">20</h6>
             </div>
-            <button className="p-2 text-h6 text-primary bg-white rounded-lg">
-              Copy code
-            </button>
+            <div onClick={handleCopyTextChange}>
+              {copied ? (
+                <p className="p-2 text-h6 text-primary bg-white rounded-lg">
+                  copied!
+                </p>
+              ) : (
+                <button
+                  onClick={handleCopyText}
+                  className="p-2 text-h6 text-primary bg-white rounded-lg"
+                >
+                  Copy code
+                </button>
+              )}
+            </div>
           </div>
         </div>
         <div className="relative flex justify-center overflow-hidden group rounded-2xl">
