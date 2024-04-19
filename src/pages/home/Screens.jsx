@@ -2,15 +2,16 @@ import { useState } from 'react';
 import filterIcon from '../../assets/icons/filter.png';
 import rightArrowIcon from '../../assets/icons/right-arrow.svg';
 import screenImgOne from '../../assets/screens/screens-1.png';
-import screenImgTen from '../../assets/screens/screens-10.png';
-import screenImgTwo from '../../assets/screens/screens-2.png';
-import screenImgThree from '../../assets/screens/screens-3.png';
-import screenImgFour from '../../assets/screens/screens-4.png';
-import screenImgFive from '../../assets/screens/screens-5.png';
-import screenImgSix from '../../assets/screens/screens-6.png';
-import screenImgSeven from '../../assets/screens/screens-7.png';
-import screenImgEight from '../../assets/screens/screens-8.png';
-import screenImgNine from '../../assets/screens/screens-9.png';
+// import screenImgTen from '../../assets/screens/screens-10.png';
+// import screenImgTwo from '../../assets/screens/screens-2.png';
+// import screenImgThree from '../../assets/screens/screens-3.png';
+// import screenImgFour from '../../assets/screens/screens-4.png';
+// import screenImgFive from '../../assets/screens/screens-5.png';
+// import screenImgSix from '../../assets/screens/screens-6.png';
+// import screenImgSeven from '../../assets/screens/screens-7.png';
+// import screenImgEight from '../../assets/screens/screens-8.png';
+// import screenImgNine from '../../assets/screens/screens-9.png';
+import copyIcon from '../../assets/icons/copy.svg';
 
 const Screens = () => {
   // TODO: BUTTONS HOVER SCROLL FUNCTIONALITY PENDING
@@ -75,16 +76,126 @@ const Screens = () => {
       </div>
       {/* Project sections */}
       <div className="grid md:grid-cols-5 gap-4">
-        <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
-        <img className="rounded-2xl w-full" src={screenImgTwo} alt="" />
-        <img className="rounded-2xl w-full" src={screenImgThree} alt="" />
-        <img className="rounded-2xl w-full" src={screenImgFour} alt="" />
-        <img className="rounded-2xl w-full" src={screenImgFive} alt="" />
-        <img className="rounded-2xl w-full" src={screenImgSix} alt="" />
-        <img className="rounded-2xl w-full" src={screenImgSeven} alt="" />
-        <img className="rounded-2xl w-full" src={screenImgEight} alt="" />
-        <img className="rounded-2xl w-full" src={screenImgNine} alt="" />
-        <img className="rounded-2xl w-full" src={screenImgTen} alt="" />
+        <div className="relative flex justify-center overflow-hidden group">
+          <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
+          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+            <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
+              <img src={copyIcon} alt="" />
+              <h6 className="text-h6">20</h6>
+            </div>
+            <button className="p-2 text-h6 text-primary bg-white rounded-lg">
+              Copy code
+            </button>
+          </div>
+        </div>
+        <div className="relative flex justify-center overflow-hidden group">
+          <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
+          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+            <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
+              <img src={copyIcon} alt="" />
+              <h6 className="text-h6">20</h6>
+            </div>
+            <button className="p-2 text-h6 text-primary bg-white rounded-lg">
+              Copy code
+            </button>
+          </div>
+        </div>
+        <div className="relative flex justify-center overflow-hidden group">
+          <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
+          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+            <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
+              <img src={copyIcon} alt="" />
+              <h6 className="text-h6">20</h6>
+            </div>
+            <button className="p-2 text-h6 text-primary bg-white rounded-lg">
+              Copy code
+            </button>
+          </div>
+        </div>
+        <div className="relative flex justify-center overflow-hidden group">
+          <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
+          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+            <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
+              <img src={copyIcon} alt="" />
+              <h6 className="text-h6">20</h6>
+            </div>
+            <button className="p-2 text-h6 text-primary bg-white rounded-lg">
+              Copy code
+            </button>
+          </div>
+        </div>
+        <div className="relative flex justify-center overflow-hidden group">
+          <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
+          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+            <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
+              <img src={copyIcon} alt="" />
+              <h6 className="text-h6">20</h6>
+            </div>
+            <button className="p-2 text-h6 text-primary bg-white rounded-lg">
+              Copy code
+            </button>
+          </div>
+        </div>
+        <div className="relative flex justify-center overflow-hidden group">
+          <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
+          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+            <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
+              <img src={copyIcon} alt="" />
+              <h6 className="text-h6">20</h6>
+            </div>
+            <button className="p-2 text-h6 text-primary bg-white rounded-lg">
+              Copy code
+            </button>
+          </div>
+        </div>
+        <div className="relative flex justify-center overflow-hidden group">
+          <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
+          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+            <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
+              <img src={copyIcon} alt="" />
+              <h6 className="text-h6">20</h6>
+            </div>
+            <button className="p-2 text-h6 text-primary bg-white rounded-lg">
+              Copy code
+            </button>
+          </div>
+        </div>
+        <div className="relative flex justify-center overflow-hidden group">
+          <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
+          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+            <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
+              <img src={copyIcon} alt="" />
+              <h6 className="text-h6">20</h6>
+            </div>
+            <button className="p-2 text-h6 text-primary bg-white rounded-lg">
+              Copy code
+            </button>
+          </div>
+        </div>
+        <div className="relative flex justify-center overflow-hidden group">
+          <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
+          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+            <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
+              <img src={copyIcon} alt="" />
+              <h6 className="text-h6">20</h6>
+            </div>
+            <button className="p-2 text-h6 text-primary bg-white rounded-lg">
+              Copy code
+            </button>
+          </div>
+        </div>
+        <div className="relative flex justify-center overflow-hidden group">
+          <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
+          <div className="flex gap-4 absolute group-hover:bottom-5 -bottom-10 transition-all duration-300 mx-auto">
+            <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
+              <img src={copyIcon} alt="" />
+              <h6 className="text-h6">20</h6>
+            </div>
+            <button className="p-2 text-h6 text-primary bg-white rounded-lg">
+              Copy code
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
