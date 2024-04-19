@@ -1,5 +1,5 @@
-import { IoMdArrowForward } from "react-icons/io";
 import filterIcon from "../../assets/icons/filter.png";
+import rightArrowIcon from "../../assets/icons/right-arrow.svg";
 import screenImgOne from "../../assets/screens/screens-1.png";
 import screenImgTen from "../../assets/screens/screens-10.png";
 import screenImgTwo from "../../assets/screens/screens-2.png";
@@ -22,49 +22,49 @@ const Screens = () => {
       <div className="flex gap-2 items-center mb-4">
         <button className="flex gap-2 items-center px-4 py-2 bg-secondary rounded-full mr-4">
           <img src={filterIcon} alt="" />
-          <p className="text-sm leading-[18.2px]">Filters</p>
+          <p className="text-h6 leading-[18.2px]">Filters</p>
         </button>
         <div className="border-secondary border-r-2 py-4 mr-4"></div>
         <div className="flex overflow-hidden">
           <div className="flex gap-2 items-center">
-            <button className="px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
+            <button className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
               All
             </button>
-            <button className="px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
+            <button className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
               New
             </button>
-            <button className="px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
+            <button className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
               Popular
             </button>
-            <button className="px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
+            <button className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
               Onboarding
             </button>
-            <button className="px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
+            <button className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
               Auth
             </button>
-            <button className="px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
+            <button className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
               Shop
             </button>
-            <button className="px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
+            <button className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
               Chat
             </button>
-            <button className="px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
+            <button className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
               Top Verification
             </button>
-            {/* <button className="px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
+            <button className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
               Dashboard
             </button>
-            <button className="px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
+            {/* <button className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
               Food
             </button>
-            <button className="px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
+            <button className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
               Restaurent
             </button>
-            <button className="px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
+            <button className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300">
               Fitness
             </button> */}
-            <button className="text-primary">
-              <IoMdArrowForward />
+            <button>
+              <img src={rightArrowIcon} alt="arrow" />
             </button>
           </div>
         </div>
