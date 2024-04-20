@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <>
       <div className="flex">
-        <div className="w-[180px]">
+        <div className="w-[200px]">
           <SideMenu />
         </div>
         <div className="px-4 pt-4 pb-5 w-full">

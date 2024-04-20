@@ -2,10 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: 'just-sans';
   src: local('JUST Sans Light'),
-    url('./fonts/JUSTSansLight.woff') format('woff');
+    url('./fonts/JUSTSansLight.woff') format('woff'),
+    url('./fonts/JUSTSansLight.woff2') format('woff2');
+} */
+@font-face {
+  font-family: 'just-sans';
+  src: local('JUST Sans Regular'),
+    url('./fonts/JUSTSansRegular.woff') format('woff'),
+    url('./fonts/JUSTSansRegular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'just-sans';
+  src: local('JUST Sans Medium'),
+    url('./fonts/JUSTSansMedium.woff') format('woff'),
+    url('./fonts/JUSTSansMedium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'just-sans';
+  src: local('JUST Sans SemiBold'),
+    url('./fonts/JUSTSansSemiBold.woff') format('woff'),
+    url('./fonts/JUSTSansSemiBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'just-sans';
+  src: local('JUST Sans Bold'), url('./fonts/JUSTSansBold.woff') format('woff'),
+    url('./fonts/JUSTSansBold.woff2') format('woff2');
 }
 
 .just-sans {
@@ -38,4 +62,7 @@ body {
 
 .active {
   @apply bg-bgSecondary text-primary;
+}
+.inactive {
+  @apply hover:bg-bgSecondary hover:text-primary transition-all duration-300;
 }

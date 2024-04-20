@@ -12,7 +12,7 @@ const SideMenu = () => {
   return (
     <div className="border-r-[1px] border-secondary">
       <Link to="/">
-        <img className=" px-4 pt-7 pb-8" src={logo} alt="" />
+        <img className="px-4 pt-7 pb-8" src={logo} alt="" />
       </Link>
       <div className="grid gap-7">
         <div className="grid gap-2 text-textSecondary">
