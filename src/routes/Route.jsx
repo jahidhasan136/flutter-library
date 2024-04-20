@@ -1,9 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Main from '../layout/Main';
 import Home from '../pages/home/Home';
-import Templates from '../pages/Templates';
-import Articles from '../pages/Articles';
-import Screens from '../pages/Screens';
+import Templates from '../pages/templates/Templates';
+import Articles from '../pages/articles/Articles';
+import Screens from '../pages/screens/Screens';
 import LoginModal from '../components/LoginModal';
 import SignUpModal from '../components/SignUpModal';
 

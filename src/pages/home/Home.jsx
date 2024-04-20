@@ -1,7 +1,7 @@
-import Templates from '../Templates';
-import Articles from '../Articles';
+import Articles from '../articles/Articles';
+import Screens from '../screens/Screens';
+import Templates from '../templates/Templates';
 import Hero from './Hero';
-import Screens from '../Screens';
 
 const Home = () => {
   return (

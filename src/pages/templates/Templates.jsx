@@ -1,7 +1,7 @@
-import TemplatesCard from '../sections/TemplatesCard';
+import TemplatesCard from '../../sections/TemplatesCard';
 // icons
-import filterIcon from '../assets/icons/filter.png';
-import rightArrowIcon from '../assets/icons/right-arrow.svg';
+import filterIcon from '../../assets/icons/filter.png';
+import rightArrowIcon from '../../assets/icons/right-arrow.svg';
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 

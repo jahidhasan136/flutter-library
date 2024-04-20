@@ -1,5 +1,5 @@
-import Templates from '../pages/Templates';
-import Articles from '../pages/Articles';
+import Templates from '../pages/templates/Templates';
+import Articles from '../pages/articles/Articles';
 // icons
 import filterIcon from '../assets/icons/filter.png';
 import closeIcon from '../assets/icons/closeIcon.svg';

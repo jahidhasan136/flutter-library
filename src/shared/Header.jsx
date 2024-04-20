@@ -3,13 +3,11 @@ import { useEffect, useRef, useState } from 'react';
 import modeIcon from '../assets/icons/mode.png';
 import searchIcon from '../assets/icons/search.png';
 import userIcon from '../assets/icons/user.svg';
-import Screens from '../pages/Screens';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import ModeModal from '../components/ModeModal';
 import UserModal from '../components/UserModal';
 import SearchModal from '../components/SearchModal';
 import LoginModal from '../components/LoginModal';
-import SignUpModal from '../components/SignUpModal';
 import GetProModal from '../components/GetProModal';
 
 const Header = () => {
