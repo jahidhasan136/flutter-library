@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import articlesIcon from '../../assets/icons/articles.png';
-import discoverIcon from '../../assets/icons/discover.png';
-import hireIcon from '../../assets/icons/hire.png';
-import screensIcon from '../../assets/icons/screens.png';
-import sponsoreIcon from '../../assets/icons/sponsore.png';
-import uiKitsIcon from '../../assets/icons/ui-kits.png';
+import articlesIcon from '../../assets/icons/articleIcon.svg';
+import discoverIcon from '../../assets/icons/discoverIcon.svg';
+import hireIcon from '../../assets/icons/hireIcon.svg';
+import screensIcon from '../../assets/icons/screenIcon.svg';
+import sponsoreIcon from '../../assets/icons/sponsorIcon.svg';
+import uiKitsIcon from '../../assets/icons/ui-kitIcon.svg';
 import logo from '../../assets/logo.svg';
 import ActiveLink from '../../components/ActiveLink';
 
