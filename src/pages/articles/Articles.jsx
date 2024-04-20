@@ -6,7 +6,7 @@ import articleImgThree from '../../assets/articles/article-3.png';
 // icons
 import filterIcon from '../../assets/icons/filterIcon.svg';
 import rightArrowIcon from '../../assets/icons/right-arrow.svg';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Articles = () => {
   // TODO: BUTTONS HOVER SCROLL FUNCTIONALITY PENDING
@@ -39,7 +39,9 @@ const Articles = () => {
     <div>
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-h3 text-textPrimary leading-[31.2px]">Articles</h2>
-        <button className="text-textSecondary text-xs ">See all</button>
+        <Link to="/article-details" className="text-textSecondary text-xs">
+          See all
+        </Link>
       </div>
 
       {/* filter sections */}

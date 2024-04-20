@@ -3,7 +3,7 @@ import TemplatesCard from '../../sections/TemplatesCard';
 import filterIcon from '../../assets/icons/filterIcon.svg';
 import rightArrowIcon from '../../assets/icons/right-arrow.svg';
 import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Templates = () => {
   // TODO: BUTTONS HOVER SCROLL FUNCTIONALITY PENDING
@@ -44,7 +44,9 @@ const Templates = () => {
         <h2 className="text-2xl text-textPrimary leading-[31.2px]">
           Templates
         </h2>
-        <button className="text-textSecondary text-xs ">See all</button>
+        <Link to="/template-details" className="text-textSecondary text-xs">
+          See all
+        </Link>
       </div>
       {/* Filter sections */}
       <div>

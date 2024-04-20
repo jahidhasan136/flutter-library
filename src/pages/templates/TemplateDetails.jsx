@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import leftArrowIcon from '../../assets/icons/leftArrowIcon.svg';
 import templateImgOne from '../../assets/screens/screens-1.png';
 import overviewImg from '../../assets/templates/overview.png';
 // icons
+import leftArrowIcon from '../../assets/icons/leftArrowIcon.svg';
 import copyIcon from '../../assets/icons/copy.svg';
 import revenueIcon from '../../assets/icons/revenueIcon.svg';
 import downloadIcon from '../../assets/icons/downloadIcon.svg';
@@ -231,14 +231,23 @@ const TemplateDetails = () => {
               download beautiful.
             </p>
           </div>
-          <div className="grid gap-2 border border-secondary rounded-2xl p-4">
-            <img src={revenueIcon} alt="" />
-            <p className="text-h6 text-black">
-              Libriwi is a plugin for Figma that lets you easily created and
-              share Figma groups, layouts and components with a single click of
-              the button.
-            </p>
-            <button className="btn_primary_a">Learn more</button>
+
+          {/* right side revenue cat content */}
+          <div className="border border-secondary rounded-2xl">
+            <div className="flex justify-end">
+              <p className="capitalize text-h7 font-medium px-2 py-1 text-textSecondary inline-block border border-t-0 border-r-0 rounded-lg">
+                Sponsored
+              </p>
+            </div>
+            <div className="grid gap-2 p-4">
+              <img src={revenueIcon} alt="" />
+              <p className="text-h6 text-black">
+                Libriwi is a plugin for Figma that lets you easily created and
+                share Figma groups, layouts and components with a single click
+                of the button.
+              </p>
+              <button className="btn_primary_a ml-auto">Learn more</button>
+            </div>
           </div>
         </div>
       </div>
