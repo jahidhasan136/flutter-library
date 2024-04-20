@@ -5,12 +5,12 @@ import Hero from './Hero';
 
 const Home = () => {
   return (
-    <>
+    <div className="grid gap-10">
       <Hero />
       <Templates />
       <Articles />
       <Screens />
-    </>
+    </div>
   );
 };
 

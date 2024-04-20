@@ -6,7 +6,7 @@ import logo from '../assets/logo.svg';
 
 const Footer = () => {
   return (
-    <div className="ml-[180px]">
+    <div className="ml-[180px] mt-10">
       <div className="flex justify-between">
         <div className="grid gap-4">
           <img src={logo} alt="" />

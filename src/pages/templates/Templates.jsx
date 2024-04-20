@@ -39,7 +39,7 @@ const Templates = () => {
     currentButton * buttonsPerClick + buttonsPerClick
   );
   return (
-    <div className="mb-10">
+    <div>
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl text-textPrimary leading-[31.2px]">
           Templates
