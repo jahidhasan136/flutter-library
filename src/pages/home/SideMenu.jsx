@@ -67,7 +67,7 @@ const SideMenu = () => {
           >
             <div className="flex gap-2 px-4 py-2 items-center">
               <img src={sponsoreIcon} alt="" />
-              <button className="text-h6">Become Sponsor</button>
+              <button className="text-h6 text-nowrap">Become Sponsor</button>
             </div>
           </ActiveLink>
           <ActiveLink
@@ -76,7 +76,7 @@ const SideMenu = () => {
           >
             <div className="flex gap-2 px-4 py-2 items-center">
               <img src={hireIcon} alt="" />
-              <button className="text-h6">Hire Flutter Dev</button>
+              <button className="text-h6 text-nowrap">Hire Flutter Dev</button>
             </div>
           </ActiveLink>
         </div>

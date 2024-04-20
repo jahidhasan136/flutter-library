@@ -6,6 +6,7 @@ import Articles from '../pages/articles/Articles';
 import Screens from '../pages/screens/Screens';
 import LoginModal from '../components/LoginModal';
 import SignUpModal from '../components/SignUpModal';
+import TemplateDetails from '../pages/templates/TemplateDetails';
 
 export const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ export const router = createBrowserRouter([
       {
         path: '/screens',
         element: <Screens />,
+      },
+      {
+        path: '/template-details',
+        element: <TemplateDetails />,
       },
     ],
   },
