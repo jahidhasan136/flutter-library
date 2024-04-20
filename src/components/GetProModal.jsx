@@ -1,19 +1,24 @@
 import logo from '../assets/logo.svg';
+// icons
 import ticIcon from '../assets/icons/tic.svg';
 import darkTicIcon from '../assets/icons/darkTicIcon.svg';
+import closeIcon from '../assets/icons/closeIcon.svg';
 
 const GetProModal = ({ isOpen, onClose }) => {
   return (
     <dialog id="getProModal" className={`modal ${isOpen ? 'open' : ''}`}>
       <div className="modal-box grid gap-5 max-w-[708px]">
         <div className="grid gap-5">
-          <img src={logo} alt="" />
-          <button
-            className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
-            onClick={onClose}
-          >
-            ✕
-          </button>
+          <div className="flex justify-between items-center">
+            <div></div>
+            <img src={logo} alt="" />
+            <img
+              className="cursor-pointer"
+              src={closeIcon}
+              onClick={onClose}
+              alt=""
+            />
+          </div>
           <h3 className="text-h3 text-textPrimary text-center capitalize">
             Upgrade to access the full library.
           </h3>

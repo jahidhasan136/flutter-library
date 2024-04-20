@@ -11,9 +11,7 @@ import phoneIcon from '../../assets/icons/phoneIcon.svg';
 import templateOne from '../../assets/templates/template-1.png';
 import templateTwo from '../../assets/templates/template-2.png';
 import templateThree from '../../assets/templates/template-3.png';
-import templateFour from '../../assets/templates/template-4.png';
-import templateFive from '../../assets/templates/template-5.png';
-import templateSix from '../../assets/templates/template-6.png';
+import { Link } from 'react-router-dom';
 
 const TemplateDetails = () => {
   // card code copy functionality
@@ -40,7 +38,9 @@ const TemplateDetails = () => {
     <div className="grid gap-10">
       <div className="grid gap-5">
         <div className="flex items-center">
-          <img src={leftArrowIcon} alt="" />
+          <Link to="/">
+            <img src={leftArrowIcon} alt="" />
+          </Link>
           <h6 className="capitalize text-h6 text-textSecondary">Templates</h6>
         </div>
         <div className="flex items-center justify-between w-full">

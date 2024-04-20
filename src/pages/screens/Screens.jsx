@@ -2,6 +2,7 @@ import { useState } from 'react';
 import filterIcon from '../../assets/icons/filterIcon.svg';
 import rightArrowIcon from '../../assets/icons/right-arrow.svg';
 import ScreensCard from '../../sections/ScreensCard';
+import { Link } from 'react-router-dom';
 
 const Screens = () => {
   // TODO: BUTTONS HOVER SCROLL FUNCTIONALITY PENDING
@@ -38,7 +39,9 @@ const Screens = () => {
     <div>
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-h3 text-textPrimary leading-[31.2px]">Screens</h3>
-        <button className="text-textSecondary text-xs">See all</button>
+        <Link to="/template-details" className="text-textSecondary text-xs">
+          See all
+        </Link>
       </div>
       {/* Filter sections */}
       <div className="flex gap-2 items-center mb-4">
