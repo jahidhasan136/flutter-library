@@ -8,11 +8,14 @@ import { useLocation } from 'react-router-dom';
 import ModeModal from '../components/ModeModal';
 import UserModal from '../components/UserModal';
 import SearchModal from '../components/SearchModal';
+import LoginModal from '../components/LoginModal';
+import SignUpModal from '../components/SignUpModal';
 
 const Header = () => {
   // dark mode light mode implement
   const [mode, setMode] = useState(false);
   const [user, setUser] = useState(false);
+  const [isLoginModal, setLoginModal] = useState(false);
   const outSideModeRef = useRef(null);
 
   // when i cick outside of card mode card are invisible
@@ -53,6 +56,14 @@ const Header = () => {
     currentButton * buttonsPerClick + buttonsPerClick
   );
 
+  // modals
+  const openLoginModal = () => {
+    setLoginModal(true);
+  };
+  const closeLoginModal = () => {
+    setLoginModal(false);
+  };
+
   return (
     <div ref={outSideModeRef} className="flex justify-between items-center">
       <div className="relative">
@@ -60,7 +71,7 @@ const Header = () => {
         <input
           onClick={() => document.getElementById('my_modal_3').showModal()}
           className="py-[14px] pl-11
-           pr-5 w-[400px] rounded-full bg-bgSecondary text-primary outline-none"
+           pr-5 w-[400px] rounded-full bg-bgSecondary text-textPrimary outline-none"
           type="text"
           placeholder="Search...."
         />
@@ -85,8 +96,16 @@ const Header = () => {
           {/* mode modal */}
           <ModeModal mode={mode} />
         </div>
-        <button className="btn_primary_s">Log in</button>
+        <button
+          onClick={() => document.getElementById('loginModal').showModal()}
+          className="btn_primary_s"
+        >
+          Log in
+        </button>
+        <LoginModal isOpen={isLoginModal} onClose={closeLoginModal} />
+
         <button className="btn_primary_a">Get Pro</button>
+        {/* user sections */}
         <div className="relative">
           <button onClick={() => setUser(!user)} className="btn_primary_s">
             <img src={userIcon} alt="" />

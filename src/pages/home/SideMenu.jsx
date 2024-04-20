@@ -5,7 +5,7 @@ import hireIcon from '../../assets/icons/hire.png';
 import screensIcon from '../../assets/icons/screens.png';
 import sponsoreIcon from '../../assets/icons/sponsore.png';
 import uiKitsIcon from '../../assets/icons/ui-kits.png';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.svg';
 import ActiveLink from '../../components/ActiveLink';
 
 const SideMenu = () => {
@@ -18,7 +18,7 @@ const SideMenu = () => {
         <div className="grid gap-2 text-textSecondary">
           <ActiveLink
             to="/discover"
-            className="hover:bg-bgSecondary hover:text-primary"
+            className="hover:bg-bgSecondary hover:text-textPrimary"
           >
             <div className="flex gap-2 px-4 py-2 items-center">
               <img src={discoverIcon} alt="" />
@@ -27,7 +27,7 @@ const SideMenu = () => {
           </ActiveLink>
           <ActiveLink
             to="/ui-kits"
-            className="hover:bg-bgSecondary hover:text-primary"
+            className="hover:bg-bgSecondary hover:text-textPrimary"
           >
             <div className="flex gap-2 px-4 py-2 items-center">
               <img src={uiKitsIcon} alt="" />
@@ -36,7 +36,7 @@ const SideMenu = () => {
           </ActiveLink>
           <ActiveLink
             to="/templates"
-            className="hover:bg-bgSecondary hover:text-primary"
+            className="hover:bg-bgSecondary hover:text-textPrimary"
           >
             <div className="flex gap-2 px-4 py-2 items-center">
               <img src={screensIcon} alt="" />
@@ -45,7 +45,7 @@ const SideMenu = () => {
           </ActiveLink>
           <ActiveLink
             to="/screens"
-            className="hover:bg-bgSecondary hover:text-primary"
+            className="hover:bg-bgSecondary hover:text-textPrimary"
           >
             <div className="flex gap-2 px-4 py-2 items-center">
               <img src={screensIcon} alt="" />
@@ -54,7 +54,7 @@ const SideMenu = () => {
           </ActiveLink>
           <ActiveLink
             to="/articles"
-            className="hover:bg-bgSecondary hover:text-primary"
+            className="hover:bg-bgSecondary hover:text-textPrimary"
           >
             <div className="flex gap-2 px-4 py-2 items-center">
               <img src={articlesIcon} alt="" />
@@ -63,7 +63,7 @@ const SideMenu = () => {
           </ActiveLink>
           <ActiveLink
             to="/sponsor"
-            className="hover:bg-bgSecondary hover:text-primary"
+            className="hover:bg-bgSecondary hover:text-textPrimary"
           >
             <div className="flex gap-2 px-4 py-2 items-center">
               <img src={sponsoreIcon} alt="" />
@@ -72,7 +72,7 @@ const SideMenu = () => {
           </ActiveLink>
           <ActiveLink
             to="/hire"
-            className="hover:bg-bgSecondary hover:text-primary"
+            className="hover:bg-bgSecondary hover:text-textPrimary"
           >
             <div className="flex gap-2 px-4 py-2 items-center">
               <img src={hireIcon} alt="" />
@@ -83,11 +83,11 @@ const SideMenu = () => {
 
         {/* TODO; ALL SCREENS SET TO SCROLL */}
         <div>
-          <h4 className="text-h6 text-primary pl-4 pb-2">All Screens</h4>
+          <h4 className="text-h6 text-textPrimary pl-4 pb-2">All Screens</h4>
           <div className="grid gap-2 text-textSecondary">
             <ActiveLink
               to="/sign-in"
-              className="hover:bg-bgSecondary hover:text-primary"
+              className="hover:bg-bgSecondary hover:text-textPrimary"
             >
               <div className="flex justify-between py-2 pl-6 pr-4 items-center">
                 <button className="text-h6">Sign in</button>
@@ -96,7 +96,7 @@ const SideMenu = () => {
             </ActiveLink>
             <ActiveLink
               to="/chat"
-              className="hover:bg-bgSecondary hover:text-primary"
+              className="hover:bg-bgSecondary hover:text-textPrimary"
             >
               <div className="flex justify-between py-2 pl-6 pr-4 items-center">
                 <button className="text-h6">Chat</button>
@@ -105,7 +105,7 @@ const SideMenu = () => {
             </ActiveLink>
             <ActiveLink
               to="/onboarding"
-              className="hover:bg-bgSecondary hover:text-primary"
+              className="hover:bg-bgSecondary hover:text-textPrimary"
             >
               <div className="flex justify-between py-2 pl-6 pr-4 items-center">
                 <button className="text-h6">Onboarding</button>
@@ -114,7 +114,7 @@ const SideMenu = () => {
             </ActiveLink>
             <ActiveLink
               to="/e-commerce"
-              className="hover:bg-bgSecondary hover:text-primary"
+              className="hover:bg-bgSecondary hover:text-textPrimary"
             >
               <div className="flex justify-between py-2 pl-6 pr-4 items-center">
                 <button className="text-h6">E-commerce</button>
@@ -123,7 +123,7 @@ const SideMenu = () => {
             </ActiveLink>
             <ActiveLink
               to="/checkout"
-              className="hover:bg-bgSecondary hover:text-primary"
+              className="hover:bg-bgSecondary hover:text-textPrimary"
             >
               <div className="flex justify-between py-2 pl-6 pr-4 items-center">
                 <button className="text-h6">Checkout</button>
@@ -132,7 +132,7 @@ const SideMenu = () => {
             </ActiveLink>
             <ActiveLink
               to="/error"
-              className="hover:bg-bgSecondary hover:text-primary"
+              className="hover:bg-bgSecondary hover:text-textPrimary"
             >
               <div className="flex justify-between py-2 pl-6 pr-4 items-center">
                 <button className="text-h6">Error</button>

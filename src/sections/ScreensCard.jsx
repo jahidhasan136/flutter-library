@@ -45,13 +45,13 @@ const ScreensCard = () => {
           </div>
           <div onClick={handleCopyTextChange}>
             {copied ? (
-              <p className="p-2 text-h6 text-primary bg-white rounded-lg">
+              <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
                 copied!
               </p>
             ) : (
               <button
                 onClick={handleCopyText}
-                className="p-2 text-h6 text-primary bg-white rounded-lg"
+                className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
               >
                 Copy code
               </button>
@@ -68,13 +68,13 @@ const ScreensCard = () => {
           </div>
           <div onClick={handleCopyTextChange}>
             {copied ? (
-              <p className="p-2 text-h6 text-primary bg-white rounded-lg">
+              <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
                 copied!
               </p>
             ) : (
               <button
                 onClick={handleCopyText}
-                className="p-2 text-h6 text-primary bg-white rounded-lg"
+                className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
               >
                 Copy code
               </button>
@@ -91,13 +91,13 @@ const ScreensCard = () => {
           </div>
           <div onClick={handleCopyTextChange}>
             {copied ? (
-              <p className="p-2 text-h6 text-primary bg-white rounded-lg">
+              <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
                 copied!
               </p>
             ) : (
               <button
                 onClick={handleCopyText}
-                className="p-2 text-h6 text-primary bg-white rounded-lg"
+                className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
               >
                 Copy code
               </button>
@@ -114,13 +114,13 @@ const ScreensCard = () => {
           </div>
           <div onClick={handleCopyTextChange}>
             {copied ? (
-              <p className="p-2 text-h6 text-primary bg-white rounded-lg">
+              <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
                 copied!
               </p>
             ) : (
               <button
                 onClick={handleCopyText}
-                className="p-2 text-h6 text-primary bg-white rounded-lg"
+                className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
               >
                 Copy code
               </button>
@@ -137,13 +137,13 @@ const ScreensCard = () => {
           </div>
           <div onClick={handleCopyTextChange}>
             {copied ? (
-              <p className="p-2 text-h6 text-primary bg-white rounded-lg">
+              <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
                 copied!
               </p>
             ) : (
               <button
                 onClick={handleCopyText}
-                className="p-2 text-h6 text-primary bg-white rounded-lg"
+                className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
               >
                 Copy code
               </button>
@@ -160,13 +160,13 @@ const ScreensCard = () => {
           </div>
           <div onClick={handleCopyTextChange}>
             {copied ? (
-              <p className="p-2 text-h6 text-primary bg-white rounded-lg">
+              <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
                 copied!
               </p>
             ) : (
               <button
                 onClick={handleCopyText}
-                className="p-2 text-h6 text-primary bg-white rounded-lg"
+                className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
               >
                 Copy code
               </button>
@@ -183,13 +183,13 @@ const ScreensCard = () => {
           </div>
           <div onClick={handleCopyTextChange}>
             {copied ? (
-              <p className="p-2 text-h6 text-primary bg-white rounded-lg">
+              <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
                 copied!
               </p>
             ) : (
               <button
                 onClick={handleCopyText}
-                className="p-2 text-h6 text-primary bg-white rounded-lg"
+                className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
               >
                 Copy code
               </button>
@@ -206,13 +206,13 @@ const ScreensCard = () => {
           </div>
           <div onClick={handleCopyTextChange}>
             {copied ? (
-              <p className="p-2 text-h6 text-primary bg-white rounded-lg">
+              <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
                 copied!
               </p>
             ) : (
               <button
                 onClick={handleCopyText}
-                className="p-2 text-h6 text-primary bg-white rounded-lg"
+                className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
               >
                 Copy code
               </button>
@@ -229,13 +229,13 @@ const ScreensCard = () => {
           </div>
           <div onClick={handleCopyTextChange}>
             {copied ? (
-              <p className="p-2 text-h6 text-primary bg-white rounded-lg">
+              <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
                 copied!
               </p>
             ) : (
               <button
                 onClick={handleCopyText}
-                className="p-2 text-h6 text-primary bg-white rounded-lg"
+                className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
               >
                 Copy code
               </button>
@@ -252,13 +252,13 @@ const ScreensCard = () => {
           </div>
           <div onClick={handleCopyTextChange}>
             {copied ? (
-              <p className="p-2 text-h6 text-primary bg-white rounded-lg">
+              <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
                 copied!
               </p>
             ) : (
               <button
                 onClick={handleCopyText}
-                className="p-2 text-h6 text-primary bg-white rounded-lg"
+                className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
               >
                 Copy code
               </button>

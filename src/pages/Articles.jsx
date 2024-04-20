@@ -38,7 +38,7 @@ const Articles = () => {
   return (
     <div className="mb-10">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-h3 text-primary leading-[31.2px]">Articles</h2>
+        <h2 className="text-h3 text-textPrimary leading-[31.2px]">Articles</h2>
         <button className="text-textSecondary text-xs ">See all</button>
       </div>
 
@@ -57,7 +57,7 @@ const Articles = () => {
               {visibleButtons.map((button, index) => (
                 <button
                   key={index}
-                  className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300"
+                  className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-textPrimary rounded-full hover:text-white transition-all duration-300"
                   onMouseOver={(e) => e.stopPropagation()} // Prevent scrolling on button hover
                 >
                   {button}
@@ -79,7 +79,7 @@ const Articles = () => {
             <h6 className="text-h6">Mar 24, 2024</h6>
             <h6 className="text-h6">Animation</h6>
           </div>
-          <h2 className="capitalize text-primary font-semibold leading-[20.8px]">
+          <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px]">
             Learn flutter animation
           </h2>
           <p className="mt-2 text-textSecondary text-h6">
@@ -93,7 +93,7 @@ const Articles = () => {
             <h6 className="text-h6">Mar 24, 2024</h6>
             <h6 className="text-h6">Animation</h6>
           </div>
-          <h2 className="capitalize text-primary font-semibold leading-[20.8px]">
+          <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px]">
             Onboarding Screen with Carousel & Animated Dots
           </h2>
           <p className="mt-2 text-textSecondary text-h6">
@@ -107,7 +107,7 @@ const Articles = () => {
             <h3 className="text-h6">Mar 24, 2024</h3>
             <h3 className="text-h6">Animation</h3>
           </div>
-          <h2 className="capitalize text-primary font-semibold leading-[20.8px]">
+          <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px]">
             Parallax Scroll Effect with PageView in Flutter
           </h2>
           <p className="mt-2 text-textSecondary text-h6">

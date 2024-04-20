@@ -2,7 +2,7 @@ import { AiFillLinkedin } from 'react-icons/ai';
 import { FaFacebookSquare, FaInstagram } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.svg';
 
 const Footer = () => {
   return (
@@ -32,17 +32,17 @@ const Footer = () => {
         </div>
         <div className="grid gap-[10px]">
           <h2 className="text-sm font-semibold leading-[18.2px]">Explore</h2>
-          <p className="text-sm text-primary leading-[18.2px]">Blog</p>
-          <p className="text-sm text-primary leading-[18.2px]">Templates</p>
-          <p className="text-sm text-primary leading-[18.2px]">Screens</p>
+          <p className="text-sm text-textPrimary leading-[18.2px]">Blog</p>
+          <p className="text-sm text-textPrimary leading-[18.2px]">Templates</p>
+          <p className="text-sm text-textPrimary leading-[18.2px]">Screens</p>
         </div>
         <div className="grid gap-[10px]">
           <h2 className="text-sm font-semibold leading-[18.2px]">Support</h2>
-          <p className="text-sm text-primary leading-[18.2px]">Pricing</p>
-          <p className="text-sm text-primary leading-[18.2px]">
+          <p className="text-sm text-textPrimary leading-[18.2px]">Pricing</p>
+          <p className="text-sm text-textPrimary leading-[18.2px]">
             Become a sponsore
           </p>
-          <p className="text-sm text-primary leading-[18.2px]">
+          <p className="text-sm text-textPrimary leading-[18.2px]">
             Hire top Flutter Devs
           </p>
         </div>

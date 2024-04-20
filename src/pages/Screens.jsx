@@ -37,7 +37,7 @@ const Screens = () => {
   return (
     <div className="mb-10">
       <div className="flex justify-between items-center mb-4">
-        <h3 className="text-h3 text-primary leading-[31.2px]">Screens</h3>
+        <h3 className="text-h3 text-textPrimary leading-[31.2px]">Screens</h3>
         <button className="text-textSecondary text-xs">See all</button>
       </div>
       {/* Filter sections */}
@@ -51,7 +51,7 @@ const Screens = () => {
           {visibleButtons.map((button, index) => (
             <button
               key={index}
-              className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300"
+              className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-textPrimary rounded-full hover:text-white transition-all duration-300"
               onMouseOver={(e) => e.stopPropagation()} // Prevent scrolling on button hover
             >
               {button}

@@ -20,7 +20,7 @@ const TemplatesCard = () => {
             alt=""
           />
           <div className="flex justify-between">
-            <h2 className="capitalize font-semibold text-primary leading-[20.8px]">
+            <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
               Foodly Restaurent App template
             </h2>
             <div className="flex gap-2 items-center">
@@ -42,7 +42,7 @@ const TemplatesCard = () => {
             alt=""
           />
           <div className="flex justify-between">
-            <h2 className="capitalize font-semibold text-primary leading-[20.8px]">
+            <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
               Flutter animation template
             </h2>
             <div className="flex gap-2 items-center">
@@ -64,7 +64,7 @@ const TemplatesCard = () => {
             alt=""
           />
           <div className="flex justify-between">
-            <h2 className="capitalize font-semibold text-primary leading-[20.8px]">
+            <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
               Flutter animation template
             </h2>
             <div className="flex gap-2 items-center">
@@ -86,7 +86,7 @@ const TemplatesCard = () => {
             alt=""
           />
           <div className="flex justify-between">
-            <h2 className="capitalize font-semibold text-primary leading-[20.8px]">
+            <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
               Flutter animation template
             </h2>
             <div className="flex gap-2 items-center">
@@ -108,7 +108,7 @@ const TemplatesCard = () => {
             alt=""
           />
           <div className="flex justify-between">
-            <h2 className="capitalize font-semibold text-primary leading-[20.8px]">
+            <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
               Flutter animation template
             </h2>
             <div className="flex gap-2 items-center">
@@ -130,7 +130,7 @@ const TemplatesCard = () => {
             alt=""
           />
           <div className="flex justify-between">
-            <h2 className="capitalize font-semibold text-primary leading-[20.8px]">
+            <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
               Flutter animation template
             </h2>
             <div className="flex gap-2 items-center">

@@ -28,7 +28,7 @@ const SearchModal = ({
               />
               <input
                 className="py-[14px] pl-11
-           pr-5 w-[400px] rounded-full bg-bgSecondary text-primary outline-none"
+           pr-5 w-[400px] rounded-full bg-bgSecondary text-textPrimary outline-none"
                 type="text"
                 placeholder="Search...."
               />
@@ -45,7 +45,7 @@ const SearchModal = ({
                 {visibleButtons.map((button, index) => (
                   <button
                     key={index}
-                    className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-primary rounded-full hover:text-white transition-all duration-300"
+                    className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-textPrimary rounded-full hover:text-white transition-all duration-300"
                     onMouseOver={(e) => e.stopPropagation()} // Prevent scrolling on button hover
                   >
                     {button}
