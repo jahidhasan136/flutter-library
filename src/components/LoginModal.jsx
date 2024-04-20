@@ -1,14 +1,32 @@
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import SignUpModal from './SignUpModal';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import closeIcon from '../assets/icons/closeIcon.svg';
 
 const LoginModal = ({ isOpen, onClose }) => {
-  const [isSignUpModal, setSignUpModal] = useState(false);
+  const [signUpModal, setSignUpModal] = useState(false);
   const navigate = useNavigate();
-  // modals
+
+  useEffect(() => {
+    const loginModal = document.getElementById('loginModal');
+    if (isOpen && loginModal) {
+      loginModal.showModal();
+    } else if (!isOpen && loginModal) {
+      loginModal.close();
+    }
+  }, [isOpen]);
+
+  useEffect(() => {
+    console.log('Current Path:', location.pathname);
+    if (location.pathname === '/signup') {
+      setSignUpModal(true);
+    } else {
+      setSignUpModal(false);
+    }
+  }, [location.pathname]);
+
   const openSignUpModal = () => {
-    // Use Daisy UI modal method to show modal
     const signUpModal = document.getElementById('signUpModal');
     if (signUpModal) {
       signUpModal.showModal();
@@ -17,24 +35,31 @@ const LoginModal = ({ isOpen, onClose }) => {
 
   const closeSignUpModal = () => {
     // Use Daisy UI modal method to close modal
-    const signUpModal = document.getElementById('signUpModal');
+    const signUpModal = document.getElementById('loginModal');
     if (signUpModal) {
-      onClose(!isOpen);
       navigate('/');
       signUpModal.close();
     }
   };
+
+  const closeModal = () => {
+    onClose(); // Close the login modal
+  };
+
   return (
-    <dialog id="loginModal" className={`modal ${isOpen ? 'open' : ''}`}>
+    <dialog id="loginModal" className="modal">
       <div className="modal-box grid gap-5">
         <div className="grid gap-5">
-          <img src={logo} alt="" />
-          <button
-            className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
-            onClick={onClose}
-          >
-            ✕
-          </button>
+          <div className="flex justify-between items-center">
+            <div></div>
+            <img src={logo} alt="" />
+            <img
+              className="cursor-pointer"
+              src={closeIcon}
+              onClick={closeModal}
+              alt=""
+            />
+          </div>
           <h3 className="text-h3 text-textPrimary text-center">Welcome Back</h3>
           <h5 className="text-h5 font-semibold text-textPrimary">Log in</h5>
         </div>
@@ -43,12 +68,12 @@ const LoginModal = ({ isOpen, onClose }) => {
             <input
               className="bg-bgSecondary outline-none rounded-lg px-4 py-[15px]"
               type="email"
-              placeholder="Enter you email"
+              placeholder="Enter your email"
             />
             <input
               className="bg-bgSecondary outline-none rounded-lg px-4 py-[15px]"
               type="password"
-              placeholder="Enter you password"
+              placeholder="Enter your password"
             />
             <p className="font-medium text-textPrimary text-h7 text-end">
               Forgot password?
@@ -57,17 +82,17 @@ const LoginModal = ({ isOpen, onClose }) => {
           <input className="btn_primary_a" type="submit" value="Log in" />
         </form>
         <div className="text-h5 text-textPrimary text-center">
-          <span>Don&apos;t have an account?</span> {''}
+          <span>Don&apos;t have an account?</span>{' '}
           <Link
             to="/signup"
-            onClick={openSignUpModal}
             className="font-bold text-textPrimary"
+            onClick={openSignUpModal}
           >
             Create account
           </Link>
-          <SignUpModal isOpen={isSignUpModal} onClose={closeSignUpModal} />
         </div>
       </div>
+      <SignUpModal isOpen={signUpModal} onClose={closeSignUpModal} />
     </dialog>
   );
 };

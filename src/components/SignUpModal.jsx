@@ -1,20 +1,35 @@
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg';
-import { useState } from 'react';
-import LoginModal from './LoginModal';
+import { useEffect } from 'react';
+import closeIcon from '../assets/icons/closeIcon.svg';
 
 const SignUpModal = ({ isOpen, onClose }) => {
+  useEffect(() => {
+    const signUpModal = document.getElementById('signUpModal');
+    if (isOpen && signUpModal) {
+      signUpModal.showModal();
+    } else if (!isOpen && signUpModal) {
+      signUpModal.close();
+    }
+  }, [isOpen]);
+
+  const closeModal = () => {
+    onClose(); // Close the SignUpModal
+  };
   return (
     <dialog id="signUpModal" className={`modal ${isOpen ? 'open' : ''}`}>
       <div className="modal-box grid gap-5">
         <div className="grid gap-5">
-          <img src={logo} alt="" />
-          <button
-            className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
-            onClick={onClose}
-          >
-            ✕
-          </button>
+          <div className="flex justify-between items-center">
+            <div></div>
+            <img src={logo} alt="" />
+            <img
+              className="cursor-pointer"
+              src={closeIcon}
+              onClick={closeModal}
+              alt=""
+            />
+          </div>
           <h3 className="text-h3 text-textPrimary text-center capitalize">
             Create your account
           </h3>
@@ -53,7 +68,6 @@ const SignUpModal = ({ isOpen, onClose }) => {
           <Link to="/login" className="font-bold text-textPrimary">
             Log in
           </Link>
-          {/* <LoginModal isOpen={isLoginModal} onClose={closeLoginModal} /> */}
         </div>
       </div>
     </dialog>

@@ -19,6 +19,7 @@ const Header = () => {
   const [isLoginModal, setLoginModal] = useState(false);
   const [isProModal, setProModal] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
   const outSideModeRef = useRef(null);
 
   // when i cick outside of card mode card are invisible
@@ -57,8 +58,17 @@ const Header = () => {
   );
 
   // modals
+  // Watch for route changes and open modal if on '/login'
+  useEffect(() => {
+    console.log('Current Path:', location.pathname);
+    if (location.pathname === '/login') {
+      setLoginModal(true);
+    } else {
+      setLoginModal(false);
+    }
+  }, [location.pathname]);
+
   const openLoginModal = () => {
-    // Use Daisy UI modal method to show modal
     const loginModal = document.getElementById('loginModal');
     if (loginModal) {
       loginModal.showModal();
