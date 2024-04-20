@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 // icons
-import modeIcon from '../assets/icons/mode.png';
-import searchIcon from '../assets/icons/search.png';
+import modeIcon from '../assets/icons/themeIcon.svg';
+import searchIcon from '../assets/icons/searchIcon.svg';
 import userIcon from '../assets/icons/user.svg';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import ModeModal from '../components/ModeModal';

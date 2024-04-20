@@ -1,6 +1,6 @@
 import TemplatesCard from '../../sections/TemplatesCard';
 // icons
-import filterIcon from '../../assets/icons/filter.png';
+import filterIcon from '../../assets/icons/filterIcon.svg';
 import rightArrowIcon from '../../assets/icons/right-arrow.svg';
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';

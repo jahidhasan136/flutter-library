@@ -1,10 +1,10 @@
 import Templates from '../pages/templates/Templates';
 import Articles from '../pages/articles/Articles';
 // icons
-import filterIcon from '../assets/icons/filter.png';
+import filterIcon from '../assets/icons/filterIcon.svg';
 import closeIcon from '../assets/icons/closeIcon.svg';
 import rightArrowIcon from '../assets/icons/right-arrow.svg';
-import searchIcon from '../assets/icons/search.png';
+import searchIcon from '../assets/icons/searchIcon.svg';
 
 const SearchModal = ({
   currentButton,

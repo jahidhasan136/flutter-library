@@ -4,7 +4,7 @@ import articleImgOne from '../../assets/articles/article-1.png';
 import articleImgTwo from '../../assets/articles/article-2.png';
 import articleImgThree from '../../assets/articles/article-3.png';
 // icons
-import filterIcon from '../../assets/icons/filter.png';
+import filterIcon from '../../assets/icons/filterIcon.svg';
 import rightArrowIcon from '../../assets/icons/right-arrow.svg';
 import { useLocation } from 'react-router-dom';
 

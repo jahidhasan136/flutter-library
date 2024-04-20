@@ -57,7 +57,7 @@ const GetProModal = ({ isOpen, onClose }) => {
             </div>
             <button className="btn_primary_a">Upgrade</button>
           </div>
-          <div className="bg-textPrimary text-white w-full border border-secondary p-4 rounded-lg grid gap-4">
+          <div className="bg-primary text-white w-full border border-secondary p-4 rounded-lg grid gap-4">
             <div className="flex justify-between items-center">
               <h5 className="text-h5 font-semibold text-white">Yearly</h5>
               <p className="text-h7 px-2 py-1 rounded-2xl border border-white">

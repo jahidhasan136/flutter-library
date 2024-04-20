@@ -1,6 +1,6 @@
 // icons
-import downloadIcon from '../assets/icons/download.png';
-import phoneIcon from '../assets/icons/phone.png';
+import downloadIcon from '../assets/icons/downloadIcon.svg';
+import phoneIcon from '../assets/icons/phoneIcon.svg';
 // images
 import templateOne from '../assets/templates/template-1.png';
 import templateTwo from '../assets/templates/template-2.png';
