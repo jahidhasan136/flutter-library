@@ -10,12 +10,14 @@ import UserModal from '../components/UserModal';
 import SearchModal from '../components/SearchModal';
 import LoginModal from '../components/LoginModal';
 import SignUpModal from '../components/SignUpModal';
+import GetProModal from '../components/GetProModal';
 
 const Header = () => {
   // dark mode light mode implement
   const [mode, setMode] = useState(false);
   const [user, setUser] = useState(false);
   const [isLoginModal, setLoginModal] = useState(false);
+  const [isProModal, setProModal] = useState(false);
   const navigate = useNavigate();
   const outSideModeRef = useRef(null);
 
@@ -40,9 +42,6 @@ const Header = () => {
   // TODO: BUTTONS HOVER SCROLL FUNCTIONALITY PENDING
   const [currentButton, setCurrentButton] = useState(0);
   const buttonsPerClick = 10;
-  // home page filter option hide
-  // const location = useLocation();
-  // const hideFilter = location.pathname === '/';
 
   const buttons = ['All', 'Templates', 'Single Screens', 'Articles'];
 
@@ -58,16 +57,6 @@ const Header = () => {
   );
 
   // modals
-  useEffect(() => {
-    // Check if the current location matches '/login'
-    if (location.pathname === '/login') {
-      // Open the login modal when the route changes to '/login'
-      setLoginModal(true);
-    } else {
-      // Close the login modal when the route changes away from '/login'
-      setLoginModal(false);
-    }
-  }, [location.pathname]);
   const openLoginModal = () => {
     // Use Daisy UI modal method to show modal
     const loginModal = document.getElementById('loginModal');
@@ -82,6 +71,22 @@ const Header = () => {
     if (loginModal) {
       navigate('/');
       loginModal.close();
+    }
+  };
+  const openProModal = () => {
+    // Use Daisy UI modal method to show modal
+    const getProModal = document.getElementById('getProModal');
+    if (getProModal) {
+      getProModal.showModal();
+    }
+  };
+
+  const closeProModal = () => {
+    // Use Daisy UI modal method to close modal
+    const getProModal = document.getElementById('getProModal');
+    if (getProModal) {
+      navigate('/');
+      getProModal.close();
     }
   };
 
@@ -120,9 +125,15 @@ const Header = () => {
         <Link to="/login" onClick={openLoginModal} className="btn_primary_s">
           Log in
         </Link>
+        {/* login modal */}
         <LoginModal isOpen={isLoginModal} onClose={closeLoginModal} />
 
-        <button className="btn_primary_a">Get Pro</button>
+        <div>
+          <button onClick={openProModal} className="btn_primary_a">
+            Get Pro
+          </button>
+          <GetProModal isOpen={isProModal} onClose={closeProModal} />
+        </div>
         {/* user sections */}
         <div className="relative">
           <button onClick={() => setUser(!user)} className="btn_primary_s">
