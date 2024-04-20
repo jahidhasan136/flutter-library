@@ -1,7 +1,29 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.svg';
+import SignUpModal from './SignUpModal';
+import { useState } from 'react';
 
 const LoginModal = ({ isOpen, onClose }) => {
+  const [isSignUpModal, setSignUpModal] = useState(false);
+  const navigate = useNavigate();
+  // modals
+  const openSignUpModal = () => {
+    // Use Daisy UI modal method to show modal
+    const signUpModal = document.getElementById('signUpModal');
+    if (signUpModal) {
+      signUpModal.showModal();
+    }
+  };
+
+  const closeSignUpModal = () => {
+    // Use Daisy UI modal method to close modal
+    const signUpModal = document.getElementById('signUpModal');
+    if (signUpModal) {
+      onClose(!isOpen);
+      navigate('/');
+      signUpModal.close();
+    }
+  };
   return (
     <dialog id="loginModal" className={`modal ${isOpen ? 'open' : ''}`}>
       <div className="modal-box grid gap-5">
@@ -36,9 +58,14 @@ const LoginModal = ({ isOpen, onClose }) => {
         </form>
         <div className="text-h5 text-textPrimary text-center">
           <span>Don&apos;t have an account?</span> {''}
-          <Link className="font-bold" to="/signup">
+          <Link
+            to="/signup"
+            onClick={openSignUpModal}
+            className="font-bold text-textPrimary"
+          >
             Create account
           </Link>
+          <SignUpModal isOpen={isSignUpModal} onClose={closeSignUpModal} />
         </div>
       </div>
     </dialog>

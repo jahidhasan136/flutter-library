@@ -4,7 +4,7 @@ import modeIcon from '../assets/icons/mode.png';
 import searchIcon from '../assets/icons/search.png';
 import userIcon from '../assets/icons/user.svg';
 import Screens from '../pages/Screens';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import ModeModal from '../components/ModeModal';
 import UserModal from '../components/UserModal';
 import SearchModal from '../components/SearchModal';
@@ -16,6 +16,7 @@ const Header = () => {
   const [mode, setMode] = useState(false);
   const [user, setUser] = useState(false);
   const [isLoginModal, setLoginModal] = useState(false);
+  const navigate = useNavigate();
   const outSideModeRef = useRef(null);
 
   // when i cick outside of card mode card are invisible
@@ -57,11 +58,31 @@ const Header = () => {
   );
 
   // modals
+  useEffect(() => {
+    // Check if the current location matches '/login'
+    if (location.pathname === '/login') {
+      // Open the login modal when the route changes to '/login'
+      setLoginModal(true);
+    } else {
+      // Close the login modal when the route changes away from '/login'
+      setLoginModal(false);
+    }
+  }, [location.pathname]);
   const openLoginModal = () => {
-    setLoginModal(true);
+    // Use Daisy UI modal method to show modal
+    const loginModal = document.getElementById('loginModal');
+    if (loginModal) {
+      loginModal.showModal();
+    }
   };
+
   const closeLoginModal = () => {
-    setLoginModal(false);
+    // Use Daisy UI modal method to close modal
+    const loginModal = document.getElementById('loginModal');
+    if (loginModal) {
+      navigate('/');
+      loginModal.close();
+    }
   };
 
   return (
@@ -96,12 +117,9 @@ const Header = () => {
           {/* mode modal */}
           <ModeModal mode={mode} />
         </div>
-        <button
-          onClick={() => document.getElementById('loginModal').showModal()}
-          className="btn_primary_s"
-        >
+        <Link to="/login" onClick={openLoginModal} className="btn_primary_s">
           Log in
-        </button>
+        </Link>
         <LoginModal isOpen={isLoginModal} onClose={closeLoginModal} />
 
         <button className="btn_primary_a">Get Pro</button>
