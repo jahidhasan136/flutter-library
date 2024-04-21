@@ -73,13 +73,13 @@ const ScreenDetails = ({ copied, handleCopyTextChange, handleCopyText }) => {
           <div className="flex  gap-2">
             <h5 className="text-h5 dark:text-secondary">Tags:</h5>
             <div className="flex gap-1">
-              <p className="text-textSecondary bg-secondary px-2 py-1 text-h7 rounded-lg hover:text-textPrimary duration-300 dark:bg-transparent dark:border dark:border-darkSecondary dark:hover:text-secondary">
+              <p className="text-textSecondary bg-secondary px-2 py-1 text-h7 rounded-lg hover:text-textPrimary duration-300 dark:bg-darkSecondary dark:hover:text-secondary">
                 Auth
               </p>
-              <p className="text-textSecondary bg-secondary px-2 py-1 text-h7 rounded-lg hover:text-textPrimary duration-300 dark:bg-transparent dark:border dark:border-darkSecondary dark:hover:text-secondary">
+              <p className="text-textSecondary bg-secondary px-2 py-1 text-h7 rounded-lg hover:text-textPrimary duration-300 dark:bg-darkSecondary dark:hover:text-secondary">
                 Sign in
               </p>
-              <p className="text-textSecondary bg-secondary px-2 py-1 text-h7 rounded-lg hover:text-textPrimary duration-300 dark:bg-transparent dark:border dark:border-darkSecondary dark:hover:text-secondary">
+              <p className="text-textSecondary bg-secondary px-2 py-1 text-h7 rounded-lg hover:text-textPrimary duration-300 dark:bg-darkSecondary dark:hover:text-secondary">
                 Register
               </p>
             </div>
