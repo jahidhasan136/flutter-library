@@ -18,7 +18,7 @@ const SignUpModal = ({ isOpen, onClose }) => {
   };
   return (
     <dialog id="signUpModal" className={`modal ${isOpen ? 'open' : ''}`}>
-      <div className="modal-box grid gap-5">
+      <div className="modal-box grid gap-5 dark:bg-dark dark:border dark:border-darkSecondary">
         <div className="grid gap-5">
           <div className="flex justify-between items-center">
             <div></div>
@@ -30,10 +30,10 @@ const SignUpModal = ({ isOpen, onClose }) => {
               alt=""
             />
           </div>
-          <h3 className="text-h3 text-textPrimary text-center capitalize">
+          <h3 className="text-h3 text-textPrimary text-center capitalize dark:text-secondary">
             Create your account
           </h3>
-          <h5 className="text-h5 font-semibold text-textPrimary text-start">
+          <h5 className="text-h5 font-semibold text-textPrimary text-start dark:text-secondary">
             Create an account
           </h5>
         </div>
@@ -56,16 +56,19 @@ const SignUpModal = ({ isOpen, onClose }) => {
             />
             <p className="font-medium text-textSecondary text-h6 text-start">
               By clicking &quot;Sign Up,&quot; you agree to the{' '}
-              <span className="text-textPrimary">
+              <span className="text-textPrimary  dark:text-secondary">
                 License Agreement, Terms of use, and Privacy policy.
               </span>
             </p>
           </div>
           <input className="btn_primary_a" type="submit" value="Sign up" />
         </form>
-        <div className="text-h5 text-textPrimary text-center">
+        <div className="text-h5 text-textPrimary text-center dark:text-secondary">
           <span>Already have an account?</span> {''}
-          <Link to="/login" className="font-bold text-textPrimary">
+          <Link
+            to="/login"
+            className="font-bold text-textPrimary dark:text-secondary"
+          >
             Log in
           </Link>
         </div>
