@@ -1,4 +1,3 @@
-import ModeModal from '../../components/ModeModal';
 import Articles from '../articles/Articles';
 import Screens from '../screens/Screens';
 import Templates from '../templates/Templates';

@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 // icons
-import modeIcon from '../assets/icons/themeIcon.svg';
 import searchIcon from '../assets/icons/searchIcon.svg';
-import userIcon from '../assets/icons/user.svg';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import ModeModal from '../components/ModeModal';
 import UserModal from '../components/UserModal';
@@ -32,28 +30,30 @@ const Header = () => {
   const outSideModeRef = useRef(null);
   const [navState, setNavState] = useState(false);
   const [isActive, setIsActive] = useState(false);
+  const outSideModeRefDesktop = useRef(null);
+  const outSideModeRefMobile = useRef(null);
 
   const handleClick = (e) => {
+    console.log('clicked', e.target);
     setIsActive(true);
   };
 
   const handleClose = (e) => {
+    console.log('closed', e.target);
     setIsActive(false);
   };
 
   // when i cick outside of card mode card are invisible
-  const handleClickOutside = (event) => {
-    if (
-      outSideModeRef.current &&
-      !outSideModeRef.current.contains(event.target)
-    ) {
-      setMode(false);
-      setUser(false);
-    }
-  };
   useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside);
+    const handleClickOutside = (event) => {
+      // Close mobile modal when clicking outside
+      const insideModal = document.getElementById('mobileModal');
+      if (insideModal && !insideModal.contains(event.target)) {
+        setIsActive(false);
+      }
+    };
 
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
@@ -135,7 +135,7 @@ const Header = () => {
     <>
       {/* laptop or desktop devices */}
       <div
-        ref={outSideModeRef}
+        ref={outSideModeRefDesktop}
         className={`${
           navState ? 'bg-white py-3 dark:bg-dark' : 'bg-transparent'
         } hidden md:flex justify-between items-center sticky top-0 z-20 duration-300`}
@@ -201,8 +201,6 @@ const Header = () => {
                 fill="none"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
                   d="M12.5713 4C10.5625 4 8.93406 5.62845 8.93406 7.63724C8.93406 9.64603 10.5625 11.2745 12.5713 11.2745C14.5801 11.2745 16.2085 9.64603 16.2085 7.63724C16.2085 5.62845 14.5801 4 12.5713 4ZM7.43406 7.63724C7.43406 4.80002 9.73408 2.5 12.5713 2.5C15.4085 2.5 17.7085 4.80002 17.7085 7.63724C17.7085 10.4745 15.4085 12.7745 12.5713 12.7745C9.73408 12.7745 7.43406 10.4745 7.43406 7.63724ZM9.7537 14.5461H15.3902C16.4823 14.5461 17.3478 14.5461 18.0454 14.6031C18.7588 14.6614 19.3624 14.783 19.9136 15.0638C20.8074 15.5192 21.534 16.2459 21.9894 17.1397C22.2709 17.692 22.3921 18.3012 22.4502 19.0221C22.5072 19.7283 22.5072 20.6069 22.5072 21.7172V21.75C22.5072 22.1642 22.1714 22.5 21.7572 22.5C21.3429 22.5 21.0072 22.1642 21.0072 21.75C21.0072 20.5996 21.0066 19.7815 20.9551 19.1426C20.9042 18.5116 20.8075 18.1239 20.6529 17.8206C20.3413 17.2091 19.8442 16.7119 19.2326 16.4003C18.9282 16.2452 18.5439 16.1488 17.9233 16.0981C17.2939 16.0467 16.4896 16.0461 15.3572 16.0461H9.78672C8.65424 16.0461 7.84998 16.0467 7.2206 16.0981C6.59997 16.1488 6.21572 16.2452 5.91125 16.4003C5.29972 16.7119 4.80254 17.2091 4.49095 17.8206C4.33643 18.1239 4.23966 18.5116 4.18879 19.1426C4.13729 19.7815 4.13672 20.5996 4.13672 21.75C4.13672 22.1642 3.80093 22.5 3.38672 22.5C2.97251 22.5 2.63672 22.1642 2.63672 21.75V21.7172C2.63671 20.6069 2.63671 19.7283 2.69364 19.0221C2.75176 18.3012 2.87298 17.692 3.15444 17.1397C3.60984 16.2459 4.33649 15.5192 5.23026 15.0638C5.78144 14.783 6.38506 14.6614 7.09845 14.6031C7.79607 14.5461 8.66156 14.5461 9.7537 14.5461Z"
                   className="fill-primary dark:fill-secondary"
                 />
@@ -215,10 +213,7 @@ const Header = () => {
       </div>
 
       {/* mobile devices */}
-      <div
-        className="md:hidden"
-        // ref={outSideModeRef}
-      >
+      <div className="md:hidden" ref={outSideModeRefMobile}>
         <div className="flex items-center justify-between">
           <Link to="/">
             <img src={logo} alt="" />
@@ -226,12 +221,6 @@ const Header = () => {
           <div className="flex items-center gap-4">
             {/* mode section */}
             <div className="relative">
-              {/* <img
-                onClick={() => setMode(!mode)}
-                className="cursor-pointer fill-white"
-                src={modeIcon}
-                alt=""
-              /> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
