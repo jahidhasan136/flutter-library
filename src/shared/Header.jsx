@@ -99,7 +99,10 @@ const Header = () => {
   };
 
   return (
-    <div ref={outSideModeRef} className="flex justify-between items-center">
+    <div
+      ref={outSideModeRef}
+      className="flex justify-between items-center sticky top-0 z-20"
+    >
       <div className="relative">
         <img className="absolute top-1/3 left-5" src={searchIcon} alt="" />
         <input

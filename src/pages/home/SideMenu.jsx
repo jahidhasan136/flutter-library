@@ -17,7 +17,7 @@ const SideMenu = () => {
       <div className="grid gap-7">
         <div className="grid gap-2 text-textSecondary">
           <ActiveLink
-            to="/discover"
+            to="/"
             className="hover:bg-bgSecondary hover:text-textPrimary"
           >
             <div className="flex gap-2 px-4 py-2 items-center">
@@ -41,15 +41,6 @@ const SideMenu = () => {
             <div className="flex gap-2 px-4 py-2 items-center">
               <img src={screensIcon} alt="" />
               <button className="text-h6">Templates</button>
-            </div>
-          </ActiveLink>
-          <ActiveLink
-            to="/screens"
-            className="hover:bg-bgSecondary hover:text-textPrimary"
-          >
-            <div className="flex gap-2 px-4 py-2 items-center">
-              <img src={screensIcon} alt="" />
-              <button className="text-h6">Screens</button>
             </div>
           </ActiveLink>
           <ActiveLink
