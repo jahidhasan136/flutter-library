@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className="ml-[180px] mt-10">
-      <div className="flex justify-between">
+    <div className="px-4 md:px-0 md:ml-[180px] mt-10">
+      <div className="grid lg:grid-cols-2 gap-5 lg:gap-0">
         <div className="grid gap-4">
           <img src={logo} alt="" />
           <p className="text-xs text-textSecondary leading-[15.6px]">
@@ -31,51 +31,53 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="grid gap-[10px]">
-          <h2 className="text-sm font-semibold leading-[18.2px]">Explore</h2>
-          <Link
-            to="/"
-            className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
-          >
-            Blog
-          </Link>
-          <Link
-            to="/"
-            className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
-          >
-            Templates
-          </Link>
-          <Link
-            to="/"
-            className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
-          >
-            Screens
-          </Link>
-        </div>
-        <div className="grid gap-[10px]">
-          <h2 className="text-sm font-semibold leading-[18.2px]">Support</h2>
-          <Link
-            to="/"
-            className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
-          >
-            Pricing
-          </Link>
-          <Link
-            to="/"
-            className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
-          >
-            Become a sponsore
-          </Link>
-          <Link
-            to="/"
-            className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
-          >
-            Hire top Flutter Devs
-          </Link>
+        <div className="grid grid-cols-2">
+          <div className="grid gap-[10px]">
+            <h2 className="text-sm font-semibold leading-[18.2px]">Explore</h2>
+            <Link
+              to="/"
+              className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
+            >
+              Blog
+            </Link>
+            <Link
+              to="/"
+              className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
+            >
+              Templates
+            </Link>
+            <Link
+              to="/"
+              className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
+            >
+              Screens
+            </Link>
+          </div>
+          <div className="grid gap-[10px]">
+            <h2 className="text-sm font-semibold leading-[18.2px]">Support</h2>
+            <Link
+              to="/"
+              className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
+            >
+              Pricing
+            </Link>
+            <Link
+              to="/"
+              className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
+            >
+              Become a sponsore
+            </Link>
+            <Link
+              to="/"
+              className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
+            >
+              Hire top Flutter Devs
+            </Link>
+          </div>
         </div>
       </div>
       <div className="border-b-[1px] my-4 bg-bgSecondary dark:bg-darkSecondary"></div>
-      <div className="text-textSecondary flex justify-between text-sm leading-[18.2px]">
+      <div className="text-textSecondary hidden md:flex justify-between text-sm leading-[18.2px]">
         <p>Copyright 2024 Jahid Hasan. All rights reserved</p>
         <div className="flex gap-2">
           <p>Privacy Policy</p> |<p>Terms & Condition</p> |<p>Cookie Policy</p>
