@@ -20,17 +20,19 @@ const TemplatesCard = () => {
           alt=""
         />
         <div className="flex justify-between">
-          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
+          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
             Foodly Restaurent App template
           </h2>
           <div className="flex gap-2 items-center">
             <div className="flex gap-1 items-center">
               <img src={phoneIcon} alt="" />
-              <p className="text-sm leading-[18.2px]">28</p>
+              <p className="text-sm leading-[18.2px] dark:text-secondary">28</p>
             </div>
             <div className="flex gap-1 items-center">
               <img src={downloadIcon} alt="" />
-              <p className="text-sm leading-[18.2px]">546</p>
+              <p className="text-sm leading-[18.2px] dark:text-secondary">
+                546
+              </p>
             </div>
           </div>
         </div>
@@ -42,17 +44,22 @@ const TemplatesCard = () => {
           alt=""
         />
         <div className="flex justify-between">
-          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
+          <h2
+            className="capitalize font-semibold text-textPrimary leading-[20.8px]
+          dark:text-secondary"
+          >
             Flutter animation template
           </h2>
           <div className="flex gap-2 items-center">
             <div className="flex gap-1 items-center">
               <img src={phoneIcon} alt="" />
-              <p className="text-sm leading-[18.2px]">28</p>
+              <p className="text-sm leading-[18.2px] dark:text-secondary">28</p>
             </div>
             <div className="flex gap-1 items-center">
               <img src={downloadIcon} alt="" />
-              <p className="text-sm leading-[18.2px]">546</p>
+              <p className="text-sm leading-[18.2px] dark:text-secondary">
+                546
+              </p>
             </div>
           </div>
         </div>
@@ -64,17 +71,19 @@ const TemplatesCard = () => {
           alt=""
         />
         <div className="flex justify-between">
-          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
+          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
             Flutter animation template
           </h2>
           <div className="flex gap-2 items-center">
             <div className="flex gap-1 items-center">
               <img src={phoneIcon} alt="" />
-              <p className="text-sm leading-[18.2px]">28</p>
+              <p className="text-sm leading-[18.2px] dark:text-secondary">28</p>
             </div>
             <div className="flex gap-1 items-center">
               <img src={downloadIcon} alt="" />
-              <p className="text-sm leading-[18.2px]">546</p>
+              <p className="text-sm leading-[18.2px] dark:text-secondary">
+                546
+              </p>
             </div>
           </div>
         </div>
@@ -86,17 +95,19 @@ const TemplatesCard = () => {
           alt=""
         />
         <div className="flex justify-between">
-          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
+          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
             Flutter animation template
           </h2>
           <div className="flex gap-2 items-center">
             <div className="flex gap-1 items-center">
               <img src={phoneIcon} alt="" />
-              <p className="text-sm leading-[18.2px]">28</p>
+              <p className="text-sm leading-[18.2px] dark:text-secondary">28</p>
             </div>
             <div className="flex gap-1 items-center">
               <img src={downloadIcon} alt="" />
-              <p className="text-sm leading-[18.2px]">546</p>
+              <p className="text-sm leading-[18.2px] dark:text-secondary">
+                546
+              </p>
             </div>
           </div>
         </div>
@@ -108,17 +119,19 @@ const TemplatesCard = () => {
           alt=""
         />
         <div className="flex justify-between">
-          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
+          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
             Flutter animation template
           </h2>
           <div className="flex gap-2 items-center">
             <div className="flex gap-1 items-center">
               <img src={phoneIcon} alt="" />
-              <p className="text-sm leading-[18.2px]">28</p>
+              <p className="text-sm leading-[18.2px] dark:text-secondary">28</p>
             </div>
             <div className="flex gap-1 items-center">
               <img src={downloadIcon} alt="" />
-              <p className="text-sm leading-[18.2px]">546</p>
+              <p className="text-sm leading-[18.2px] dark:text-secondary">
+                546
+              </p>
             </div>
           </div>
         </div>
@@ -130,17 +143,19 @@ const TemplatesCard = () => {
           alt=""
         />
         <div className="flex justify-between">
-          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
+          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
             Flutter animation template
           </h2>
           <div className="flex gap-2 items-center">
             <div className="flex gap-1 items-center">
               <img src={phoneIcon} alt="" />
-              <p className="text-sm leading-[18.2px]">28</p>
+              <p className="text-sm leading-[18.2px] dark:text-secondary">28</p>
             </div>
             <div className="flex gap-1 items-center">
               <img src={downloadIcon} alt="" />
-              <p className="text-sm leading-[18.2px]">546</p>
+              <p className="text-sm leading-[18.2px] dark:text-secondary">
+                546
+              </p>
             </div>
           </div>
         </div>

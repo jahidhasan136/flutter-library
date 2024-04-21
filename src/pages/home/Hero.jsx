@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <div className="text-center">
-      <h1 className="text-h1 leading-[52px] text-textPrimary mb-2">
+      <h1 className="text-h1 leading-[52px] text-textPrimary mb-2 dark:text-secondary">
         Build your next App <br /> even faster!
       </h1>
       <h5 className="text-textSecondary leading-[20.8px]">

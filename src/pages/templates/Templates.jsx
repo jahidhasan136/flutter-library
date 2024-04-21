@@ -41,7 +41,7 @@ const Templates = () => {
   return (
     <div>
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl text-textPrimary leading-[31.2px]">
+        <h2 className="text-2xl text-textPrimary leading-[31.2px] dark:text-secondary">
           Templates
         </h2>
         <Link

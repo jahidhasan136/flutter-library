@@ -42,11 +42,11 @@ body {
 
 /* buttons start */
 .btn_primary_a {
-  @apply px-4 py-[14px] rounded-2xl font-semibold bg-primary text-white text-h5;
+  @apply px-4 py-[14px] rounded-2xl font-semibold bg-primary text-white text-h5 dark:bg-bgSecondary dark:text-dark;
 }
 
 .btn_primary_s {
-  @apply px-4 py-[14px] border border-secondary rounded-2xl font-semibold text-h5 text-textPrimary hover:bg-bgSecondary transition-all duration-300;
+  @apply px-4 py-[14px] border border-secondary rounded-2xl font-semibold text-h5 text-textPrimary hover:bg-bgSecondary transition-all duration-300 dark:text-secondary dark:hover:text-textPrimary;
 }
 .btn_primary_d {
   @apply px-4 py-2 rounded-[20px] border border-secondary text-textPrimary hover:bg-bgSecondary transition-all duration-300;
@@ -64,8 +64,8 @@ body {
 }
 
 .active {
-  @apply bg-bgSecondary text-textPrimary;
+  @apply bg-bgSecondary text-textPrimary dark:bg-darkSecondary dark:text-secondary;
 }
 .inactive {
-  @apply hover:bg-bgSecondary hover:text-textPrimary transition-all duration-300;
+  @apply hover:bg-bgSecondary hover:text-textPrimary transition-all duration-300 dark:hover:bg-darkSecondary dark:hover:text-secondary;
 }

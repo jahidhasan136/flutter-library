@@ -6,7 +6,7 @@ import Hero from './Hero';
 
 const Home = () => {
   return (
-    <div className="grid gap-10 dark:bg-dark">
+    <div className="grid gap-10 ">
       <Hero />
       <Templates />
       <Articles />

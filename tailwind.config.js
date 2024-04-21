@@ -10,6 +10,7 @@ export default {
         textPrimary: '#111',
         textSecondary: '#989898',
         bgSecondary: '#F5F5F5',
+        darkSecondary: '#2E2E2E',
         dark: '#111',
         light: '#fff',
       },

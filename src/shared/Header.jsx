@@ -115,7 +115,7 @@ const Header = () => {
     <div
       ref={outSideModeRef}
       className={`${
-        navState ? 'bg-white py-3' : 'bg-transparent'
+        navState ? 'bg-white py-3 dark:bg-dark' : 'bg-transparent'
       } flex justify-between items-center sticky top-0 z-20 duration-300`}
     >
       <div className="relative">
@@ -123,7 +123,7 @@ const Header = () => {
         <input
           onClick={() => document.getElementById('my_modal_3').showModal()}
           className="py-[14px] pl-11
-           pr-5 w-[400px] rounded-full bg-bgSecondary text-textPrimary outline-none"
+           pr-5 w-[400px] rounded-full bg-bgSecondary text-textPrimary outline-none dark:bg-darkSecondary"
           type="text"
           placeholder="Search...."
         />

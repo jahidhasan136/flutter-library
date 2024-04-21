@@ -12,12 +12,12 @@ const ArticlesCard = () => {
           <h6 className="text-h6">Mar 24, 2024</h6>
           <h6 className="text-h6">Animation</h6>
         </div>
-        <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px]">
+        <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px] dark:text-secondary">
           Learn flutter animation
         </h2>
         <p className="mt-2 text-textSecondary text-h6">
           Lately, more Flutter developers have been running Dart on the server.
-          And it’s no wonder: who doesn’t like using...
+          And it&apos;s no wonder: who doesn&apos;t like using...
         </p>
       </Link>
       <Link to="/article-details">
@@ -26,12 +26,12 @@ const ArticlesCard = () => {
           <h6 className="text-h6">Mar 24, 2024</h6>
           <h6 className="text-h6">Animation</h6>
         </div>
-        <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px]">
+        <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px] dark:text-secondary">
           Onboarding Screen with Carousel & Animated Dots
         </h2>
         <p className="mt-2 text-textSecondary text-h6">
           Lately, more Flutter developers have been running Dart on the server.
-          And it’s no wonder: who doesn’t like using...
+          And it&apos;s no wonder: who doesn&apos;t like using...
         </p>
       </Link>
       <Link to="/article-details">
@@ -40,12 +40,12 @@ const ArticlesCard = () => {
           <h3 className="text-h6">Mar 24, 2024</h3>
           <h3 className="text-h6">Animation</h3>
         </div>
-        <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px]">
+        <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px] dark:text-secondary">
           Parallax Scroll Effect with PageView in Flutter
         </h2>
         <p className="mt-2 text-textSecondary text-h6">
           Lately, more Flutter developers have been running Dart on the server.
-          And it’s no wonder: who doesn’t like using...
+          And it&apos;s no wonder: who doesn&apos;t like using...
         </p>
       </Link>
     </>

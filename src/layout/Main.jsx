@@ -5,7 +5,7 @@ import Footer from '../shared/Footer';
 
 const Main = () => {
   return (
-    <>
+    <div className=" dark:bg-dark">
       <div className="flex">
         <div className="w-[200px]">
           <SideMenu />
@@ -18,7 +18,7 @@ const Main = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

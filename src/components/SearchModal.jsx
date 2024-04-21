@@ -14,7 +14,7 @@ const SearchModal = ({
 }) => {
   return (
     <dialog id="my_modal_3" className="modal">
-      <div className="modal-box max-w-screen-xl">
+      <div className="modal-box max-w-screen-xl dark:bg-dark">
         <form
           method="dialog"
           className="flex items-center justify-between mb-5"
@@ -28,7 +28,7 @@ const SearchModal = ({
               />
               <input
                 className="py-[14px] pl-11
-           pr-5 w-[400px] rounded-full bg-bgSecondary text-textPrimary outline-none"
+           pr-5 w-[400px] rounded-full bg-bgSecondary text-textPrimary outline-none dark:bg-darkSecondary"
                 type="text"
                 placeholder="Search...."
               />
@@ -36,17 +36,17 @@ const SearchModal = ({
 
             {/* Filter sections */}
             <div className="flex gap-2 items-center">
-              <button className="flex gap-2 items-center px-4 py-2 bg-bgSecondary rounded-full mr-4">
+              <button className="flex gap-2 items-center px-4 py-2 bg-bgSecondary rounded-full mr-4 dark:border dark:border-darkSecondary dark:bg-transparent dark:text-secondary">
                 <img src={filterIcon} alt="" />
                 <p className="text-h6 leading-[18.2px]">Filters</p>
               </button>
-              <div className="border-secondary border-r-2 py-4 mr-4"></div>
+              <div className="border-secondary dark:border-darkSecondary border-r-2 py-4 mr-4"></div>
               <div className="button-container flex gap-2 items-center overflow-x-auto">
                 {visibleButtons.map((button, index) => (
                   <button
                     key={index}
-                    className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-textPrimary rounded-full hover:text-white transition-all duration-300"
-                    onMouseOver={(e) => e.stopPropagation()} // Prevent scrolling on button hover
+                    className="text-h6 px-4 py-2 border border-secondary hover:bg-secondary text-textPrimary rounded-full transition-all duration-300 dark:border-darkSecondary dark:text-secondary dark:hover:text-textPrimary"
+                    onMouseOver={(e) => e.stopPropagation()}
                   >
                     {button}
                   </button>
@@ -63,9 +63,11 @@ const SearchModal = ({
             <img src={closeIcon} alt="" />
           </button>
         </form>
-        <Templates />
-        <Articles />
-        {/* <Screens /> */}
+        <div className="grid gap-10">
+          <Templates />
+          <Articles />
+          {/* <Screens /> */}
+        </div>
       </div>
     </dialog>
   );

@@ -48,7 +48,7 @@ const Screens = () => {
       </div>
       {/* Filter sections */}
       <div className="flex gap-2 items-center mb-4">
-        <button className="flex gap-2 items-center px-4 py-2 bg-bgSecondary rounded-full mr-4">
+        <button className="flex gap-2 items-center px-4 py-2 bg-bgSecondary rounded-full mr-4 dark:border dark:border-darkSecondary dark:bg-black dark:text-secondary">
           <img src={filterIcon} alt="" />
           <p className="text-h6 leading-[18.2px]">Filters</p>
         </button>
@@ -57,7 +57,7 @@ const Screens = () => {
           {visibleButtons.map((button, index) => (
             <button
               key={index}
-              className="text-h6 px-4 py-2 border border-secondary hover:bg-secondary text-textPrimary rounded-full transition-all duration-300"
+              className="text-h6 px-4 py-2 border border-secondary hover:bg-secondary text-textPrimary rounded-full transition-all duration-300 dark:text-secondary dark:border-darkSecondary"
               onMouseOver={(e) => e.stopPropagation()} // Prevent scrolling on button hover
             >
               {button}
