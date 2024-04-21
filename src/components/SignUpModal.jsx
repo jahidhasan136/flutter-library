@@ -18,7 +18,7 @@ const SignUpModal = ({ isOpen, onClose }) => {
   };
   return (
     <dialog id="signUpModal" className={`modal ${isOpen ? 'open' : ''}`}>
-      <div className="modal-box grid gap-5 dark:bg-dark dark:border dark:border-darkSecondary">
+      <div className="modal-box grid gap-5 dark:bg-dark dark:border dark:border-darkSecondary w-[361px] md:w-full">
         <div className="grid gap-5">
           <div className="flex justify-between items-center">
             <div></div>

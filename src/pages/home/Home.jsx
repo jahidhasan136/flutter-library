@@ -7,7 +7,7 @@ import Hero from './Hero';
 const Home = () => {
   return (
     <div className="grid gap-10 ">
-      {/* <Hero /> */}
+      <Hero />
       <Templates />
       <Articles />
       <Screens />

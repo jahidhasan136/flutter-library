@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="text-center">
+    <div className="text-center hidden md:grid">
       <h1 className="text-h1 leading-[52px] text-textPrimary mb-2 dark:text-secondary">
         Build your next App <br /> even faster!
       </h1>

@@ -11,7 +11,10 @@ const Templates = () => {
   const buttonsPerClick = 10;
   // home page filter option hide
   const location = useLocation();
-  const hideFilter = location.pathname === '/';
+  const hideFilter =
+    location.pathname === '/' ||
+    location.pathname === '/login' ||
+    location.pathname === '/signup';
 
   const buttons = [
     'All',

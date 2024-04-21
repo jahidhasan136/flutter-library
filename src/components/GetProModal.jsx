@@ -7,7 +7,7 @@ import closeIcon from '../assets/icons/closeIcon.svg';
 const GetProModal = ({ isOpen, onClose }) => {
   return (
     <dialog id="getProModal" className={`modal ${isOpen ? 'open' : ''}`}>
-      <div className="modal-box grid gap-5 max-w-[708px] dark:bg-dark dark:border dark:border-darkSecondary">
+      <div className="modal-box grid gap-5 max-w-[708px] dark:bg-dark dark:border dark:border-darkSecondary w-[361px] md:w-full">
         <div className="grid gap-5">
           <div className="flex justify-between items-center">
             <div></div>
@@ -23,7 +23,7 @@ const GetProModal = ({ isOpen, onClose }) => {
             Upgrade to access the full library.
           </h3>
         </div>
-        <div className="flex gap-4">
+        <div className="grid md:flex gap-4">
           <div className="w-full border border-secondary p-4 rounded-lg grid gap-4 dark:text-secondary dark:border-darkSecondary">
             <h5 className="text-h5 font-semibold text-textPrimary dark:text-secondary">
               Monthly
