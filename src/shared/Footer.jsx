@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-b-[1px] my-4 bg-bgSecondary dark:bg-darkSecondary"></div>
+      <div className="border-b-[1px] my-4 bg-bgSecondary dark:bg-darkSecondary hidden md:flex"></div>
       <div className="text-textSecondary hidden md:flex justify-between text-sm leading-[18.2px]">
         <p>Copyright 2024 Jahid Hasan. All rights reserved</p>
         <div className="flex gap-2">

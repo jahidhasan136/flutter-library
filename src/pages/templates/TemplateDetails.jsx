@@ -44,12 +44,12 @@ const TemplateDetails = () => {
           </Link>
           <h6 className="capitalize text-h6 text-textSecondary">Templates</h6>
         </div>
-        <div className="flex items-center justify-between w-full">
+        <div className="grid gap-4 md:gap-0 md:flex items-center justify-between w-full">
           <div>
             <h3 className="capitalize text-h3 text-textPrimary mb-2 dark:text-secondary">
               Chat App Template
             </h3>
-            <p className="text-textSecondary text-h5 w-2/3">
+            <p className="text-textSecondary text-h5 lg:w-2/3">
               Need a boost in your app design? Grab a free Flutter UI kit! These
               handy Flutter UI libraries offer a variety of pre-designed
               templates, making it easy for you to create stunning apps. The
@@ -57,16 +57,18 @@ const TemplateDetails = () => {
             </p>
           </div>
           <div className="flex flex-shrink-0 items-start gap-4">
-            <button className="btn_primary_s flex items-center gap-2">
+            <button className="btn_primary_s flex items-center gap-2 w-full">
               <img src={eyeIcon} alt="" />
               Preview
             </button>
-            <button className="btn_primary_a text-nowrap">Get Code</button>
+            <button className="btn_primary_a text-nowrap w-full">
+              Get Code
+            </button>
           </div>
         </div>
 
         {/* slider cards */}
-        <div className="grid md:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           <div className="relative flex justify-center overflow-hidden group rounded-2xl">
             <img
               className="rounded-2xl border border-secondary"
@@ -201,12 +203,30 @@ const TemplateDetails = () => {
                 )}
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* right side revenue cat content for mobile devices */}
+        <div className="lg:hidden border border-secondary rounded-2xl w-full md:w-1/2">
+          <div className="flex justify-end">
+            <p className="capitalize text-h7 font-medium px-2 py-1 text-textSecondary inline-block border border-t-0 border-r-0 rounded-lg">
+              Sponsored
+            </p>
+          </div>
+          <div className="grid gap-2 p-4">
+            <img src={revenueIcon} alt="" />
+            <p className="text-h6 text-black dark:text-textSecondary">
+              Libriwi is a plugin for Figma that lets you easily created and
+              share Figma groups, layouts and components with a single click of
+              the button.
+            </p>
+            <button className="btn_primary_a ml-auto">Learn more</button>
           </div>
         </div>
 
         <div className="flex gap-5 items-start w-full">
           {/* overview */}
-          <div className="grid gap-4 w-4/5">
+          <div className="grid gap-4 lg:w-4/5">
             <h3 className="capitalize text-h3 text-textPrimary dark:text-secondary">
               overview
             </h3>
@@ -238,8 +258,8 @@ const TemplateDetails = () => {
             </p>
           </div>
 
-          {/* right side revenue cat content */}
-          <div className="border border-secondary rounded-2xl w-1/5">
+          {/* right side revenue cat content desktop or laptop devices */}
+          <div className="hidden lg:grid border border-secondary rounded-2xl w-1/5">
             <div className="flex justify-end">
               <p className="capitalize text-h7 font-medium px-2 py-1 text-textSecondary inline-block border border-t-0 border-r-0 rounded-lg">
                 Sponsored
@@ -268,7 +288,7 @@ const TemplateDetails = () => {
         </div>
 
         {/* you may like cards */}
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
           <div className="grid gap-2">
             <img
               className="rounded-lg w-full object-cover"
