@@ -19,19 +19,24 @@ const SearchModal = ({
           method="dialog"
           className="flex items-center justify-between mb-5"
         >
-          <div className="flex items-center gap-5">
-            <div className="relative">
-              <img
-                className="absolute top-1/3 left-5"
-                src={searchIcon}
-                alt=""
-              />
-              <input
-                className="py-[14px] pl-11
+          <div className="grid lg:flex items-center gap-5 w-full">
+            <div className="flex items-center justify-between">
+              <div className="relative">
+                <img
+                  className="absolute top-1/3 left-5"
+                  src={searchIcon}
+                  alt=""
+                />
+                <input
+                  className="py-[14px] pl-11
            pr-5 w-[400px] rounded-full bg-bgSecondary text-textPrimary outline-none dark:bg-darkSecondary"
-                type="text"
-                placeholder="Search...."
-              />
+                  type="text"
+                  placeholder="Search...."
+                />
+              </div>
+              <button className="grid lg:hidden">
+                <img src={closeIcon} alt="" />
+              </button>
             </div>
 
             {/* Filter sections */}
@@ -59,7 +64,7 @@ const SearchModal = ({
               </div>
             </div>
           </div>
-          <button>
+          <button className="hidden lg:grid">
             <img src={closeIcon} alt="" />
           </button>
         </form>
