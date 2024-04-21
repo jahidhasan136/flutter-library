@@ -159,7 +159,7 @@ const Header = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          {/* mode section */}
+          {/* mode section laptop or desktop devices */}
           <div className="relative">
             <img
               onClick={() => setMode(!mode)}
@@ -194,12 +194,13 @@ const Header = () => {
       </div>
 
       {/* mobile devices */}
-      <div className="md:hidden">
+      <div className="md:hidden" ref={outSideModeRef}>
         <div className="flex items-center justify-between">
           <Link to="/">
             <img src={logo} alt="" />
           </Link>
           <div className="flex items-center gap-4">
+            {/* mode section */}
             <div className="relative">
               <img
                 onClick={() => setMode(!mode)}
