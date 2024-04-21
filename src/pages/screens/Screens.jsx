@@ -47,7 +47,7 @@ const Screens = () => {
         </Link>
       </div>
       {/* Filter sections */}
-      <div className="flex gap-2 items-center mb-4">
+      {/* <div className="flex gap-2 items-center mb-4">
         <button className="flex gap-2 items-center px-4 py-2 bg-bgSecondary rounded-full mr-4 dark:border dark:border-darkSecondary dark:bg-black dark:text-secondary">
           <img src={filterIcon} alt="" />
           <p className="text-h6 leading-[18.2px]">Filters</p>
@@ -69,10 +69,10 @@ const Screens = () => {
             </button>
           )}
         </div>
-      </div>
+      </div> */}
 
       {/* screens card sections */}
-      <div className="grid md:grid-cols-5 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 w-full">
         <ScreensCard />
       </div>
     </div>

@@ -6,18 +6,16 @@ import Footer from '../shared/Footer';
 const Main = () => {
   return (
     <div className=" dark:bg-dark">
-      <div className="flex">
-        <div className="w-[200px]">
-          <SideMenu />
-        </div>
+      <div className="md:flex">
+        <div className="w-[200px]">{/* <SideMenu /> */}</div>
         <div className="px-4 pt-4 pb-5 w-full">
-          <Header />
+          {/* <Header /> */}
           <div className="mt-10">
             <Outlet />
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

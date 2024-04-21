@@ -34,7 +34,7 @@ const ScreensCard = () => {
 
   return (
     <>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl w-[220px] min-w-[160px] max-w-[260px]">
+      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -59,7 +59,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl w-[220px] min-w-[160px] max-w-[260px]">
+      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -84,7 +84,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl w-[220px] min-w-[160px] max-w-[260px]">
+      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -109,7 +109,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl w-[220px] min-w-[160px] max-w-[260px]">
+      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -134,7 +134,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl w-[220px] min-w-[160px] max-w-[260px]">
+      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -159,7 +159,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl w-[220px] min-w-[160px] max-w-[260px]">
+      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -184,7 +184,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl w-[220px] min-w-[160px] max-w-[260px]">
+      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -209,7 +209,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl w-[220px] min-w-[160px] max-w-[260px]">
+      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -234,7 +234,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl w-[220px] min-w-[160px] max-w-[260px]">
+      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -259,7 +259,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl w-[220px] min-w-[160px] max-w-[260px]">
+      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
