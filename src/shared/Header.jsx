@@ -149,13 +149,6 @@ const Header = () => {
             type="text"
             placeholder="Search...."
           />
-          {/* input search filed  modal */}
-          <SearchModal
-            currentButton={currentButton}
-            totalPages={totalPages}
-            handleNext={handleNext}
-            visibleButtons={visibleButtons}
-          />
         </div>
 
         <div className="flex items-center gap-4">
@@ -181,14 +174,10 @@ const Header = () => {
           <Link to="/login" onClick={openLoginModal} className="btn_primary_s">
             Log in
           </Link>
-          {/* login modal */}
-          <LoginModal isOpen={isLoginModal} onClose={closeLoginModal} />
-
           <div>
             <button onClick={openProModal} className="btn_primary_a">
               Get Pro
             </button>
-            <GetProModal isOpen={isProModal} onClose={closeProModal} />
           </div>
           {/* user sections */}
           <div className="relative">
@@ -206,8 +195,6 @@ const Header = () => {
                 />
               </svg>
             </button>
-            {/* user modal */}
-            <UserModal user={user} />
           </div>
         </div>
       </div>
@@ -241,13 +228,16 @@ const Header = () => {
             <img onClick={handleClick} src={barIcon} alt="" />
           </div>
         </div>
-        <input
-          // onClick={() => document.getElementById('my_modal_3').showModal()}
-          className="py-[14px] pl-11
-           pr-5 w-full rounded-full bg-bgSecondary text-textPrimary outline-none dark:bg-darkSecondary mt-4"
-          type="text"
-          placeholder="Search...."
-        />
+        <div className="relative mt-4">
+          <img className="absolute top-1/3 left-5" src={searchIcon} alt="" />
+          <input
+            onClick={() => document.getElementById('my_modal_3').showModal()}
+            className="py-[14px] pl-11
+           pr-5 w-full rounded-full bg-bgSecondary text-textPrimary outline-none dark:bg-darkSecondary"
+            type="text"
+            placeholder="Search...."
+          />
+        </div>
       </div>
 
       {/* mobile device slider */}
@@ -269,14 +259,11 @@ const Header = () => {
             >
               Log in
             </Link>
-            {/* login modal */}
-            <LoginModal isOpen={isLoginModal} onClose={closeLoginModal} />
           </div>
           <div>
             <button onClick={openProModal} className="btn_primary_a">
               Get Pro
             </button>
-            <GetProModal isOpen={isProModal} onClose={closeProModal} />
           </div>
         </div>
 
@@ -373,6 +360,19 @@ const Header = () => {
           </div>
         </div>
       </div>
+
+      {/* input search filed  modal */}
+      <SearchModal
+        currentButton={currentButton}
+        totalPages={totalPages}
+        handleNext={handleNext}
+        visibleButtons={visibleButtons}
+      />
+      {/* login modal */}
+      <LoginModal isOpen={isLoginModal} onClose={closeLoginModal} />
+      <GetProModal isOpen={isProModal} onClose={closeProModal} />
+      {/* user modal */}
+      <UserModal user={user} />
     </>
   );
 };
