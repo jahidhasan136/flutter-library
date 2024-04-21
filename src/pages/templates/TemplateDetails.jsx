@@ -204,9 +204,9 @@ const TemplateDetails = () => {
           </div>
         </div>
 
-        {/* overview */}
-        <div className="flex gap-5 items-start">
-          <div className="grid gap-4">
+        <div className="flex gap-5 items-start w-full">
+          {/* overview */}
+          <div className="grid gap-4 w-4/5">
             <h3 className="capitalize text-h3 text-textPrimary dark:text-secondary">
               overview
             </h3>
@@ -239,7 +239,7 @@ const TemplateDetails = () => {
           </div>
 
           {/* right side revenue cat content */}
-          <div className="border border-secondary rounded-2xl">
+          <div className="border border-secondary rounded-2xl w-1/5">
             <div className="flex justify-end">
               <p className="capitalize text-h7 font-medium px-2 py-1 text-textSecondary inline-block border border-t-0 border-r-0 rounded-lg">
                 Sponsored
@@ -247,7 +247,7 @@ const TemplateDetails = () => {
             </div>
             <div className="grid gap-2 p-4">
               <img src={revenueIcon} alt="" />
-              <p className="text-h6 text-black">
+              <p className="text-h6 text-black dark:text-textSecondary">
                 Libriwi is a plugin for Figma that lets you easily created and
                 share Figma groups, layouts and components with a single click
                 of the button.

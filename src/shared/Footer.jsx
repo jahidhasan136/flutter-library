@@ -35,19 +35,19 @@ const Footer = () => {
           <h2 className="text-sm font-semibold leading-[18.2px]">Explore</h2>
           <Link
             to="/"
-            className="text-sm text-textPrimary leading-[18.2px] hover:underline"
+            className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
           >
             Blog
           </Link>
           <Link
             to="/"
-            className="text-sm text-textPrimary leading-[18.2px] hover:underline"
+            className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
           >
             Templates
           </Link>
           <Link
             to="/"
-            className="text-sm text-textPrimary leading-[18.2px] hover:underline"
+            className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
           >
             Screens
           </Link>
@@ -56,25 +56,25 @@ const Footer = () => {
           <h2 className="text-sm font-semibold leading-[18.2px]">Support</h2>
           <Link
             to="/"
-            className="text-sm text-textPrimary leading-[18.2px] hover:underline"
+            className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
           >
             Pricing
           </Link>
           <Link
             to="/"
-            className="text-sm text-textPrimary leading-[18.2px] hover:underline"
+            className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
           >
             Become a sponsore
           </Link>
           <Link
             to="/"
-            className="text-sm text-textPrimary leading-[18.2px] hover:underline"
+            className="text-sm text-textPrimary leading-[18.2px] hover:underline dark:text-secondary"
           >
             Hire top Flutter Devs
           </Link>
         </div>
       </div>
-      <hr className="my-4 bg-bgSecondary" />
+      <div className="border-b-[1px] my-4 bg-bgSecondary dark:bg-darkSecondary"></div>
       <div className="text-textSecondary flex justify-between text-sm leading-[18.2px]">
         <p>Copyright 2024 Jahid Hasan. All rights reserved</p>
         <div className="flex gap-2">
