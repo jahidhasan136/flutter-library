@@ -46,7 +46,7 @@ const TemplateDetails = () => {
         </div>
         <div className="flex items-center justify-between w-full">
           <div>
-            <h3 className="capitalize text-h3 text-textPrimary mb-2 ">
+            <h3 className="capitalize text-h3 text-textPrimary mb-2 dark:text-secondary">
               Chat App Template
             </h3>
             <p className="text-textSecondary text-h5 w-2/3">
@@ -207,7 +207,9 @@ const TemplateDetails = () => {
         {/* overview */}
         <div className="flex gap-5 items-start">
           <div className="grid gap-4">
-            <h3 className="capitalize text-h3 text-textPrimary">overview</h3>
+            <h3 className="capitalize text-h3 text-textPrimary dark:text-secondary">
+              overview
+            </h3>
             <p className="text-textSecondary">
               Need a boost in your app design? Grab a free Flutter UI kit! These
               handy Flutter UI libraries offer a variety of pre-designed
@@ -221,7 +223,7 @@ const TemplateDetails = () => {
               templates, making it easy for you to create stunning apps. The
               best part you can download beautiful.
             </p>
-            <h3 className="capitalize text-textPrimary text-h3">
+            <h3 className="capitalize text-textPrimary text-h3 dark:text-secondary">
               Build you shop app in days
             </h3>
             <p className="text-textSecondary">
@@ -259,7 +261,7 @@ const TemplateDetails = () => {
       {/* you may like */}
       <div className="grid gap-4">
         <div className="flex justify-between items-center">
-          <h3 className="text-h3 text-textPrimary capitalize">
+          <h3 className="text-h3 text-textPrimary capitalize dark:text-secondary">
             You may also like...
           </h3>
           <p className="text-h7 text-textSecondary">See all</p>
@@ -274,17 +276,21 @@ const TemplateDetails = () => {
               alt=""
             />
             <div className="flex justify-between">
-              <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
+              <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
                 Foodly Restaurent App template
               </h2>
               <div className="flex gap-2 items-center">
                 <div className="flex gap-1 items-center">
                   <img src={phoneIcon} alt="" />
-                  <p className="text-sm leading-[18.2px]">28</p>
+                  <p className="text-sm leading-[18.2px] dark:text-secondary">
+                    28
+                  </p>
                 </div>
                 <div className="flex gap-1 items-center">
                   <img src={downloadIcon} alt="" />
-                  <p className="text-sm leading-[18.2px]">546</p>
+                  <p className="text-sm leading-[18.2px] dark:text-secondary">
+                    546
+                  </p>
                 </div>
               </div>
             </div>
@@ -296,17 +302,21 @@ const TemplateDetails = () => {
               alt=""
             />
             <div className="flex justify-between">
-              <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
+              <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
                 Flutter animation template
               </h2>
               <div className="flex gap-2 items-center">
                 <div className="flex gap-1 items-center">
                   <img src={phoneIcon} alt="" />
-                  <p className="text-sm leading-[18.2px]">28</p>
+                  <p className="text-sm leading-[18.2px] dark:text-secondary">
+                    28
+                  </p>
                 </div>
                 <div className="flex gap-1 items-center">
                   <img src={downloadIcon} alt="" />
-                  <p className="text-sm leading-[18.2px]">546</p>
+                  <p className="text-sm leading-[18.2px] dark:text-secondary">
+                    546
+                  </p>
                 </div>
               </div>
             </div>
@@ -318,17 +328,21 @@ const TemplateDetails = () => {
               alt=""
             />
             <div className="flex justify-between">
-              <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
+              <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
                 Flutter animation template
               </h2>
               <div className="flex gap-2 items-center">
                 <div className="flex gap-1 items-center">
                   <img src={phoneIcon} alt="" />
-                  <p className="text-sm leading-[18.2px]">28</p>
+                  <p className="text-sm leading-[18.2px] dark:text-secondary">
+                    28
+                  </p>
                 </div>
                 <div className="flex gap-1 items-center">
                   <img src={downloadIcon} alt="" />
-                  <p className="text-sm leading-[18.2px]">546</p>
+                  <p className="text-sm leading-[18.2px] dark:text-secondary">
+                    546
+                  </p>
                 </div>
               </div>
             </div>
