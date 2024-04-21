@@ -60,7 +60,7 @@ const Articles = () => {
               {visibleButtons.map((button, index) => (
                 <button
                   key={index}
-                  className="text-h6 px-4 py-2 border border-secondary hover:bg-primary text-textPrimary rounded-full hover:text-white transition-all duration-300"
+                  className="text-h6 px-4 py-2 border border-secondary hover:bg-secondary text-textPrimary rounded-full transition-all duration-300"
                   onMouseOver={(e) => e.stopPropagation()} // Prevent scrolling on button hover
                 >
                   {button}
