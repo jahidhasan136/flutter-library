@@ -40,7 +40,7 @@ const Screens = () => {
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-h3 text-textPrimary leading-[31.2px]">Screens</h3>
         <Link
-          to="/template-details"
+          to="/screens"
           className="text-textSecondary text-xs hover:underline"
         >
           See all
