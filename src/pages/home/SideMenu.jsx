@@ -10,7 +10,7 @@ import ActiveLink from '../../components/ActiveLink';
 
 const SideMenu = () => {
   return (
-    <div className="border-r-[1px] border-secondary dark:border-darkSecondary">
+    <div className="hidden md:grid border-r-[1px] border-secondary dark:border-darkSecondary">
       <Link to="/">
         <img className="px-4 pt-7 pb-8" src={logo} alt="" />
       </Link>

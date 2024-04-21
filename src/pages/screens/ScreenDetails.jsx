@@ -25,7 +25,7 @@ const ScreenDetails = ({ copied, handleCopyTextChange, handleCopyText }) => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <div className="p-5 w-[539px] min-h-full bg-white dark:bg-dark grid gap-4 items-center">
+        <div className="p-5 w-full md:w-[539px] min-h-full bg-white dark:bg-dark grid gap-4 items-center">
           <div className="flex items-center justify-between">
             <h3 className="text-h3 dark:text-secondary">Sign in page</h3>
             <img
@@ -35,7 +35,7 @@ const ScreenDetails = ({ copied, handleCopyTextChange, handleCopyText }) => {
               alt=""
             />
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-0 justify-between md:gap-4 md:justify-normal">
             <button className="btn_primary_a">Copy code</button>
             <button className="btn_primary_s">Copy link</button>
             <div className="relative">

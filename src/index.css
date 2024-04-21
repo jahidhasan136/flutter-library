@@ -69,3 +69,7 @@ body {
 .inactive {
   @apply hover:bg-bgSecondary hover:text-textPrimary transition-all duration-300 dark:hover:bg-darkSecondary dark:hover:text-secondary;
 }
+
+.offcanvas.active {
+  right: 0;
+}
