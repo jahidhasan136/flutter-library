@@ -13,7 +13,7 @@ import templateSix from '../assets/templates/template-6.png';
 const TemplatesCard = () => {
   return (
     <>
-      <Link to="/article-details" className="grid gap-2">
+      <Link to="/template-details" className="grid gap-2">
         <img
           className="rounded-lg w-full object-cover"
           src={templateOne}
@@ -35,7 +35,7 @@ const TemplatesCard = () => {
           </div>
         </div>
       </Link>
-      <Link to="/article-details" className="grid gap-2">
+      <Link to="/template-details" className="grid gap-2">
         <img
           className="rounded-lg w-full object-cover"
           src={templateTwo}
@@ -57,7 +57,7 @@ const TemplatesCard = () => {
           </div>
         </div>
       </Link>
-      <Link to="/article-details" className="grid gap-2">
+      <Link to="/template-details" className="grid gap-2">
         <img
           className="rounded-lg w-full object-cover"
           src={templateThree}
@@ -79,7 +79,7 @@ const TemplatesCard = () => {
           </div>
         </div>
       </Link>
-      <Link to="/article-details" className="grid gap-2">
+      <Link to="/template-details" className="grid gap-2">
         <img
           className="rounded-lg w-full object-cover"
           src={templateFour}
@@ -101,7 +101,7 @@ const TemplatesCard = () => {
           </div>
         </div>
       </Link>
-      <Link to="/article-details" className="grid gap-2">
+      <Link to="/template-details" className="grid gap-2">
         <img
           className="rounded-lg w-full object-cover"
           src={templateFive}
@@ -123,7 +123,7 @@ const TemplatesCard = () => {
           </div>
         </div>
       </Link>
-      <Link to="/article-details" className="grid gap-2">
+      <Link to="/template-details" className="grid gap-2">
         <img
           className="rounded-lg w-full object-cover"
           src={templateSix}

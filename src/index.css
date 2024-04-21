@@ -48,6 +48,9 @@ body {
 .btn_primary_s {
   @apply px-4 py-[14px] border border-secondary rounded-2xl font-semibold text-h5 text-textPrimary hover:bg-bgSecondary transition-all duration-300;
 }
+.btn_primary_d {
+  @apply px-4 py-2 rounded-[20px] border border-secondary text-textPrimary hover:bg-bgSecondary transition-all duration-300;
+}
 /* buttons end */
 
 .bg-screens {

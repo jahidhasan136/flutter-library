@@ -3,6 +3,7 @@ import { FaFacebookSquare, FaInstagram } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
 import logo from '../assets/logo.svg';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -32,19 +33,45 @@ const Footer = () => {
         </div>
         <div className="grid gap-[10px]">
           <h2 className="text-sm font-semibold leading-[18.2px]">Explore</h2>
-          <p className="text-sm text-textPrimary leading-[18.2px]">Blog</p>
-          <p className="text-sm text-textPrimary leading-[18.2px]">Templates</p>
-          <p className="text-sm text-textPrimary leading-[18.2px]">Screens</p>
+          <Link
+            to="/"
+            className="text-sm text-textPrimary leading-[18.2px] hover:underline"
+          >
+            Blog
+          </Link>
+          <Link
+            to="/"
+            className="text-sm text-textPrimary leading-[18.2px] hover:underline"
+          >
+            Templates
+          </Link>
+          <Link
+            to="/"
+            className="text-sm text-textPrimary leading-[18.2px] hover:underline"
+          >
+            Screens
+          </Link>
         </div>
         <div className="grid gap-[10px]">
           <h2 className="text-sm font-semibold leading-[18.2px]">Support</h2>
-          <p className="text-sm text-textPrimary leading-[18.2px]">Pricing</p>
-          <p className="text-sm text-textPrimary leading-[18.2px]">
+          <Link
+            to="/"
+            className="text-sm text-textPrimary leading-[18.2px] hover:underline"
+          >
+            Pricing
+          </Link>
+          <Link
+            to="/"
+            className="text-sm text-textPrimary leading-[18.2px] hover:underline"
+          >
             Become a sponsore
-          </p>
-          <p className="text-sm text-textPrimary leading-[18.2px]">
+          </Link>
+          <Link
+            to="/"
+            className="text-sm text-textPrimary leading-[18.2px] hover:underline"
+          >
             Hire top Flutter Devs
-          </p>
+          </Link>
         </div>
       </div>
       <hr className="my-4 bg-bgSecondary" />

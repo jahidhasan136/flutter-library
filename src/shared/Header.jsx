@@ -19,6 +19,7 @@ const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const outSideModeRef = useRef(null);
+  const [navState, setNavState] = useState(false);
 
   // when i cick outside of card mode card are invisible
   const handleClickOutside = (event) => {
@@ -98,10 +99,24 @@ const Header = () => {
     }
   };
 
+  const onNavScroll = () => {
+    if (window.scrollY > 100) {
+      setNavState(true);
+    } else {
+      setNavState(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', onNavScroll);
+  }, []);
+
   return (
     <div
       ref={outSideModeRef}
-      className="flex justify-between items-center sticky top-0 z-20"
+      className={`${
+        navState ? 'bg-white py-3' : 'bg-transparent'
+      } flex justify-between items-center sticky top-0 z-20 duration-300`}
     >
       <div className="relative">
         <img className="absolute top-1/3 left-5" src={searchIcon} alt="" />

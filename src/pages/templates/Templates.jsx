@@ -44,7 +44,10 @@ const Templates = () => {
         <h2 className="text-2xl text-textPrimary leading-[31.2px]">
           Templates
         </h2>
-        <Link to="/templates" className="text-textSecondary text-xs">
+        <Link
+          to="/templates"
+          className="text-textSecondary text-xs hover:underline"
+        >
           See all
         </Link>
       </div>

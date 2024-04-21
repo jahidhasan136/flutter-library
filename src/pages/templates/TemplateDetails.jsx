@@ -7,6 +7,7 @@ import copyIcon from '../../assets/icons/copy.svg';
 import revenueIcon from '../../assets/icons/revenueIcon.svg';
 import downloadIcon from '../../assets/icons/downloadIcon.svg';
 import phoneIcon from '../../assets/icons/phoneIcon.svg';
+import eyeIcon from '../../assets/icons/eyeIcon.svg';
 // images
 import templateOne from '../../assets/templates/template-1.png';
 import templateTwo from '../../assets/templates/template-2.png';
@@ -55,8 +56,11 @@ const TemplateDetails = () => {
               best part you can download beautiful.
             </p>
           </div>
-          <div className="flex items-start gap-4">
-            <button className="btn_primary_s">Preview</button>
+          <div className="flex flex-shrink-0 items-start gap-4">
+            <button className="btn_primary_s flex items-center gap-2">
+              <img src={eyeIcon} alt="" />
+              Preview
+            </button>
             <button className="btn_primary_a text-nowrap">Get Code</button>
           </div>
         </div>
