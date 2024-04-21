@@ -20,32 +20,36 @@ const ArticleDetails = () => {
         </Link>
         <h6 className="capitalize text-h6 text-textSecondary">Articles</h6>
       </div>
-      <div className="flex gap-5 items-start">
+      <div className="grid lg:flex gap-5 items-start">
         <div>
           <div className="grid gap-4">
             <h3 className="text-h3 text-textPrimary capitalize">
               Shipping A VisionOS App For Lauch
             </h3>
-            <div className="flex items-center gap-4">
-              <img src={personImg} alt="" />
-              <div>
-                <div className="flex items-center gap-2">
-                  <h6 className="text-h6 text-secondary">Abu Anwar</h6>
-                  <p className="text-h6 text-textSecondary">@abuanwar072</p>
-                </div>
-                <div className="flex gap-[10px] items-center">
-                  <p className="text-h6 text-textSecondary capitalize">
-                    March 29, 2024
-                  </p>
-                  <div className="bg-[#D9D9D9] w-2 h-2 rounded-full"></div>
-                  <p className="text-h6 text-textSecondary capitalize">
-                    Flutter, Animation
-                  </p>
+            <div className="grid md:flex items-center gap-4">
+              <div className="flex items-center gap-4">
+                <img src={personImg} alt="" />
+                <div>
+                  <div className="flex items-center gap-2">
+                    <h6 className="text-h6 text-textPrimary">Abu Anwar</h6>
+                    <p className="text-h6 text-textSecondary">@abuanwar072</p>
+                  </div>
+                  <div className="flex gap-[10px] items-center">
+                    <p className="text-h6 text-textSecondary capitalize">
+                      March 29, 2024
+                    </p>
+                    <div className="bg-[#D9D9D9] w-2 h-2 rounded-full"></div>
+                    <p className="text-h6 text-textSecondary capitalize">
+                      Flutter, Animation
+                    </p>
+                  </div>
                 </div>
               </div>
-              <button className="flex items-center gap-2 bg-secondary px-4 py-2 rounded-[20px]">
-                <img src={codeIcon} alt="" /> Source code
-              </button>
+              <div>
+                <button className="flex items-center gap-2 bg-secondary px-4 py-2 rounded-[20px]">
+                  <img src={codeIcon} alt="" /> Source code
+                </button>
+              </div>
             </div>
             <p className="text-textSecondary">
               Need a boost in your app design? Grab a free Flutter UI kit! These
@@ -104,7 +108,7 @@ const ArticleDetails = () => {
         </div>
 
         {/* you may also like cards */}
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
           <div>
             <img className="rounded-2xl w-full" src={articleImgOne} alt="" />
             <div className="flex gap-5 pt-4 pb-2 text-textSecondary text-h6 leading-[18.2px] capitalize">
