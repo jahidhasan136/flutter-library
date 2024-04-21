@@ -30,7 +30,7 @@ const ArticleDetails = () => {
               <img src={personImg} alt="" />
               <div>
                 <div className="flex items-center gap-2">
-                  <h6 className="text-h6">Abu Anwar</h6>
+                  <h6 className="text-h6 text-secondary">Abu Anwar</h6>
                   <p className="text-h6 text-textSecondary">@abuanwar072</p>
                 </div>
                 <div className="flex gap-[10px] items-center">
@@ -63,7 +63,9 @@ const ArticleDetails = () => {
             <img src={imgOne} alt="" />
           </div>
           <div className="grid gap-4 mt-6">
-            <h3 className="text-h3">Build You Shop App in Days</h3>
+            <h3 className="text-h3 dark:text-secondary">
+              Build You Shop App in Days
+            </h3>
             <p className="text-textSecondary">
               Need a boost in your app design? Grab a free Flutter UI kit! These
               handy Flutter UI libraries offer a variety of pre-designed
@@ -82,7 +84,7 @@ const ArticleDetails = () => {
           </div>
           <div className="grid gap-2 p-4">
             <img src={revenueIcon} alt="" />
-            <p className="text-h6 text-black">
+            <p className="text-h6 text-black dark:text-textSecondary">
               Libriwi is a plugin for Figma that lets you easily created and
               share Figma groups, layouts and components with a single click of
               the button.
@@ -95,7 +97,7 @@ const ArticleDetails = () => {
       {/* you may also like */}
       <div className="mt-10 grid gap-4">
         <div className="flex justify-between items-center">
-          <h3 className="text-h3 text-textPrimary capitalize">
+          <h3 className="text-h3 text-textPrimary capitalize dark:text-secondary">
             You may also like...
           </h3>
           <p className="text-h7 text-textSecondary">See all</p>
@@ -109,7 +111,7 @@ const ArticleDetails = () => {
               <h6 className="text-h6">Mar 24, 2024</h6>
               <h6 className="text-h6">Animation</h6>
             </div>
-            <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px]">
+            <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px] dark:text-secondary">
               Learn flutter animation
             </h2>
             <p className="mt-2 text-textSecondary text-h6">
@@ -123,7 +125,7 @@ const ArticleDetails = () => {
               <h6 className="text-h6">Mar 24, 2024</h6>
               <h6 className="text-h6">Animation</h6>
             </div>
-            <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px]">
+            <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px] dark:text-secondary">
               Onboarding Screen with Carousel & Animated Dots
             </h2>
             <p className="mt-2 text-textSecondary text-h6">
@@ -137,7 +139,7 @@ const ArticleDetails = () => {
               <h3 className="text-h6">Mar 24, 2024</h3>
               <h3 className="text-h6">Animation</h3>
             </div>
-            <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px]">
+            <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px] dark:text-secondary">
               Parallax Scroll Effect with PageView in Flutter
             </h2>
             <p className="mt-2 text-textSecondary text-h6">
