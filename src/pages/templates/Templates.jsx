@@ -44,7 +44,7 @@ const Templates = () => {
         <h2 className="text-2xl text-textPrimary leading-[31.2px]">
           Templates
         </h2>
-        <Link to="/template-details" className="text-textSecondary text-xs">
+        <Link to="/templates" className="text-textSecondary text-xs">
           See all
         </Link>
       </div>
@@ -80,7 +80,10 @@ const Templates = () => {
       </div>
 
       {/* templates card section */}
-      <TemplatesCard />
+
+      <div className="grid md:grid-cols-3 gap-4">
+        <TemplatesCard />
+      </div>
     </div>
   );
 };

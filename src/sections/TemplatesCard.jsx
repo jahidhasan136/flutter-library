@@ -1,4 +1,5 @@
 // icons
+import { Link } from 'react-router-dom';
 import downloadIcon from '../assets/icons/downloadIcon.svg';
 import phoneIcon from '../assets/icons/phoneIcon.svg';
 // images
@@ -12,140 +13,138 @@ import templateSix from '../assets/templates/template-6.png';
 const TemplatesCard = () => {
   return (
     <>
-      <div className="grid md:grid-cols-3 gap-4">
-        <div className="grid gap-2">
-          <img
-            className="rounded-lg w-full object-cover"
-            src={templateOne}
-            alt=""
-          />
-          <div className="flex justify-between">
-            <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
-              Foodly Restaurent App template
-            </h2>
-            <div className="flex gap-2 items-center">
-              <div className="flex gap-1 items-center">
-                <img src={phoneIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">28</p>
-              </div>
-              <div className="flex gap-1 items-center">
-                <img src={downloadIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">546</p>
-              </div>
+      <Link to="/article-details" className="grid gap-2">
+        <img
+          className="rounded-lg w-full object-cover"
+          src={templateOne}
+          alt=""
+        />
+        <div className="flex justify-between">
+          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
+            Foodly Restaurent App template
+          </h2>
+          <div className="flex gap-2 items-center">
+            <div className="flex gap-1 items-center">
+              <img src={phoneIcon} alt="" />
+              <p className="text-sm leading-[18.2px]">28</p>
+            </div>
+            <div className="flex gap-1 items-center">
+              <img src={downloadIcon} alt="" />
+              <p className="text-sm leading-[18.2px]">546</p>
             </div>
           </div>
         </div>
-        <div className="grid gap-2">
-          <img
-            className="rounded-lg w-full object-cover"
-            src={templateTwo}
-            alt=""
-          />
-          <div className="flex justify-between">
-            <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
-              Flutter animation template
-            </h2>
-            <div className="flex gap-2 items-center">
-              <div className="flex gap-1 items-center">
-                <img src={phoneIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">28</p>
-              </div>
-              <div className="flex gap-1 items-center">
-                <img src={downloadIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">546</p>
-              </div>
+      </Link>
+      <Link to="/article-details" className="grid gap-2">
+        <img
+          className="rounded-lg w-full object-cover"
+          src={templateTwo}
+          alt=""
+        />
+        <div className="flex justify-between">
+          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
+            Flutter animation template
+          </h2>
+          <div className="flex gap-2 items-center">
+            <div className="flex gap-1 items-center">
+              <img src={phoneIcon} alt="" />
+              <p className="text-sm leading-[18.2px]">28</p>
+            </div>
+            <div className="flex gap-1 items-center">
+              <img src={downloadIcon} alt="" />
+              <p className="text-sm leading-[18.2px]">546</p>
             </div>
           </div>
         </div>
-        <div className="grid gap-2">
-          <img
-            className="rounded-lg w-full object-cover"
-            src={templateThree}
-            alt=""
-          />
-          <div className="flex justify-between">
-            <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
-              Flutter animation template
-            </h2>
-            <div className="flex gap-2 items-center">
-              <div className="flex gap-1 items-center">
-                <img src={phoneIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">28</p>
-              </div>
-              <div className="flex gap-1 items-center">
-                <img src={downloadIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">546</p>
-              </div>
+      </Link>
+      <Link to="/article-details" className="grid gap-2">
+        <img
+          className="rounded-lg w-full object-cover"
+          src={templateThree}
+          alt=""
+        />
+        <div className="flex justify-between">
+          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
+            Flutter animation template
+          </h2>
+          <div className="flex gap-2 items-center">
+            <div className="flex gap-1 items-center">
+              <img src={phoneIcon} alt="" />
+              <p className="text-sm leading-[18.2px]">28</p>
+            </div>
+            <div className="flex gap-1 items-center">
+              <img src={downloadIcon} alt="" />
+              <p className="text-sm leading-[18.2px]">546</p>
             </div>
           </div>
         </div>
-        <div className="grid gap-2">
-          <img
-            className="rounded-lg w-full object-cover"
-            src={templateFour}
-            alt=""
-          />
-          <div className="flex justify-between">
-            <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
-              Flutter animation template
-            </h2>
-            <div className="flex gap-2 items-center">
-              <div className="flex gap-1 items-center">
-                <img src={phoneIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">28</p>
-              </div>
-              <div className="flex gap-1 items-center">
-                <img src={downloadIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">546</p>
-              </div>
+      </Link>
+      <Link to="/article-details" className="grid gap-2">
+        <img
+          className="rounded-lg w-full object-cover"
+          src={templateFour}
+          alt=""
+        />
+        <div className="flex justify-between">
+          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
+            Flutter animation template
+          </h2>
+          <div className="flex gap-2 items-center">
+            <div className="flex gap-1 items-center">
+              <img src={phoneIcon} alt="" />
+              <p className="text-sm leading-[18.2px]">28</p>
+            </div>
+            <div className="flex gap-1 items-center">
+              <img src={downloadIcon} alt="" />
+              <p className="text-sm leading-[18.2px]">546</p>
             </div>
           </div>
         </div>
-        <div className="grid gap-2">
-          <img
-            className="rounded-lg w-full object-cover"
-            src={templateFive}
-            alt=""
-          />
-          <div className="flex justify-between">
-            <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
-              Flutter animation template
-            </h2>
-            <div className="flex gap-2 items-center">
-              <div className="flex gap-1 items-center">
-                <img src={phoneIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">28</p>
-              </div>
-              <div className="flex gap-1 items-center">
-                <img src={downloadIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">546</p>
-              </div>
+      </Link>
+      <Link to="/article-details" className="grid gap-2">
+        <img
+          className="rounded-lg w-full object-cover"
+          src={templateFive}
+          alt=""
+        />
+        <div className="flex justify-between">
+          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
+            Flutter animation template
+          </h2>
+          <div className="flex gap-2 items-center">
+            <div className="flex gap-1 items-center">
+              <img src={phoneIcon} alt="" />
+              <p className="text-sm leading-[18.2px]">28</p>
+            </div>
+            <div className="flex gap-1 items-center">
+              <img src={downloadIcon} alt="" />
+              <p className="text-sm leading-[18.2px]">546</p>
             </div>
           </div>
         </div>
-        <div className="grid gap-2">
-          <img
-            className="rounded-lg w-full object-cover"
-            src={templateSix}
-            alt=""
-          />
-          <div className="flex justify-between">
-            <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
-              Flutter animation template
-            </h2>
-            <div className="flex gap-2 items-center">
-              <div className="flex gap-1 items-center">
-                <img src={phoneIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">28</p>
-              </div>
-              <div className="flex gap-1 items-center">
-                <img src={downloadIcon} alt="" />
-                <p className="text-sm leading-[18.2px]">546</p>
-              </div>
+      </Link>
+      <Link to="/article-details" className="grid gap-2">
+        <img
+          className="rounded-lg w-full object-cover"
+          src={templateSix}
+          alt=""
+        />
+        <div className="flex justify-between">
+          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px]">
+            Flutter animation template
+          </h2>
+          <div className="flex gap-2 items-center">
+            <div className="flex gap-1 items-center">
+              <img src={phoneIcon} alt="" />
+              <p className="text-sm leading-[18.2px]">28</p>
+            </div>
+            <div className="flex gap-1 items-center">
+              <img src={downloadIcon} alt="" />
+              <p className="text-sm leading-[18.2px]">546</p>
             </div>
           </div>
         </div>
-      </div>
+      </Link>
     </>
   );
 };
