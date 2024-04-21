@@ -1,3 +1,4 @@
+import ModeModal from '../../components/ModeModal';
 import Articles from '../articles/Articles';
 import Screens from '../screens/Screens';
 import Templates from '../templates/Templates';
@@ -5,7 +6,7 @@ import Hero from './Hero';
 
 const Home = () => {
   return (
-    <div className="grid gap-10">
+    <div className="grid gap-10 dark:bg-dark">
       <Hero />
       <Templates />
       <Articles />
