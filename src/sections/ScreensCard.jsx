@@ -1,13 +1,9 @@
 import { useState } from 'react';
 // images
 import screenImgOne from '../assets/screens/screens-1.png';
-import templateImg from '../assets/templates/template-1.png';
 // icons
-import closeIcon from '../assets/icons/closeIcon.svg';
 import copyIcon from '../assets/icons/copy.svg';
-import barIcon from '../assets/icons/barIcon.svg';
-import collectionIcon from '../assets/icons/collections.svg';
-import downloadIcon from '../assets/icons/download2.svg';
+
 import ScreenDetails from '../pages/screens/ScreenDetails';
 
 const ScreensCard = () => {
@@ -34,7 +30,7 @@ const ScreensCard = () => {
 
   return (
     <>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+      <div className="relative flex justify-center overflow-hidden border border-secondary group rounded-2xl min-w-[160px] max-w-[260px]">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -59,7 +55,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+      <div className="relative flex justify-center overflow-hidden border border-secondary group rounded-2xl min-w-[160px] max-w-[260px]">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -84,7 +80,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+      <div className="relative flex justify-center overflow-hidden border border-secondary group rounded-2xl min-w-[160px] max-w-[260px]">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -109,7 +105,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+      <div className="relative flex justify-center overflow-hidden border border-secondary group rounded-2xl min-w-[160px] max-w-[260px]">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -134,7 +130,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+      <div className="relative flex justify-center overflow-hidden border border-secondary group rounded-2xl min-w-[160px] max-w-[260px]">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -159,7 +155,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+      <div className="relative flex justify-center overflow-hidden border border-secondary group rounded-2xl min-w-[160px] max-w-[260px]">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -184,7 +180,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+      <div className="relative flex justify-center overflow-hidden border border-secondary group rounded-2xl min-w-[160px] max-w-[260px]">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -209,7 +205,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+      <div className="relative flex justify-center overflow-hidden border border-secondary group rounded-2xl min-w-[160px] max-w-[260px]">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -234,7 +230,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+      <div className="relative flex justify-center overflow-hidden border border-secondary group rounded-2xl min-w-[160px] max-w-[260px]">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
@@ -259,7 +255,7 @@ const ScreensCard = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+      <div className="relative flex justify-center overflow-hidden border border-secondary group rounded-2xl min-w-[160px] max-w-[260px]">
         <label htmlFor="my-drawer-4">
           <img className="rounded-2xl w-full" src={screenImgOne} alt="" />
         </label>
