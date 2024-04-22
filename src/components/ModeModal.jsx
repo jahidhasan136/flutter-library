@@ -8,7 +8,7 @@ const ModeModal = ({
     <div
       className={`${
         mode ? 'grid' : 'hidden'
-      } absolute -right-4 top-12 gap-[2px] rounded-lg w-[184px] p-2 shadow-shadowMd bg-white dark:bg-[#1E1E1E] dark:text-secondary z-10`}
+      } absolute right-4 md:right-72 top-20 gap-[2px] rounded-lg w-[184px] p-2 shadow-shadowMd bg-white dark:bg-[#1E1E1E] dark:text-secondary z-10`}
     >
       {/* Light Mode Button */}
       <div

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 // icons
 import searchIcon from '../assets/icons/searchIcon.svg';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useFetcher, useLocation, useNavigate } from 'react-router-dom';
 import ModeModal from '../components/ModeModal';
 import UserModal from '../components/UserModal';
 import SearchModal from '../components/SearchModal';
@@ -24,11 +24,9 @@ const Header = () => {
   const [isProModal, setProModal] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-  // const outSideModeRef = useRef(null);
   const [navState, setNavState] = useState(false);
   const [isActive, setIsActive] = useState(false);
-  const outSideModeRefDesktop = useRef(null);
-  const outSideModeRefMobile = useRef(null);
+  const [darkMode, setDarkMode] = useState(false);
 
   const handleClick = (e) => {
     console.log('clicked', e.target);
@@ -41,22 +39,57 @@ const Header = () => {
   };
 
   // when i cick outside of card mode card are invisible
-  // useEffect(() => {
-  //   const handleClickOutside = (event) => {
-  //     // Close mobile modal when clicking outside
-  //     const insideModal = document.getElementById('mobileModal');
-  //     if (insideModal && !insideModal.contains(event.target)) {
-  //       setIsActive(false);
-  //     }
-  //   };
 
-  //   document.addEventListener('mousedown', handleClickOutside);
-  //   return () => {
-  //     document.removeEventListener('mousedown', handleClickOutside);
-  //   };
-  // }, []);
+  const modeModalRef = useRef(null);
+  const userModalRef = useRef(null);
 
-  const [darkMode, setDarkMode] = useState(false);
+  // Function to handle click outside mode modal
+  const handleClickOutsideModeModal = (event) => {
+    if (modeModalRef.current && !modeModalRef.current.contains(event.target)) {
+      setMode(false);
+    }
+  };
+
+  // Function to handle click outside user modal
+  const handleClickOutsideUserModal = (event) => {
+    if (userModalRef.current && !userModalRef.current.contains(event.target)) {
+      setUser(false);
+    }
+  };
+
+  // Add click event listeners when mode or user state changes
+  useEffect(() => {
+    if (mode) {
+      document.addEventListener('mousedown', handleClickOutsideModeModal);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutsideModeModal);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutsideModeModal);
+    };
+  }, [mode]);
+  useEffect(() => {
+    if (user) {
+      document.addEventListener('mousedown', handleClickOutsideUserModal);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutsideUserModal);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutsideUserModal);
+    };
+  }, [mode, user]);
+
+  // Toggle mode modal
+  const handleModeToggle = () => {
+    setMode(!mode);
+  };
+
+  // Toggle user modal
+  const handleUserToggle = () => {
+    setUser(!user);
+  };
 
   useEffect(() => {
     const setDarkModePreference = (matches) => {
@@ -98,7 +131,6 @@ const Header = () => {
     }
   }, [darkMode]);
 
-  // TODO: BUTTONS HOVER SCROLL FUNCTIONALITY PENDING
   const [currentButton, setCurrentButton] = useState(0);
   const buttonsPerClick = 10;
 
@@ -191,7 +223,7 @@ const Header = () => {
 
         <div className="flex items-center gap-4">
           {/* mode section laptop or desktop devices */}
-          <div className="relative">
+          <div>
             {darkMode ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -222,13 +254,6 @@ const Header = () => {
                 />
               </svg>
             )}
-            {/* mode modal */}
-            <ModeModal
-              mode={mode}
-              handleLightModeClick={handleLightModeClick}
-              handleDarkModeClick={handleDarkModeClick}
-              handleSystemModeClick={handleSystemModeClick}
-            />
           </div>
           <Link to="/login" onClick={openLoginModal} className="btn_primary_s">
             Log in
@@ -239,7 +264,7 @@ const Header = () => {
             </button>
           </div>
           {/* user sections */}
-          <div className="relative">
+          <div className="relative" onClick={handleUserToggle}>
             <button
               onClick={() => setUser(!user)}
               className="btn_primary_s group"
@@ -269,7 +294,7 @@ const Header = () => {
           </Link>
           <div className="flex items-center gap-4">
             {/* mode section */}
-            <div className="relative">
+            <div>
               {darkMode ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -300,13 +325,6 @@ const Header = () => {
                   />
                 </svg>
               )}
-              {/* mode modal */}
-              <ModeModal
-                mode={mode}
-                handleLightModeClick={handleLightModeClick}
-                handleDarkModeClick={handleDarkModeClick}
-                handleSystemModeClick={handleSystemModeClick}
-              />
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -490,11 +508,24 @@ const Header = () => {
         handleNext={handleNext}
         visibleButtons={visibleButtons}
       />
+      {/* mode modal */}
+      {mode && (
+        <div ref={modeModalRef} className="pr-10">
+          <ModeModal
+            mode={mode}
+            handleLightModeClick={handleLightModeClick}
+            handleDarkModeClick={handleDarkModeClick}
+            handleSystemModeClick={handleSystemModeClick}
+          />
+        </div>
+      )}
       {/* login modal */}
       <LoginModal isOpen={isLoginModal} onClose={closeLoginModal} />
       <GetProModal isOpen={isProModal} onClose={closeProModal} />
       {/* user modal */}
-      <UserModal user={user} />
+      <div ref={userModalRef}>
+        <UserModal user={user} />
+      </div>
     </>
   );
 };
