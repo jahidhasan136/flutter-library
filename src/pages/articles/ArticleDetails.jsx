@@ -4,12 +4,22 @@ import revenueIcon from '../../assets/icons/revenueIcon.svg';
 // images
 import personImg from '../../assets/articles/personImg.png';
 import imgTwo from '../../assets/articles/imgTwo.png';
-import imgOne from '../../assets/articles/imgOne.png';
 import articleImgOne from '../../assets/articles/article-1.png';
 import articleImgTwo from '../../assets/articles/article-2.png';
 import articleImgThree from '../../assets/articles/article-3.png';
+import { useEffect } from 'react';
+import Prism from 'prismjs';
+import 'prismjs/components/prism-javascript';
+import 'prismjs/components/prism-dart';
+import 'prismjs/themes/prism-tomorrow.css';
 
 const ArticleDetails = () => {
+  useEffect(() => {
+    // Delay calling Prism.highlightAll() using setTimeout
+    setTimeout(() => {
+      Prism.highlightAll();
+    }, 0);
+  }, []);
   return (
     <div>
       <div className="flex items-center">
@@ -91,7 +101,35 @@ const ArticleDetails = () => {
               templates, making it easy for you to create stunning apps. The
               best part you can download beautiful.
             </p>
-            <img src={imgOne} alt="" />
+            {/* <img src={imgOne} alt="" /> */}
+            <pre
+              style={{
+                overflowX: 'auto',
+                padding: '1em',
+                backgroundColor: '#111', // Light background color
+                borderRadius: '16px',
+                border: '1px solid #2e2e2e',
+                fontWeight: 'bold',
+                fontSize: '14px',
+                lineHeight: '1.5',
+              }}
+            >
+              <code className="language-dart">
+                {`void main() {
+      runApp(const MyApp());
+    }
+
+    final RouteObserver<ModalRoute<void>> routeObserver = RouteObserver<ModalRoute<void>>();
+
+    class MyApp extends StatefulWidget {
+      const MyApp({ super.Key });
+
+      @override
+      State<MyApp> createState() => _MyAppState();
+    }
+    `}
+              </code>
+            </pre>
           </div>
           <div className="grid gap-4 mt-6">
             <h3 className="text-h3 dark:text-secondary">

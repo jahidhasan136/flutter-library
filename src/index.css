@@ -74,6 +74,19 @@ body {
   @apply hover:bg-bgSecondary hover:text-textPrimary transition-all duration-300 dark:hover:bg-darkSecondary dark:hover:text-secondary;
 }
 
+/* prism colors */
+.token.keyword {
+  color: #389edb !important; /* Blue color for keywords */
+}
+
+.token.function {
+  color: #00ccaf !important; /* Green color for function names */
+}
+
+.token.comment {
+  color: #dcdca4 !important; /* Gray color for comments */
+}
+
 .offcanvas.active {
   right: 0;
 }
