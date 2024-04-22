@@ -223,7 +223,7 @@ const Header = () => {
 
         <div className="flex items-center gap-4">
           {/* mode section laptop or desktop devices */}
-          <div>
+          <div className="relative" onClick={handleModeToggle}>
             {darkMode ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -508,17 +508,16 @@ const Header = () => {
         handleNext={handleNext}
         visibleButtons={visibleButtons}
       />
+
       {/* mode modal */}
-      {mode && (
-        <div ref={modeModalRef} className="pr-10">
-          <ModeModal
-            mode={mode}
-            handleLightModeClick={handleLightModeClick}
-            handleDarkModeClick={handleDarkModeClick}
-            handleSystemModeClick={handleSystemModeClick}
-          />
-        </div>
-      )}
+      <div ref={modeModalRef} className="relative">
+        <ModeModal
+          mode={mode}
+          handleLightModeClick={handleLightModeClick}
+          handleDarkModeClick={handleDarkModeClick}
+          handleSystemModeClick={handleSystemModeClick}
+        />
+      </div>
       {/* login modal */}
       <LoginModal isOpen={isLoginModal} onClose={closeLoginModal} />
       <GetProModal isOpen={isProModal} onClose={closeProModal} />

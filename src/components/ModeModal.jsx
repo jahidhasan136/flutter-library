@@ -8,7 +8,7 @@ const ModeModal = ({
     <div
       className={`${
         mode ? 'grid' : 'hidden'
-      } absolute right-4 md:right-72 top-20 gap-[2px] rounded-lg w-[184px] p-2 shadow-shadowMd bg-white dark:bg-[#1E1E1E] dark:text-secondary z-10`}
+      } absolute right-4 md:right-64 -top-10 md:top-0 gap-[2px] rounded-lg w-[184px] p-2 shadow-shadowMd bg-white dark:bg-[#1E1E1E] dark:text-secondary z-10`}
     >
       {/* Light Mode Button */}
       <div
@@ -52,7 +52,10 @@ const ModeModal = ({
       </div>
 
       {/* System Mode Button (Placeholder) */}
-      <div className="flex gap-[10px] items-center hover:bg-bgSecondary hover:text-textPrimary cursor-pointer p-1 rounded-lg dark:hover:bg-darkSecondary dark:hover:text-secondary">
+      <div
+        className="flex gap-[10px] items-center hover:bg-bgSecondary hover:text-textPrimary cursor-pointer p-1 rounded-lg dark:hover:bg-darkSecondary dark:hover:text-secondary"
+        onClick={handleSystemModeClick}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
