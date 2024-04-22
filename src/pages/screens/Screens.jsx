@@ -96,7 +96,7 @@ const Screens = () => {
       </div>
 
       {/* screens card sections */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-4 w-full">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full">
         <ScreensCard />
       </div>
     </div>

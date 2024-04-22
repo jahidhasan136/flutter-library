@@ -7,7 +7,6 @@ import copyIcon from '../../assets/icons/copy.svg';
 import revenueIcon from '../../assets/icons/revenueIcon.svg';
 import downloadIcon from '../../assets/icons/downloadIcon.svg';
 import phoneIcon from '../../assets/icons/phoneIcon.svg';
-import eyeIcon from '../../assets/icons/eyeIcon.svg';
 // images
 import templateOne from '../../assets/templates/template-1.png';
 import templateTwo from '../../assets/templates/template-2.png';
@@ -44,7 +43,7 @@ const TemplateDetails = () => {
           </Link>
           <h6 className="capitalize text-h6 text-textSecondary">Templates</h6>
         </div>
-        <div className="grid gap-4 md:gap-0 md:flex items-center justify-between w-full">
+        <div className="grid gap-4 md:gap-0 md:flex items-center justify-between">
           <div>
             <h3 className="capitalize text-h3 text-textPrimary mb-2 dark:text-secondary">
               Chat App Template
@@ -56,10 +55,21 @@ const TemplateDetails = () => {
               best part you can download beautiful.
             </p>
           </div>
-          <div className="flex flex-shrink-0 items-start gap-4">
+          <div className="flex items-start gap-4">
             <button className="btn_primary_s flex items-center gap-2 w-full">
-              <img src={eyeIcon} alt="" />
-              Preview
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6.2482 10.1701C4.79637 11.5422 3.85959 13.1933 3.45058 14.267C3.30312 14.6541 2.8698 14.8483 2.48272 14.7009C2.09564 14.5534 1.90139 14.1201 2.04885 13.733C2.52873 12.4733 3.58362 10.6245 5.21789 9.07992C6.86097 7.52706 9.12689 6.25 11.9997 6.25C14.8725 6.25 17.1385 7.52706 18.7815 9.07992C20.4158 10.6245 21.4707 12.4733 21.9506 13.733C22.098 14.1201 21.9038 14.5534 21.5167 14.7009C21.1296 14.8483 20.6963 14.6541 20.5488 14.267C20.1398 13.1933 19.2031 11.5422 17.7512 10.1701C16.3082 8.80628 14.3936 7.75 11.9997 7.75C9.60588 7.75 7.69124 8.80628 6.2482 10.1701ZM11.9997 11.75C10.7571 11.75 9.74971 12.7574 9.74971 14C9.74971 15.2426 10.7571 16.25 11.9997 16.25C13.2424 16.25 14.2497 15.2426 14.2497 14C14.2497 12.7574 13.2424 11.75 11.9997 11.75ZM8.24971 14C8.24971 11.9289 9.92865 10.25 11.9997 10.25C14.0708 10.25 15.7497 11.9289 15.7497 14C15.7497 16.0711 14.0708 17.75 11.9997 17.75C9.92865 17.75 8.24971 16.0711 8.24971 14Z"
+                  className="fill-dark dark:fill-secondary"
+                />
+              </svg>
+              <p>Preview</p>
             </button>
             <button className="btn_primary_a text-nowrap w-full">
               Get Code

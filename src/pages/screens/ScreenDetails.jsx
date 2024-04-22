@@ -8,7 +8,7 @@ import collectionIcon from '../../assets/icons/collections.svg';
 import downloadIcon from '../../assets/icons/download2.svg';
 import screenImgOne from '../../assets/screens/screens-1.png';
 
-const ScreenDetails = ({ copied, handleCopyTextChange, handleCopyText }) => {
+const ScreenDetails = () => {
   const [barModalOpen, setBarModelOpen] = useState(false);
   const handleDrawerClose = () => {
     const drawerCheckbox = document.getElementById('my-drawer-4');
