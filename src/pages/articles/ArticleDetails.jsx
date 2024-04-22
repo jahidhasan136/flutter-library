@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
 // icons
-import leftArrowIcon from '../../assets/icons/leftArrowIcon.svg';
-import codeIcon from '../../assets/icons/codeIcon.svg';
 import revenueIcon from '../../assets/icons/revenueIcon.svg';
 // images
 import personImg from '../../assets/articles/personImg.png';
@@ -16,7 +14,18 @@ const ArticleDetails = () => {
     <div>
       <div className="flex items-center">
         <Link to="/">
-          <img src={leftArrowIcon} alt="" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+          >
+            <path
+              d="M12.5987 4.5296C12.8586 4.75687 12.8849 5.15172 12.6577 5.41152L8.64374 10L12.6577 14.5885C12.8849 14.8483 12.8586 15.2431 12.5987 15.4705C12.339 15.6977 11.9441 15.6713 11.7168 15.4115L7.34294 10.4115C7.13683 10.176 7.13683 9.82412 7.34294 9.58853L11.7168 4.5885C11.9441 4.3287 12.339 4.30233 12.5987 4.5296Z"
+              className="fill-dark dark:fill-secondary"
+            />
+          </svg>
         </Link>
         <h6 className="capitalize text-h6 text-textSecondary">Articles</h6>
       </div>
