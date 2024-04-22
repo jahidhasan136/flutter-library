@@ -19,7 +19,7 @@ const TemplatesCard = () => {
           src={templateOne}
           alt=""
         />
-        <div className="flex justify-between">
+        <div className="flex justify-between items-start">
           <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
             Foodly Restaurent App template
           </h2>
@@ -43,7 +43,7 @@ const TemplatesCard = () => {
           src={templateTwo}
           alt=""
         />
-        <div className="flex justify-between">
+        <div className="flex justify-between items-start">
           <h2
             className="capitalize font-semibold text-textPrimary leading-[20.8px]
           dark:text-secondary"
@@ -70,7 +70,7 @@ const TemplatesCard = () => {
           src={templateThree}
           alt=""
         />
-        <div className="flex justify-between">
+        <div className="flex justify-between items-start">
           <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
             Flutter animation template
           </h2>
@@ -94,7 +94,7 @@ const TemplatesCard = () => {
           src={templateFour}
           alt=""
         />
-        <div className="flex justify-between">
+        <div className="flex justify-between items-start">
           <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
             Flutter animation template
           </h2>
@@ -118,7 +118,7 @@ const TemplatesCard = () => {
           src={templateFive}
           alt=""
         />
-        <div className="flex justify-between">
+        <div className="flex justify-between items-start">
           <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
             Flutter animation template
           </h2>
@@ -142,7 +142,7 @@ const TemplatesCard = () => {
           src={templateSix}
           alt=""
         />
-        <div className="flex justify-between">
+        <div className="flex justify-between items-start">
           <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
             Flutter animation template
           </h2>
