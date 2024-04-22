@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className="px-4 md:px-0 md:ml-[180px] mt-10">
-      <div className="grid lg:grid-cols-2 gap-5 lg:gap-0">
+      <div className="grid lg:flex justify-between gap-5 lg:gap-0">
         <div className="grid gap-4">
           <img src={logo} alt="" />
           <p className="text-xs text-textSecondary leading-[15.6px]">
