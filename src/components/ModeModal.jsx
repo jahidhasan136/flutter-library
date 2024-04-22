@@ -1,24 +1,4 @@
-import { useState, useEffect } from 'react';
-const ModeModal = ({ mode }) => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    // Update document class based on darkMode state
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [darkMode]);
-
-  const handleLightModeClick = () => {
-    setDarkMode(false);
-  };
-
-  const handleDarkModeClick = () => {
-    setDarkMode(true);
-  };
-
+const ModeModal = ({ mode, handleLightModeClick, handleDarkModeClick }) => {
   return (
     <div
       className={`${
