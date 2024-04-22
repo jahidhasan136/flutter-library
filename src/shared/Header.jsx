@@ -435,12 +435,12 @@ const Header = () => {
               </ActiveLink>
             </div>
 
-            {/* TODO; ALL SCREENS SET TO SCROLL */}
+            {/* All screens link */}
             <div>
               <h4 className="text-h6 text-textPrimary pl-4 pb-2 dark:text-white">
                 All Screens
               </h4>
-              <div className="grid gap-2 text-textSecondary">
+              <div className="grid gap-2 text-textSecondary overflow-y-auto max-h-[400px]">
                 <ActiveLink to="/sign-in">
                   <div className="flex justify-between py-2 pl-6 pr-4 items-center">
                     <button className="text-h6">Sign in</button>
