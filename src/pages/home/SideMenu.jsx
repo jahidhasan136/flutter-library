@@ -64,84 +64,12 @@ const SideMenu = () => {
           </ActiveLink>
         </div>
 
-        {/* TODO; ALL SCREENS SET TO SCROLL */}
+        {/* all screens link */}
         <div>
           <h4 className="text-h6 text-textPrimary pl-4 pb-2 dark:text-white">
             All Screens
           </h4>
-          <div className="grid gap-2 text-textSecondary h-[60%] overflow-y-auto">
-            <ActiveLink to="/sign-in">
-              <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <button className="text-h6">Sign in</button>
-                <h3 className="text-h6">10</h3>
-              </div>
-            </ActiveLink>
-            <ActiveLink to="/chat">
-              <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <button className="text-h6">Chat</button>
-                <h3 className="text-h6">5</h3>
-              </div>
-            </ActiveLink>
-            <ActiveLink to="/onboarding">
-              <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <button className="text-h6">Onboarding</button>
-                <h3 className="text-h6">18</h3>
-              </div>
-            </ActiveLink>
-            <ActiveLink to="/e-commerce">
-              <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <button className="text-h6">E-commerce</button>
-                <h3 className="text-h6">9</h3>
-              </div>
-            </ActiveLink>
-            <ActiveLink to="/checkout">
-              <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <button className="text-h6">Checkout</button>
-                <h3 className="text-h6">10</h3>
-              </div>
-            </ActiveLink>
-            <ActiveLink to="/error">
-              <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <button className="text-h6">Error</button>
-                <h3 className="text-h6">16</h3>
-              </div>
-            </ActiveLink>
-            <ActiveLink to="/sign-in">
-              <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <button className="text-h6">Sign in</button>
-                <h3 className="text-h6">10</h3>
-              </div>
-            </ActiveLink>
-            <ActiveLink to="/chat">
-              <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <button className="text-h6">Chat</button>
-                <h3 className="text-h6">5</h3>
-              </div>
-            </ActiveLink>
-            <ActiveLink to="/onboarding">
-              <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <button className="text-h6">Onboarding</button>
-                <h3 className="text-h6">18</h3>
-              </div>
-            </ActiveLink>
-            <ActiveLink to="/e-commerce">
-              <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <button className="text-h6">E-commerce</button>
-                <h3 className="text-h6">9</h3>
-              </div>
-            </ActiveLink>
-            <ActiveLink to="/checkout">
-              <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <button className="text-h6">Checkout</button>
-                <h3 className="text-h6">10</h3>
-              </div>
-            </ActiveLink>
-            <ActiveLink to="/error">
-              <div className="flex justify-between py-2 pl-6 pr-4 items-center">
-                <button className="text-h6">Error</button>
-                <h3 className="text-h6">16</h3>
-              </div>
-            </ActiveLink>
+          <div className="grid gap-2 text-textSecondary overflow-y-auto max-h-[400px]">
             <ActiveLink to="/sign-in">
               <div className="flex justify-between py-2 pl-6 pr-4 items-center">
                 <button className="text-h6">Sign in</button>
