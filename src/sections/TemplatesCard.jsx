@@ -15,7 +15,7 @@ const TemplatesCard = () => {
     <>
       <Link to="/template-details" className="grid gap-2">
         <img
-          className="rounded-lg w-full object-cover"
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
           src={templateOne}
           alt=""
         />
@@ -39,7 +39,7 @@ const TemplatesCard = () => {
       </Link>
       <Link to="/template-details" className="grid gap-2">
         <img
-          className="rounded-lg w-full object-cover"
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
           src={templateTwo}
           alt=""
         />
@@ -66,7 +66,7 @@ const TemplatesCard = () => {
       </Link>
       <Link to="/template-details" className="grid gap-2">
         <img
-          className="rounded-lg w-full object-cover"
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
           src={templateThree}
           alt=""
         />
@@ -90,7 +90,7 @@ const TemplatesCard = () => {
       </Link>
       <Link to="/template-details" className="grid gap-2">
         <img
-          className="rounded-lg w-full object-cover"
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
           src={templateFour}
           alt=""
         />
@@ -114,7 +114,7 @@ const TemplatesCard = () => {
       </Link>
       <Link to="/template-details" className="grid gap-2">
         <img
-          className="rounded-lg w-full object-cover"
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
           src={templateFive}
           alt=""
         />
@@ -138,7 +138,7 @@ const TemplatesCard = () => {
       </Link>
       <Link to="/template-details" className="grid gap-2">
         <img
-          className="rounded-lg w-full object-cover"
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
           src={templateSix}
           alt=""
         />

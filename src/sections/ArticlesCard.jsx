@@ -7,7 +7,11 @@ const ArticlesCard = () => {
   return (
     <>
       <Link to="/article-details">
-        <img className="rounded-2xl w-full" src={articleImgOne} alt="" />
+        <img
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
+          src={articleImgOne}
+          alt=""
+        />
         <div className="flex gap-5 pt-4 pb-2 text-textSecondary text-h6 leading-[18.2px] capitalize">
           <h6 className="text-h6">Mar 24, 2024</h6>
           <h6 className="text-h6">Animation</h6>
@@ -21,7 +25,11 @@ const ArticlesCard = () => {
         </p>
       </Link>
       <Link to="/article-details">
-        <img className="rounded-2xl w-full" src={articleImgTwo} alt="" />
+        <img
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
+          src={articleImgTwo}
+          alt=""
+        />
         <div className="flex gap-5 pt-4 pb-2 text-textSecondary text-h6 leading-[18.2px] capitalize">
           <h6 className="text-h6">Mar 24, 2024</h6>
           <h6 className="text-h6">Animation</h6>
@@ -35,7 +43,11 @@ const ArticlesCard = () => {
         </p>
       </Link>
       <Link to="/article-details">
-        <img className="rounded-2xl w-full" src={articleImgThree} alt="" />
+        <img
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
+          src={articleImgThree}
+          alt=""
+        />
         <div className="flex gap-5 pt-4 pb-2 text-textSecondary text-h6 leading-[18.2px] capitalize">
           <h3 className="text-h6">Mar 24, 2024</h3>
           <h3 className="text-h6">Animation</h3>
