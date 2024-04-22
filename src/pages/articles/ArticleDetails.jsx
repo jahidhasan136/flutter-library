@@ -28,10 +28,16 @@ const ArticleDetails = () => {
             </h3>
             <div className="grid md:flex items-center gap-4">
               <div className="flex items-center gap-4">
-                <img src={personImg} alt="" />
+                <img
+                  className="w-[54px] h-[54px] rounded-full"
+                  src={personImg}
+                  alt=""
+                />
                 <div>
                   <div className="flex items-center gap-2">
-                    <h6 className="text-h6 text-textPrimary">Abu Anwar</h6>
+                    <h6 className="text-h6 text-textPrimary dark:text-secondary">
+                      Abu Anwar
+                    </h6>
                     <p className="text-h6 text-textSecondary">@abuanwar072</p>
                   </div>
                   <div className="flex gap-[10px] items-center">
@@ -46,8 +52,20 @@ const ArticleDetails = () => {
                 </div>
               </div>
               <div>
-                <button className="flex items-center gap-2 bg-secondary px-4 py-2 rounded-[20px]">
-                  <img src={codeIcon} alt="" /> Source code
+                <button className="flex items-center gap-2 bg-secondary px-4 py-2 rounded-[20px] dark:border dark:border-darkSecondary dark:bg-dark dark:text-secondary">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.35109 2.99865C9.61763 3.07069 9.77536 3.3452 9.70329 3.61178L7.26076 12.6492C7.18869 12.9158 6.91423 13.0734 6.64762 13.0014C6.38104 12.9294 6.22335 12.6548 6.29539 12.3882L8.73796 3.35087C8.80996 3.08429 9.08449 2.92659 9.35109 2.99865ZM10.8064 4.91104C10.9932 4.70777 11.3096 4.6945 11.5128 4.88141L14.5042 7.63191C14.6072 7.72664 14.6658 7.86011 14.6658 7.99997C14.6658 8.13991 14.6072 8.27337 14.5042 8.36804L11.5128 11.1186C11.3096 11.3054 10.9932 11.2922 10.8064 11.0889C10.6194 10.8856 10.6327 10.5694 10.836 10.3824L13.427 7.99997L10.836 5.61753C10.6327 5.43062 10.6194 5.11431 10.8064 4.91104ZM5.19207 4.91113C5.37897 5.11441 5.36571 5.43071 5.16243 5.61761L2.57136 8.00004L5.16243 10.3825C5.36571 10.5694 5.37897 10.8857 5.19207 11.089C5.00516 11.2923 4.68885 11.3056 4.48558 11.1186L1.49421 8.36811C1.39124 8.27344 1.33264 8.13997 1.33264 8.00004C1.33264 7.86017 1.39125 7.72671 1.49422 7.63197L4.48558 4.88149C4.68885 4.69459 5.00516 4.70785 5.19207 4.91113Z"
+                      className="fill-dark dark:fill-secondary"
+                    />
+                  </svg>{' '}
+                  <p>Source code</p>
                 </button>
               </div>
             </div>
