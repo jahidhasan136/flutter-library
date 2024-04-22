@@ -66,7 +66,7 @@ const TemplateDetails = () => {
             </p>
           </div>
           <div className="flex items-start gap-4">
-            <button className="btn_primary_s flex items-center gap-2 w-full">
+            <button className="btn_primary_s flex items-center gap-2 w-full justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
