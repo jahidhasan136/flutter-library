@@ -73,12 +73,14 @@ const Templates = () => {
               </svg>
               <p className="text-h6 leading-[18.2px]">Filters</p>
             </button>
-            <div className="border-secondary border-r-2 py-4 mr-4"></div>
+            <div className="border-secondary border-r-2 py-4 mr-4 dark:border-darkSecondary"></div>
             <div className="button-container flex gap-2 items-center overflow-x-auto">
               {visibleButtons.map((button, index) => (
                 <button
                   key={index}
-                  className="text-h6 px-4 py-2 border border-secondary hover:bg-secondary text-textPrimary rounded-full transition-all duration-300 dark:text-secondary dark:border-darkSecondary"
+                  className="text-h6 px-4 py-2 border border-secondary hover:bg-secondary
+                  dark:text-secondary text-textPrimary rounded-full transition-all duration-300
+                   dark:hover:text-dark dark:border-darkSecondary"
                   onMouseOver={(e) => e.stopPropagation()} // Prevent scrolling on button hover
                 >
                   {button}
