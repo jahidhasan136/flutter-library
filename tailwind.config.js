@@ -41,7 +41,8 @@ export default {
         h7: '12px',
       },
       boxShadow: {
-        shadowMd: '0px 8px 24px 0px rgba(0, 0, 0, 0.10);',
+        shadowMd: '0px 8px 24px 0px rgba(0, 0, 0, 0.10)',
+        shadowlg: '5px 5px 50px 5px rgba(0,0,0,0.3)',
       },
     },
   },

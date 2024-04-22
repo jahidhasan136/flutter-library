@@ -7,9 +7,6 @@ import { Link, useLocation } from 'react-router-dom';
 import ArticlesCard from '../../sections/ArticlesCard';
 
 const Articles = () => {
-  // TODO: BUTTONS HOVER SCROLL FUNCTIONALITY PENDING
-  const [currentButton, setCurrentButton] = useState(0);
-  const buttonsPerClick = 10;
   // home page filter option hide
   const location = useLocation();
   const hideFilter =
@@ -26,16 +23,6 @@ const Articles = () => {
     'UI',
   ];
 
-  const totalPages = Math.ceil(buttons.length / buttonsPerClick);
-
-  const handleNext = () => {
-    setCurrentButton((prevPage) => prevPage + 1);
-  };
-
-  const visibleButtons = buttons.slice(
-    currentButton * buttonsPerClick,
-    currentButton * buttonsPerClick + buttonsPerClick
-  );
   return (
     <div>
       <div className="flex justify-between items-center mb-4">
@@ -50,7 +37,7 @@ const Articles = () => {
         </Link>
       </div>
 
-      {/* filter sections */}
+      {/* Filter sections */}
       <div>
         {hideFilter ? (
           ''
@@ -72,39 +59,37 @@ const Articles = () => {
               <p className="text-h6 leading-[18.2px]">Filters</p>
             </button>
             <div className="border-secondary border-r-2 py-4 mr-4 dark:border-darkSecondary"></div>
-            <div className="button-container flex gap-2 items-center overflow-x-auto">
-              {visibleButtons.map((button, index) => (
+            <div className="flex gap-2 items-center overflow-x-auto">
+              {buttons.map((button, index) => (
                 <button
                   key={index}
                   className="text-h6 px-4 py-2 border border-secondary hover:bg-secondary
-                  dark:text-secondary text-textPrimary rounded-full transition-all duration-300
-                   dark:hover:text-dark dark:border-darkSecondary"
+                dark:text-secondary text-textPrimary rounded-full transition-all duration-300
+                dark:hover:text-dark dark:border-darkSecondary text-nowrap"
                   onMouseOver={(e) => e.stopPropagation()} // Prevent scrolling on button hover
                 >
                   {button}
                 </button>
               ))}
-              {currentButton < totalPages - 1 && (
-                <button onClick={handleNext}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="26"
-                    viewBox="0 0 24 26"
-                    fill="none"
-                  >
-                    <path
-                      d="M13.3248 6.76254C13.6365 6.48982 14.1104 6.52147 14.3831 6.83323L19.5645 12.7563C19.8118 13.0391 19.8118 13.4612 19.5645 13.7439L14.3831 19.667C14.1103 19.9788 13.6365 20.0104 13.3248 19.7377C13.013 19.465 12.9814 18.9911 13.2541 18.6794L17.3474 14.0001H5C4.58578 14.0001 4.25 13.6643 4.25 13.2501C4.25 12.8359 4.58578 12.5001 5 12.5001H17.3474L13.2541 7.82084C12.9814 7.50908 13.013 7.03526 13.3248 6.76254Z"
-                      className="fill-dark dark:fill-secondary"
-                    />
-                  </svg>
-                </button>
-              )}
             </div>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="26"
+                viewBox="0 0 24 26"
+                fill="none"
+              >
+                <path
+                  d="M13.3248 6.76254C13.6365 6.48982 14.1104 6.52147 14.3831 6.83323L19.5645 12.7563C19.8118 13.0391 19.8118 13.4612 19.5645 13.7439L14.3831 19.667C14.1103 19.9788 13.6365 20.0104 13.3248 19.7377C13.013 19.465 12.9814 18.9911 13.2541 18.6794L17.3474 14.0001H5C4.58578 14.0001 4.25 13.6643 4.25 13.2501C4.25 12.8359 4.58578 12.5001 5 12.5001H17.3474L13.2541 7.82084C12.9814 7.50908 13.013 7.03526 13.3248 6.76254Z"
+                  className="fill-dark dark:fill-secondary"
+                />
+              </svg>
+            </button>
           </div>
         )}
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
         <ArticlesCard />
       </div>
     </div>

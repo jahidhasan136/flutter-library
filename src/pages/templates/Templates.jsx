@@ -24,20 +24,6 @@ const Templates = () => {
     'Food',
     'Restaurant',
     'Fitness',
-    'Shop',
-    'Chat',
-    'Top Verification',
-    'Dashboard',
-    'Food',
-    'Restaurant',
-    'Fitness',
-    'Shop',
-    'Chat',
-    'Top Verification',
-    'Dashboard',
-    'Food',
-    'Restaurant',
-    'Fitness',
   ];
 
   return (

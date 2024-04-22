@@ -35,7 +35,7 @@ const ArticleDetails = () => {
             <h3 className="text-h3 text-textPrimary capitalize">
               Shipping A VisionOS App For Lauch
             </h3>
-            <div className="grid md:flex items-center gap-4">
+            <div className="grid md:flex items-center gap-4 group">
               <div className="flex items-center gap-4">
                 <img
                   className="w-[54px] h-[54px] rounded-full"
@@ -54,7 +54,7 @@ const ArticleDetails = () => {
                       March 29, 2024
                     </p>
                     <div className="bg-[#D9D9D9] w-2 h-2 rounded-full"></div>
-                    <p className="text-h6 text-textSecondary capitalize">
+                    <p className="group-hover:text-dark duration-300 text-h6 text-textSecondary capitalize">
                       Flutter, Animation
                     </p>
                   </div>
