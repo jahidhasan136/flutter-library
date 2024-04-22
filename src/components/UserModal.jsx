@@ -1,6 +1,3 @@
-import getProIcon from '../assets/icons/get-pro.svg';
-import collectionsIcon from '../assets/icons/collections.svg';
-
 const UserModal = ({ user }) => {
   return (
     <div
@@ -51,7 +48,7 @@ const UserModal = ({ user }) => {
               Collections
             </h6>
           </button>
-          <button className="text-h6 text-textPrimary text-start hover:bg-bgSecondary hover:text-textPrimary p-1 rounded-lg dark:text-secondary dark:hover:decoration-darkSecondary">
+          <button className="text-h6 text-textPrimary text-start hover:bg-bgSecondary hover:text-textPrimary p-1 rounded-lg dark:text-secondary dark:hover:bg-darkSecondary">
             Log out
           </button>
         </div>
