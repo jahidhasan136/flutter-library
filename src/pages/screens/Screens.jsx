@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import filterIcon from '../../assets/icons/filterIcon.svg';
-import rightArrowIcon from '../../assets/icons/right-arrow.svg';
 import ScreensCard from '../../sections/ScreensCard';
 import { Link } from 'react-router-dom';
 
