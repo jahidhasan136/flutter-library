@@ -1,8 +1,8 @@
 import Templates from '../pages/templates/Templates';
 import Articles from '../pages/articles/Articles';
 // icons
-import closeIcon from '../assets/icons/closeIcon.svg';
 import searchIcon from '../assets/icons/searchIcon.svg';
+import Screens from '../pages/screens/Screens';
 
 const SearchModal = ({
   currentButton,
@@ -113,7 +113,7 @@ const SearchModal = ({
         <div className="grid gap-10">
           <Templates />
           <Articles />
-          {/* <Screens /> */}
+          <Screens />
         </div>
       </div>
     </dialog>
