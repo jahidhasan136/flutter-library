@@ -60,13 +60,24 @@ const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    // Update document class based on darkMode state
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [darkMode]);
+    // Function to set dark mode based on system preference
+    const setDarkModePreference = (matches) => {
+      setDarkMode(matches);
+    };
+
+    // Check if system prefers dark mode using matchMedia
+    const darkModeMediaQuery = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    );
+    setDarkModePreference(darkModeMediaQuery.matches);
+
+    // Listen for changes to system color scheme preference
+    const darkModeChangeListener = (e) => setDarkModePreference(e.matches);
+    darkModeMediaQuery.addListener(darkModeChangeListener);
+
+    // Cleanup listener on component unmount
+    return () => darkModeMediaQuery.removeListener(darkModeChangeListener);
+  }, []);
 
   const handleLightModeClick = () => {
     setDarkMode(false);
@@ -75,6 +86,23 @@ const Header = () => {
   const handleDarkModeClick = () => {
     setDarkMode(true);
   };
+
+  const handleSystemModeClick = () => {
+    // Check current system preference and toggle dark mode accordingly
+    const prefersDarkMode = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    ).matches;
+    setDarkMode(prefersDarkMode);
+  };
+
+  useEffect(() => {
+    // Update document class based on darkMode state
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [darkMode]);
 
   // TODO: BUTTONS HOVER SCROLL FUNCTIONALITY PENDING
   const [currentButton, setCurrentButton] = useState(0);
@@ -206,6 +234,7 @@ const Header = () => {
               mode={mode}
               handleLightModeClick={handleLightModeClick}
               handleDarkModeClick={handleDarkModeClick}
+              handleSystemModeClick={handleSystemModeClick}
             />
           </div>
           <Link to="/login" onClick={openLoginModal} className="btn_primary_s">
