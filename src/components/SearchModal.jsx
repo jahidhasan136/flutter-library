@@ -113,7 +113,7 @@ const SearchModal = ({
         <div className="grid gap-10">
           <Templates />
           <Articles />
-          <Screens />
+          {/* <Screens /> */}
         </div>
       </div>
     </dialog>
