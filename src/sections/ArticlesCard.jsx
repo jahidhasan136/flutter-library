@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import articleImgOne from '../assets/articles/article-1.png';
-import articleImgTwo from '../assets/articles/article-2.png';
-import articleImgThree from '../assets/articles/article-3.png';
+import articleImgTwo from '../assets/articles/article-2.jpeg';
+import articleImgThree from '../assets/articles/article-3.jpeg';
 
 const ArticlesCard = () => {
   return (

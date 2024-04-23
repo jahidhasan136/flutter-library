@@ -5,7 +5,7 @@ import phoneIcon from '../assets/icons/phoneIcon.svg';
 // images
 import templateOne from '../assets/templates/template-1.png';
 import templateTwo from '../assets/templates/template-2.png';
-import templateThree from '../assets/templates/template-3.png';
+import templateThree from '../assets/templates/template-3.jpg';
 import templateFour from '../assets/templates/template-4.png';
 import templateFive from '../assets/templates/template-5.png';
 import templateSix from '../assets/templates/template-6.png';
