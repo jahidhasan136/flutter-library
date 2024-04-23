@@ -92,6 +92,28 @@ const TemplateDetails = () => {
 
         {/* slider cards */}
         <Swiper
+          breakpoints={{
+            // 640: {
+            //   slidesPerView: 1,
+            //   spaceBetween: 16,
+            // },
+            375: {
+              slidesPerView: 1,
+              spaceBetween: 16,
+            },
+            425: {
+              slidesPerView: 2,
+              spaceBetween: 16,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 16,
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 16,
+            },
+          }}
           slidesPerView={4}
           spaceBetween={30}
           navigation={true}
@@ -99,9 +121,9 @@ const TemplateDetails = () => {
           className="mySwiper w-[100%]"
         >
           <SwiperSlide>
-            <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+            <div className="relative flex justify-center mx-auto overflow-hidden group rounded-2xl min-w-[160px] max-w-[260px]">
               <img
-                className="rounded-2xl border border-secondary"
+                className="w-full rounded-2xl border border-secondary"
                 src={templateImgOne}
                 alt=""
               />
@@ -128,9 +150,9 @@ const TemplateDetails = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+            <div className="relative flex justify-center mx-auto overflow-hidden group rounded-2xl min-w-[160px] max-w-[260px]">
               <img
-                className="rounded-2xl border border-secondary"
+                className="w-full rounded-2xl border border-secondary"
                 src={templateImgOne}
                 alt=""
               />
@@ -157,9 +179,9 @@ const TemplateDetails = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+            <div className="relative flex justify-center mx-auto overflow-hidden group rounded-2xl min-w-[160px] max-w-[260px]">
               <img
-                className="rounded-2xl border border-secondary"
+                className="w-full rounded-2xl border border-secondary"
                 src={templateImgOne}
                 alt=""
               />
@@ -186,9 +208,9 @@ const TemplateDetails = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+            <div className="relative flex justify-center mx-auto overflow-hidden group rounded-2xl min-w-[160px] max-w-[260px]">
               <img
-                className="rounded-2xl border border-secondary"
+                className="w-full rounded-2xl border border-secondary"
                 src={templateImgOne}
                 alt=""
               />
@@ -215,9 +237,38 @@ const TemplateDetails = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+            <div className="relative flex justify-center mx-auto overflow-hidden group rounded-2xl min-w-[160px] max-w-[260px]">
               <img
-                className="rounded-2xl border border-secondary"
+                className="w-full rounded-2xl border border-secondary"
+                src={templateImgOne}
+                alt=""
+              />
+              <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
+                <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
+                  <img src={copyIcon} alt="" />
+                  <h6 className="text-h6">20</h6>
+                </div>
+                <div onClick={handleCopyTextChange}>
+                  {copied ? (
+                    <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
+                      copied!
+                    </p>
+                  ) : (
+                    <button
+                      onClick={handleCopyText}
+                      className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
+                    >
+                      Copy code
+                    </button>
+                  )}
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative flex justify-center mx-auto overflow-hidden group rounded-2xl min-w-[160px] max-w-[260px]">
+              <img
+                className="w-full rounded-2xl border border-secondary"
                 src={templateImgOne}
                 alt=""
               />
