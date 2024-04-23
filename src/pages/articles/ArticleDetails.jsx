@@ -12,6 +12,7 @@ import Prism from 'prismjs';
 import 'prismjs/components/prism-javascript';
 import 'prismjs/components/prism-dart';
 import 'prismjs/themes/prism-tomorrow.css';
+import ArticlesCard from '../../sections/ArticlesCard';
 
 const ArticleDetails = () => {
   useEffect(() => {
@@ -174,48 +175,7 @@ const ArticleDetails = () => {
 
         {/* you may also like cards */}
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
-          <div>
-            <img className="rounded-2xl w-full" src={articleImgOne} alt="" />
-            <div className="flex gap-5 pt-4 pb-2 text-textSecondary text-h6 leading-[18.2px] capitalize">
-              <h6 className="text-h6">Mar 24, 2024</h6>
-              <h6 className="text-h6">Animation</h6>
-            </div>
-            <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px] dark:text-secondary">
-              Learn flutter animation
-            </h2>
-            <p className="mt-2 text-textSecondary text-h6">
-              Lately, more Flutter developers have been running Dart on the
-              server. And it’s no wonder: who doesn’t like using...
-            </p>
-          </div>
-          <div>
-            <img className="rounded-2xl w-full" src={articleImgTwo} alt="" />
-            <div className="flex gap-5 pt-4 pb-2 text-textSecondary text-h6 leading-[18.2px] capitalize">
-              <h6 className="text-h6">Mar 24, 2024</h6>
-              <h6 className="text-h6">Animation</h6>
-            </div>
-            <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px] dark:text-secondary">
-              Onboarding Screen with Carousel & Animated Dots
-            </h2>
-            <p className="mt-2 text-textSecondary text-h6">
-              Lately, more Flutter developers have been running Dart on the
-              server. And it’s no wonder: who doesn’t like using...
-            </p>
-          </div>
-          <div>
-            <img className="rounded-2xl w-full" src={articleImgThree} alt="" />
-            <div className="flex gap-5 pt-4 pb-2 text-textSecondary text-h6 leading-[18.2px] capitalize">
-              <h3 className="text-h6">Mar 24, 2024</h3>
-              <h3 className="text-h6">Animation</h3>
-            </div>
-            <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px] dark:text-secondary">
-              Parallax Scroll Effect with PageView in Flutter
-            </h2>
-            <p className="mt-2 text-textSecondary text-h6">
-              Lately, more Flutter developers have been running Dart on the
-              server. And it’s no wonder: who doesn’t like using...
-            </p>
-          </div>
+          <ArticlesCard />
         </div>
       </div>
     </div>
