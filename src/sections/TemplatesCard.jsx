@@ -13,14 +13,17 @@ import templateSix from '../assets/templates/template-6.png';
 const TemplatesCard = () => {
   return (
     <>
-      <Link to="/template-details" className="grid gap-2">
+      <Link
+        to="/template-details"
+        className="grid gap-2 group overflow-hidden rounded-lg"
+      >
         <img
-          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary group-hover:scale-105 transition-all duration-300"
           src={templateOne}
           alt=""
         />
         <div className="flex justify-between items-start">
-          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
+          <h2 className="capitalize font-normal text-textPrimary leading-[20.8px] dark:text-secondary text-nowrap text-ellipsis overflow-hidden">
             Foodly Restaurent App template
           </h2>
           <div className="flex gap-2 items-center">
@@ -37,17 +40,17 @@ const TemplatesCard = () => {
           </div>
         </div>
       </Link>
-      <Link to="/template-details" className="grid gap-2">
+      <Link
+        to="/template-details"
+        className="grid gap-2 group overflow-hidden rounded-lg"
+      >
         <img
-          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary group-hover:scale-105 transition-all duration-300"
           src={templateTwo}
           alt=""
         />
         <div className="flex justify-between items-start">
-          <h2
-            className="capitalize font-semibold text-textPrimary leading-[20.8px]
-          dark:text-secondary"
-          >
+          <h2 className="capitalize font-normal text-textPrimary leading-[20.8px] dark:text-secondary text-nowrap text-ellipsis overflow-hidden">
             Flutter animation template
           </h2>
           <div className="flex gap-2 items-center">
@@ -64,14 +67,17 @@ const TemplatesCard = () => {
           </div>
         </div>
       </Link>
-      <Link to="/template-details" className="grid gap-2">
+      <Link
+        to="/template-details"
+        className="grid gap-2 group overflow-hidden rounded-lg"
+      >
         <img
-          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary group-hover:scale-105 transition-all duration-300"
           src={templateThree}
           alt=""
         />
         <div className="flex justify-between items-start">
-          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
+          <h2 className="capitalize font-normal text-textPrimary leading-[20.8px] dark:text-secondary text-nowrap text-ellipsis overflow-hidden">
             Flutter animation template
           </h2>
           <div className="flex gap-2 items-center">
@@ -88,14 +94,17 @@ const TemplatesCard = () => {
           </div>
         </div>
       </Link>
-      <Link to="/template-details" className="grid gap-2">
+      <Link
+        to="/template-details"
+        className="grid gap-2 group overflow-hidden rounded-lg"
+      >
         <img
-          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary group-hover:scale-105 transition-all duration-300"
           src={templateFour}
           alt=""
         />
         <div className="flex justify-between items-start">
-          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
+          <h2 className="capitalize font-normal text-textPrimary leading-[20.8px] dark:text-secondary text-nowrap text-ellipsis overflow-hidden">
             Flutter animation template
           </h2>
           <div className="flex gap-2 items-center">
@@ -112,14 +121,17 @@ const TemplatesCard = () => {
           </div>
         </div>
       </Link>
-      <Link to="/template-details" className="grid gap-2">
+      <Link
+        to="/template-details"
+        className="grid gap-2 group overflow-hidden rounded-lg"
+      >
         <img
-          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary group-hover:scale-105 transition-all duration-300"
           src={templateFive}
           alt=""
         />
         <div className="flex justify-between items-start">
-          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
+          <h2 className="capitalize font-normal text-textPrimary leading-[20.8px] dark:text-secondary text-nowrap text-ellipsis overflow-hidden">
             Flutter animation template
           </h2>
           <div className="flex gap-2 items-center">
@@ -136,14 +148,17 @@ const TemplatesCard = () => {
           </div>
         </div>
       </Link>
-      <Link to="/template-details" className="grid gap-2">
+      <Link
+        to="/template-details"
+        className="grid gap-2 group overflow-hidden rounded-lg"
+      >
         <img
-          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary group-hover:scale-105 transition-all duration-300"
           src={templateSix}
           alt=""
         />
         <div className="flex justify-between items-start">
-          <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
+          <h2 className="capitalize font-normal text-textPrimary leading-[20.8px] dark:text-secondary text-nowrap text-ellipsis overflow-hidden">
             Flutter animation template
           </h2>
           <div className="flex gap-2 items-center">

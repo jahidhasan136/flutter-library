@@ -31,7 +31,6 @@ const SearchModal = ({
                     className="fill-dark dark:fill-secondary"
                   />
                 </svg>
-
                 <input
                   className="py-[14px] pl-11
            pr-5 md:w-[400px] rounded-full bg-bgSecondary text-textPrimary outline-none dark:bg-darkSecondary dark:text-secondary"

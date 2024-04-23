@@ -11,6 +11,7 @@ import templateOne from '../../assets/templates/template-1.png';
 import templateTwo from '../../assets/templates/template-2.png';
 import templateThree from '../../assets/templates/template-3.png';
 import { Link } from 'react-router-dom';
+import TemplatesCard from '../../sections/TemplatesCard';
 
 const TemplateDetails = () => {
   // card code copy functionality
@@ -309,84 +310,7 @@ const TemplateDetails = () => {
 
         {/* you may like cards */}
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
-          <div className="grid gap-2">
-            <img
-              className="rounded-lg w-full object-cover"
-              src={templateOne}
-              alt=""
-            />
-            <div className="flex justify-between">
-              <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
-                Foodly Restaurent App template
-              </h2>
-              <div className="flex gap-2 items-center">
-                <div className="flex gap-1 items-center">
-                  <img src={phoneIcon} alt="" />
-                  <p className="text-sm leading-[18.2px] dark:text-secondary">
-                    28
-                  </p>
-                </div>
-                <div className="flex gap-1 items-center">
-                  <img src={downloadIcon} alt="" />
-                  <p className="text-sm leading-[18.2px] dark:text-secondary">
-                    546
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="grid gap-2">
-            <img
-              className="rounded-lg w-full object-cover"
-              src={templateTwo}
-              alt=""
-            />
-            <div className="flex justify-between">
-              <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
-                Flutter animation template
-              </h2>
-              <div className="flex gap-2 items-center">
-                <div className="flex gap-1 items-center">
-                  <img src={phoneIcon} alt="" />
-                  <p className="text-sm leading-[18.2px] dark:text-secondary">
-                    28
-                  </p>
-                </div>
-                <div className="flex gap-1 items-center">
-                  <img src={downloadIcon} alt="" />
-                  <p className="text-sm leading-[18.2px] dark:text-secondary">
-                    546
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="grid gap-2">
-            <img
-              className="rounded-lg w-full object-cover"
-              src={templateThree}
-              alt=""
-            />
-            <div className="flex justify-between">
-              <h2 className="capitalize font-semibold text-textPrimary leading-[20.8px] dark:text-secondary">
-                Flutter animation template
-              </h2>
-              <div className="flex gap-2 items-center">
-                <div className="flex gap-1 items-center">
-                  <img src={phoneIcon} alt="" />
-                  <p className="text-sm leading-[18.2px] dark:text-secondary">
-                    28
-                  </p>
-                </div>
-                <div className="flex gap-1 items-center">
-                  <img src={downloadIcon} alt="" />
-                  <p className="text-sm leading-[18.2px] dark:text-secondary">
-                    546
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <TemplatesCard />
         </div>
       </div>
     </div>

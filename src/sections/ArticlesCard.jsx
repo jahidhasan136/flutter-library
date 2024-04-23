@@ -6,9 +6,9 @@ import articleImgThree from '../assets/articles/article-3.png';
 const ArticlesCard = () => {
   return (
     <>
-      <Link to="/article-details">
+      <Link to="/article-details" className="group overflow-hidden rounded-lg">
         <img
-          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary group-hover:scale-105 transition-all duration-300"
           src={articleImgOne}
           alt=""
         />
@@ -16,7 +16,7 @@ const ArticlesCard = () => {
           <h6 className="text-h6">Mar 24, 2024</h6>
           <h6 className="text-h6">Animation</h6>
         </div>
-        <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px] dark:text-secondary">
+        <h2 className="capitalize text-textPrimary font-medium leading-[20.8px] dark:text-secondary overflow-hidden text-nowrap text-ellipsis">
           Learn flutter animation
         </h2>
         <p className="mt-2 text-textSecondary text-h6">
@@ -24,9 +24,9 @@ const ArticlesCard = () => {
           And it&apos;s no wonder: who doesn&apos;t like using...
         </p>
       </Link>
-      <Link to="/article-details">
+      <Link to="/article-details" className="group overflow-hidden rounded-lg">
         <img
-          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary group-hover:scale-105 transition-all duration-300"
           src={articleImgTwo}
           alt=""
         />
@@ -34,7 +34,7 @@ const ArticlesCard = () => {
           <h6 className="text-h6">Mar 24, 2024</h6>
           <h6 className="text-h6">Animation</h6>
         </div>
-        <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px] dark:text-secondary">
+        <h2 className="capitalize text-textPrimary font-medium leading-[20.8px] dark:text-secondary overflow-hidden text-nowrap text-ellipsis">
           Onboarding Screen with Carousel & Animated Dots
         </h2>
         <p className="mt-2 text-textSecondary text-h6">
@@ -42,9 +42,9 @@ const ArticlesCard = () => {
           And it&apos;s no wonder: who doesn&apos;t like using...
         </p>
       </Link>
-      <Link to="/article-details">
+      <Link to="/article-details" className="group overflow-hidden rounded-lg">
         <img
-          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary group-hover:scale-105 transition-all duration-300"
           src={articleImgThree}
           alt=""
         />
@@ -52,7 +52,7 @@ const ArticlesCard = () => {
           <h3 className="text-h6">Mar 24, 2024</h3>
           <h3 className="text-h6">Animation</h3>
         </div>
-        <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px] dark:text-secondary">
+        <h2 className="capitalize text-textPrimary font-medium leading-[20.8px] dark:text-secondary overflow-hidden text-nowrap text-ellipsis">
           Parallax Scroll Effect with PageView in Flutter
         </h2>
         <p className="mt-2 text-textSecondary text-h6">
@@ -60,9 +60,9 @@ const ArticlesCard = () => {
           And it&apos;s no wonder: who doesn&apos;t like using...
         </p>
       </Link>
-      <Link to="/article-details">
+      <Link to="/article-details" className="group overflow-hidden rounded-lg">
         <img
-          className="rounded-lg w-full border border-secondary dark:border-darkSecondary"
+          className="rounded-lg w-full border border-secondary dark:border-darkSecondary group-hover:scale-105 transition-all duration-300"
           src={articleImgThree}
           alt=""
         />
@@ -70,7 +70,7 @@ const ArticlesCard = () => {
           <h3 className="text-h6">Mar 24, 2024</h3>
           <h3 className="text-h6">Animation</h3>
         </div>
-        <h2 className="capitalize text-textPrimary font-semibold leading-[20.8px] dark:text-secondary">
+        <h2 className="capitalize text-textPrimary font-medium leading-[20.8px] dark:text-secondary overflow-hidden text-nowrap text-ellipsis">
           Parallax Scroll Effect with PageView in Flutter
         </h2>
         <p className="mt-2 text-textSecondary text-h6">
