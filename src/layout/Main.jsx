@@ -12,7 +12,7 @@ const Main = () => {
         </div>
         <div className="px-4 pb-5 w-full md:w-[85%] xl:md:w-[90%]">
           <Header />
-          <div className="pt-10">
+          <div className="pt-6">
             <Outlet />
           </div>
         </div>
