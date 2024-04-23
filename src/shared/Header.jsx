@@ -385,7 +385,7 @@ const Header = () => {
       <div
         className={`${
           isActive ? 'active grid gap-5' : 'closed'
-        } offcanvas w-[250px] p-4 md:hidden h-full fixed z-50 top-0 right-[-250px] transition-all dark:bg-dark`}
+        } offcanvas w-[250px] p-4 md:hidden h-full fixed z-50 top-0 right-[-250px] transition-all dark:bg-dark grid content-start gap-5`}
       >
         <div className="flex justify-between">
           <img src={logoName} alt="" />
@@ -419,7 +419,6 @@ const Header = () => {
             </button>
           </div>
         </div>
-
         {/* links */}
         <div>
           <div className="grid gap-7">
