@@ -107,7 +107,7 @@ const ArticleDetails = () => {
                 backgroundColor: '#111', // Light background color
                 borderRadius: '16px',
                 border: '1px solid #2e2e2e',
-                fontWeight: 'bold',
+                fontWeight: '500',
                 fontSize: '14px',
                 lineHeight: '1.5',
               }}

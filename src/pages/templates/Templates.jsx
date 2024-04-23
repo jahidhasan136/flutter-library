@@ -44,7 +44,7 @@ const Templates = () => {
           ''
         ) : (
           <div className="flex gap-2 items-center mb-4">
-            <button className="flex gap-2 items-center px-4 py-2 bg-bgSecondary rounded-full mr-4 dark:border dark:border-darkSecondary dark:bg-black dark:text-secondary">
+            <button className="flex gap-2 items-center px-4 py-2 bg-bgSecondary rounded-full mr-4 dark:border dark:border-darkSecondary dark:bg-darkSecondary dark:text-secondary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -66,7 +66,8 @@ const Templates = () => {
                   key={index}
                   className="text-h6 px-4 py-2 border border-secondary hover:bg-secondary
                 dark:text-secondary text-textPrimary rounded-full transition-all duration-300
-                dark:hover:text-dark dark:border-darkSecondary text-nowrap"
+                dark:hover:text-secondary 
+                dark:hover:bg-darkSecondary dark:border-darkSecondary text-nowrap"
                   onMouseOver={(e) => e.stopPropagation()} // Prevent scrolling on button hover
                 >
                   {button}
