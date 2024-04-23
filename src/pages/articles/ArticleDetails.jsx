@@ -4,9 +4,6 @@ import revenueIcon from '../../assets/icons/revenueIcon.svg';
 // images
 import personImg from '../../assets/articles/personImg.png';
 import imgTwo from '../../assets/articles/imgTwo.png';
-import articleImgOne from '../../assets/articles/article-1.png';
-import articleImgTwo from '../../assets/articles/article-2.png';
-import articleImgThree from '../../assets/articles/article-3.png';
 import { useEffect } from 'react';
 import Prism from 'prismjs';
 import 'prismjs/components/prism-javascript';
@@ -65,14 +62,14 @@ const ArticleDetails = () => {
                       March 29, 2024
                     </p>
                     <div className="bg-[#D9D9D9] w-2 h-2 rounded-full"></div>
-                    <p className="group-hover:text-dark duration-300 text-h6 text-textSecondary capitalize">
+                    <p className="group-hover:text-dark duration-300 text-h6 text-textSecondary dark:group-hover:text-secondary capitalize">
                       Flutter, Animation
                     </p>
                   </div>
                 </div>
               </div>
               <div>
-                <button className="flex items-center gap-2 bg-secondary px-4 py-2 rounded-[20px] dark:border dark:border-darkSecondary dark:bg-dark dark:text-secondary">
+                <button className="flex items-center gap-2 bg-secondary px-4 py-2 rounded-[20px] dark:border dark:border-darkSecondary dark:bg-dark dark:text-secondary dark:hover:bg-darkSecondary">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
