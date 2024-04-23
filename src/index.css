@@ -42,7 +42,7 @@ body {
 
 /* buttons start */
 .btn_primary_a {
-  @apply px-4 py-[14px] rounded-2xl font-semibold bg-primary text-white text-h5 dark:bg-bgSecondary dark:text-dark;
+  @apply px-4 py-[14px] rounded-2xl font-semibold bg-primary hover:bg-primary/85 text-white text-h5 dark:bg-bgSecondary dark:text-dark dark:hover:bg-bgSecondary/95;
 }
 
 .btn_primary_s {
