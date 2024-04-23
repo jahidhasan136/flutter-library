@@ -60,42 +60,40 @@ const Screens = () => {
           <p className="text-h6 leading-[18.2px]">Filters</p>
         </button>
         <div className="border-secondary border-r-2 py-4 mr-4 dark:border-darkSecondary"></div>
-        <div className="flex gap-2 items-center">
-          {scrollIndex > 0 && (
-            <button onClick={handlePrev}>
-              <FaArrowLeftLong className="text-dark dark:text-secondary" />
-            </button>
-          )}
-          <div className="flex gap-2 items-center overflow-x-auto">
-            {/* Render all buttons with conditional styling based on scrollIndex */}
-            {buttons.map((button, index) => (
-              <button
-                key={index}
-                className={`text-h6 px-4 py-2 border border-secondary hover:bg-secondary
+        {scrollIndex > 0 && (
+          <button onClick={handlePrev}>
+            <FaArrowLeftLong className="text-dark dark:text-secondary" />
+          </button>
+        )}
+        <div className="flex gap-2 items-center overflow-x-auto">
+          {/* Render all buttons with conditional styling based on scrollIndex */}
+          {buttons.map((button, index) => (
+            <button
+              key={index}
+              className={`text-h6 px-4 py-2 border border-secondary hover:bg-secondary
                 dark:text-secondary text-textPrimary rounded-full transition-all duration-300
                 dark:hover:text-secondary 
                 dark:hover:bg-darkSecondary dark:border-darkSecondary text-nowrap`}
-                onClick={() => console.log(`${button} clicked`)}
-                style={{
-                  display:
-                    index >= scrollIndex && index < scrollIndex + 5
-                      ? 'inline-block'
-                      : 'none',
-                }}
-              >
-                {button}
-              </button>
-            ))}
-          </div>
-          {/* arrow buttons */}
-          {scrollIndex + 5 >= buttons.length ? (
-            ''
-          ) : (
-            <button onClick={handleNext}>
-              <FaArrowRightLong className="text-dark dark:text-secondary" />
+              onClick={() => console.log(`${button} clicked`)}
+              style={{
+                display:
+                  index >= scrollIndex && index < scrollIndex + 10
+                    ? 'inline-block'
+                    : 'none',
+              }}
+            >
+              {button}
             </button>
-          )}
+          ))}
         </div>
+        {/* arrow buttons */}
+        {scrollIndex + 10 >= buttons.length ? (
+          ''
+        ) : (
+          <button onClick={handleNext}>
+            <FaArrowRightLong className="text-dark dark:text-secondary" />
+          </button>
+        )}
       </div>
 
       {/* screens card sections */}
