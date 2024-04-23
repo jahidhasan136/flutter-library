@@ -4,14 +4,15 @@ import overviewImg from '../../assets/templates/overview.png';
 // icons
 import copyIcon from '../../assets/icons/copy.svg';
 import revenueIcon from '../../assets/icons/revenueIcon.svg';
-import downloadIcon from '../../assets/icons/downloadIcon.svg';
-import phoneIcon from '../../assets/icons/phoneIcon.svg';
-// images
-import templateOne from '../../assets/templates/template-1.png';
-import templateTwo from '../../assets/templates/template-2.png';
-import templateThree from '../../assets/templates/template-3.png';
 import { Link } from 'react-router-dom';
 import TemplatesCard from '../../sections/TemplatesCard';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+// import required modules
+import { Navigation } from 'swiper/modules';
 
 const TemplateDetails = () => {
   // card code copy functionality
@@ -34,6 +35,7 @@ const TemplateDetails = () => {
   const handleCopyTextChange = () => {
     setCopied(true);
   };
+
   return (
     <div className="grid gap-10">
       <div className="grid gap-5">
@@ -89,143 +91,159 @@ const TemplateDetails = () => {
         </div>
 
         {/* slider cards */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-          <div className="relative flex justify-center overflow-hidden group rounded-2xl">
-            <img
-              className="rounded-2xl border border-secondary"
-              src={templateImgOne}
-              alt=""
-            />
-            <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
-              <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
-                <img src={copyIcon} alt="" />
-                <h6 className="text-h6">20</h6>
-              </div>
-              <div onClick={handleCopyTextChange}>
-                {copied ? (
-                  <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
-                    copied!
-                  </p>
-                ) : (
-                  <button
-                    onClick={handleCopyText}
-                    className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
-                  >
-                    Copy code
-                  </button>
-                )}
-              </div>
-            </div>
-          </div>
-          <div className="relative flex justify-center overflow-hidden group rounded-2xl">
-            <img
-              className="rounded-2xl border border-secondary"
-              src={templateImgOne}
-              alt=""
-            />
-            <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
-              <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
-                <img src={copyIcon} alt="" />
-                <h6 className="text-h6">20</h6>
-              </div>
-              <div onClick={handleCopyTextChange}>
-                {copied ? (
-                  <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
-                    copied!
-                  </p>
-                ) : (
-                  <button
-                    onClick={handleCopyText}
-                    className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
-                  >
-                    Copy code
-                  </button>
-                )}
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={30}
+          navigation={true}
+          modules={[Navigation]}
+          className="mySwiper w-[100%]"
+        >
+          <SwiperSlide>
+            <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+              <img
+                className="rounded-2xl border border-secondary"
+                src={templateImgOne}
+                alt=""
+              />
+              <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
+                <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
+                  <img src={copyIcon} alt="" />
+                  <h6 className="text-h6">20</h6>
+                </div>
+                <div onClick={handleCopyTextChange}>
+                  {copied ? (
+                    <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
+                      copied!
+                    </p>
+                  ) : (
+                    <button
+                      onClick={handleCopyText}
+                      className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
+                    >
+                      Copy code
+                    </button>
+                  )}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="relative flex justify-center overflow-hidden group rounded-2xl">
-            <img
-              className="rounded-2xl border border-secondary"
-              src={templateImgOne}
-              alt=""
-            />
-            <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
-              <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
-                <img src={copyIcon} alt="" />
-                <h6 className="text-h6">20</h6>
-              </div>
-              <div onClick={handleCopyTextChange}>
-                {copied ? (
-                  <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
-                    copied!
-                  </p>
-                ) : (
-                  <button
-                    onClick={handleCopyText}
-                    className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
-                  >
-                    Copy code
-                  </button>
-                )}
-              </div>
-            </div>
-          </div>
-          <div className="relative flex justify-center overflow-hidden group rounded-2xl">
-            <img
-              className="rounded-2xl border border-secondary"
-              src={templateImgOne}
-              alt=""
-            />
-            <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
-              <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
-                <img src={copyIcon} alt="" />
-                <h6 className="text-h6">20</h6>
-              </div>
-              <div onClick={handleCopyTextChange}>
-                {copied ? (
-                  <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
-                    copied!
-                  </p>
-                ) : (
-                  <button
-                    onClick={handleCopyText}
-                    className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
-                  >
-                    Copy code
-                  </button>
-                )}
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+              <img
+                className="rounded-2xl border border-secondary"
+                src={templateImgOne}
+                alt=""
+              />
+              <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
+                <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
+                  <img src={copyIcon} alt="" />
+                  <h6 className="text-h6">20</h6>
+                </div>
+                <div onClick={handleCopyTextChange}>
+                  {copied ? (
+                    <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
+                      copied!
+                    </p>
+                  ) : (
+                    <button
+                      onClick={handleCopyText}
+                      className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
+                    >
+                      Copy code
+                    </button>
+                  )}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="relative flex justify-center overflow-hidden group rounded-2xl">
-            <img
-              className="rounded-2xl border border-secondary"
-              src={templateImgOne}
-              alt=""
-            />
-            <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
-              <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
-                <img src={copyIcon} alt="" />
-                <h6 className="text-h6">20</h6>
-              </div>
-              <div onClick={handleCopyTextChange}>
-                {copied ? (
-                  <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
-                    copied!
-                  </p>
-                ) : (
-                  <button
-                    onClick={handleCopyText}
-                    className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
-                  >
-                    Copy code
-                  </button>
-                )}
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+              <img
+                className="rounded-2xl border border-secondary"
+                src={templateImgOne}
+                alt=""
+              />
+              <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
+                <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
+                  <img src={copyIcon} alt="" />
+                  <h6 className="text-h6">20</h6>
+                </div>
+                <div onClick={handleCopyTextChange}>
+                  {copied ? (
+                    <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
+                      copied!
+                    </p>
+                  ) : (
+                    <button
+                      onClick={handleCopyText}
+                      className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
+                    >
+                      Copy code
+                    </button>
+                  )}
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+              <img
+                className="rounded-2xl border border-secondary"
+                src={templateImgOne}
+                alt=""
+              />
+              <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
+                <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
+                  <img src={copyIcon} alt="" />
+                  <h6 className="text-h6">20</h6>
+                </div>
+                <div onClick={handleCopyTextChange}>
+                  {copied ? (
+                    <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
+                      copied!
+                    </p>
+                  ) : (
+                    <button
+                      onClick={handleCopyText}
+                      className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
+                    >
+                      Copy code
+                    </button>
+                  )}
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative flex justify-center overflow-hidden group rounded-2xl">
+              <img
+                className="rounded-2xl border border-secondary"
+                src={templateImgOne}
+                alt=""
+              />
+              <div className="absolute bg-screens w-full h-full flex items-center justify-center gap-4 group-hover:bottom-0 -bottom-32 transition-all duration-300 -mb-5">
+                <div className="flex items-center gap-2 p-2 bg-white rounded-lg">
+                  <img src={copyIcon} alt="" />
+                  <h6 className="text-h6">20</h6>
+                </div>
+                <div onClick={handleCopyTextChange}>
+                  {copied ? (
+                    <p className="p-2 text-h6 text-textPrimary bg-white rounded-lg">
+                      copied!
+                    </p>
+                  ) : (
+                    <button
+                      onClick={handleCopyText}
+                      className="p-2 text-h6 text-textPrimary bg-white rounded-lg"
+                    >
+                      Copy code
+                    </button>
+                  )}
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
 
         {/* right side revenue cat content for mobile devices */}
         <div className="lg:hidden border border-secondary rounded-2xl w-full md:w-1/2">
