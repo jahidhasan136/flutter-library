@@ -1,8 +1,6 @@
 import Templates from '../pages/templates/Templates';
 import Articles from '../pages/articles/Articles';
 // icons
-import searchIcon from '../assets/icons/searchIcon.svg';
-import Screens from '../pages/screens/Screens';
 
 const SearchModal = ({
   currentButton,
@@ -20,14 +18,23 @@ const SearchModal = ({
           <div className="grid lg:flex items-center gap-5 w-full">
             <div className="flex items-center justify-between">
               <div className="relative">
-                <img
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
                   className="absolute top-1/3 left-5"
-                  src={searchIcon}
-                  alt=""
-                />
+                >
+                  <path
+                    d="M9.99984 3.41666C6.6312 3.41666 3.90039 6.14746 3.90039 9.51607C3.90039 12.8847 6.6312 15.6155 9.99984 15.6155C13.3684 15.6155 16.0993 12.8847 16.0993 9.51607C16.0993 6.14746 13.3684 3.41666 9.99984 3.41666ZM2.65039 9.51607C2.65039 5.45711 5.94084 2.16666 9.99984 2.16666C14.0588 2.16666 17.3493 5.45711 17.3493 9.51607C17.3493 11.7552 16.3479 13.7604 14.7686 15.1084L16.8931 17.8231C17.1058 18.0949 17.0579 18.4877 16.7861 18.7004C16.5143 18.9132 16.1214 18.8652 15.9088 18.5934L13.7516 15.8371C12.6533 16.4903 11.3704 16.8655 9.99984 16.8655C5.94084 16.8655 2.65039 13.5751 2.65039 9.51607Z"
+                    className="fill-dark dark:fill-secondary"
+                  />
+                </svg>
+
                 <input
                   className="py-[14px] pl-11
-           pr-5 md:w-[400px] rounded-full bg-bgSecondary text-textPrimary outline-none dark:bg-darkSecondary"
+           pr-5 md:w-[400px] rounded-full bg-bgSecondary text-textPrimary outline-none dark:bg-darkSecondary dark:text-secondary"
                   type="text"
                   placeholder="Search...."
                 />

@@ -10,9 +10,9 @@ const Main = () => {
         <div className="w-[200px]">
           <SideMenu />
         </div>
-        <div className="px-4 pt-4 pb-5 w-full md:w-[85%] xl:md:w-[90%]">
+        <div className="px-4 pb-5 w-full md:w-[85%] xl:md:w-[90%]">
           <Header />
-          <div className="mt-10">
+          <div className="pt-10">
             <Outlet />
           </div>
         </div>

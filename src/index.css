@@ -46,7 +46,7 @@ body {
 }
 
 .btn_primary_s {
-  @apply px-4 py-[14px] border border-secondary rounded-2xl font-semibold text-h5 text-textPrimary hover:bg-bgSecondary transition-all duration-300 dark:text-secondary dark:hover:text-textPrimary;
+  @apply px-4 py-[14px] border border-secondary rounded-2xl font-semibold text-h5 text-textPrimary hover:bg-bgSecondary transition-all duration-300 dark:border-darkSecondary dark:text-secondary dark:hover:text-secondary dark:hover:bg-darkSecondary;
 }
 .btn_primary_d {
   @apply px-4 py-2 rounded-[20px] border border-secondary text-textPrimary hover:bg-bgSecondary transition-all dark:text-secondary dark:hover:text-textPrimary duration-300;
@@ -68,7 +68,7 @@ body {
 }
 
 .active {
-  @apply bg-bgSecondary text-textPrimary dark:bg-darkSecondary dark:text-secondary;
+  @apply bg-white text-textPrimary dark:bg-darkSecondary dark:text-secondary;
 }
 .inactive {
   @apply hover:bg-bgSecondary hover:text-textPrimary transition-all duration-300 dark:hover:bg-darkSecondary dark:hover:text-secondary;
